@@ -4,11 +4,7 @@
 body,
 h1,
 p,
-pre,
 hr,
-dl,
-dd,
-ol,
 ul {
   margin: 0;
   padding: 0;
@@ -39,10 +35,7 @@ body {
  */
 h1,
 p,
-pre,
-ul,
-ol,
-dl {
+ul {
   margin-bottom: 15px;
 }
 
@@ -57,25 +50,18 @@ main {
 /**
  * Lists
  */
-ul,
-ol {
+ul {
   margin-left: 30px;
 }
 
-li > ul,
-li > ol {
+li > ul {
   margin-bottom: 0;
 }
 
 /**
  * Headings
  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-weight: 400;
 }
 
