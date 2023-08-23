@@ -11,7 +11,10 @@ The first thing to consider when training language models is the datasets we're 
 - Target set (labeled): ...
 - Validation set (labeled): ...
 
-When training our model, we want to aim for a good statistical fit so our model can make good predictions based on our inputs. We want to avoid a situation where our target set is too simple, and our model cannot make accurate generalizations on the data it has not seen before — this is called underfitting. We also want to avoid overfitting, where our target set contains too much noise where random fluctuations in the training data is picked up and learned as concepts by the model.
+When training our model, we want to aim for a good statistical fit so our model can make good predictions based on our inputs. We want to avoid a situation where our target set is too simple, and our model cannot make accurate generalizations on the data it has not seen before — this is called _underfitting_. We also want to avoid _overfitting_, where our target set contains too much noise where random fluctuations in the training data is picked up and learned as concepts by the model.
+
+_Overfitting vs. Underfitting_
+![Statistical Fit](/assets/train-llm-one/statistical-fit.svg)
 
 Finally, we must do some preprocessing to prepare our datasets for training. In the preprocessing step we divide our text into individual tokens. Our tokens, are then converted into numbers, which our model receives as inputs.
 
