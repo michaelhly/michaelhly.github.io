@@ -15,7 +15,7 @@ When training our model, we want to aim for a good statistical fit so our model 
 
 Finally, we must do some preprocessing to prepare our datasets for training. In the preprocessing step we divide our text into individual tokens. Our tokens, are then converted into numbers, which our model receives as inputs.
 
-```python3
+```python
 import torch
 ```
 
