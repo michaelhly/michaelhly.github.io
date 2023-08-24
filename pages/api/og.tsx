@@ -15,8 +15,6 @@ export default async function handler(request: NextRequest) {
     ? searchParams.get("title")?.slice(0, 100)
     : DEFAULT_POST_TITLE;
 
-  console.log({ title });
-
   return new ImageResponse(
     (
       <div
@@ -32,8 +30,7 @@ export default async function handler(request: NextRequest) {
           alignItems: "center",
         }}
       >
-        📔
-        {title}
+        📔 {title}
       </div>
     ),
     {
