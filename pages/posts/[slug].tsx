@@ -11,7 +11,7 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
-import { VERCEL_URL, PREVIEW_IMAGE_META_PREFIXES } from "../../lib/constants";
+import { VERCEL_URL } from "../../lib/constants";
 
 type Props = {
   post: PostType;
@@ -22,6 +22,9 @@ type Props = {
 export default function Post({ post }: Props) {
   const router = useRouter();
   const title = `${post.title}`;
+  const ogImageUrl = post.ogImage
+    ? post.ogImage.url
+    : `${VERCEL_URL}/api/og?title=${post.title}.png`;
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
@@ -36,13 +39,7 @@ export default function Post({ post }: Props) {
             <article className="mb-32">
               <Head>
                 <title>{title}</title>
-                {PREVIEW_IMAGE_META_PREFIXES.map((prefix) => {
-                  const image_property = `${prefix}:image`;
-                  const content = post.ogImage
-                    ? post.ogImage.url
-                    : `${VERCEL_URL}/api/og?title=${post.title}`;
-                  return <meta property={image_property} content={content} />;
-                })}
+                <meta property="og:image" content={ogImageUrl} />;
               </Head>
               <PostHeader title={post.title} date={post.date} />
               <PostBody content={post.content} />
