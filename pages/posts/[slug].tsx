@@ -40,7 +40,7 @@ export default function Post({ post }: Props) {
                   <meta property="og:image" content={post.ogImage.url} />
                 ) : (
                   <meta
-                    property="og:image"
+                    property="og:image:secure_url"
                     content={`${VERCEL_URL}/api/og?title=${post.title}`}
                   />
                 )}
