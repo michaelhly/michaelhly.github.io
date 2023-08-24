@@ -11,7 +11,7 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
-import { HOME_OG_IMAGE_URL } from "../../lib/constants";
+import { HOME_OG_IMAGE_URL, VERCEL_URL } from "../../lib/constants";
 
 type Props = {
   post: PostType;
@@ -39,7 +39,10 @@ export default function Post({ post }: Props) {
                 {post.ogImage ? (
                   <meta property="og:image" content={post.ogImage.url} />
                 ) : (
-                  <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+                  <meta
+                    property="og:image"
+                    content={`${VERCEL_URL}/api/title?${post.title}`}
+                  />
                 )}
               </Head>
               <PostHeader title={post.title} date={post.date} />
