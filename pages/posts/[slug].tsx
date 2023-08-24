@@ -1,4 +1,7 @@
 import ErrorPage from "next/error";
+import Head from "next/head";
+import { useRouter } from "next/router";
+
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
 import Header from "../../components/header";
@@ -6,10 +9,9 @@ import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
-import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
-import { useRouter } from "next/router";
+import { HOME_OG_IMAGE_URL } from "../../lib/constants";
 
 type Props = {
   post: PostType;
@@ -34,8 +36,10 @@ export default function Post({ post }: Props) {
             <article className="mb-32">
               <Head>
                 <title>{title}</title>
-                {post.ogImage && (
+                {post.ogImage ? (
                   <meta property="og:image" content={post.ogImage.url} />
+                ) : (
+                  <meta property="og:image" content={HOME_OG_IMAGE_URL} />
                 )}
               </Head>
               <PostHeader title={post.title} date={post.date} />
