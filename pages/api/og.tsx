@@ -28,9 +28,9 @@ export default async function handler(request: NextRequest) {
           backgroundColor: "white",
         }}
       >
-        <div tw="flex flex-col">
-          <h1 tw="text-3xl">{title}</h1>
-          <p tw="text-gray-500">📔 Michael Huang</p>
+        <div tw="flex flex-col px-24">
+          <h1 tw="text-6xl break-words">{title}</h1>
+          <p tw="text-2xl text-gray-500">📔 Michael Huang</p>
         </div>
       </div>
     ),
