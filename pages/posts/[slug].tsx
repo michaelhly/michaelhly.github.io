@@ -12,6 +12,7 @@ import PostTitle from "../../components/post-title";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import { VERCEL_API_URL } from "../../lib/constants";
+import Footer from "../../components/footer";
 
 type Props = {
   post: PostType;
@@ -48,6 +49,7 @@ export default function Post({ post }: Props) {
           </>
         )}
       </Container>
+      <Footer />
     </Layout>
   );
 }
