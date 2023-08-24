@@ -9,7 +9,7 @@ const nextConfig = {
      *
      * @see https://nextjs.org/docs/pages/building-your-application/deploying/static-exports
      */
-    output: process.env.HOST === "gh-pages" ?  "export" : "standalone",
+    output: process.env.HOST === "gh-pages" ?  "export" : undefined,
   
     /**
      * Disable server-based image optimization. Next.js does not support
