@@ -19,19 +19,19 @@ export default async function handler(request: NextRequest) {
     (
       <div
         style={{
-          display: "flex",
-          fontSize: 100,
-          color: "black",
-          background: "white",
-          width: "100%",
           height: "100%",
-          padding: "50px 200px",
-          textAlign: "center",
-          justifyContent: "center",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
           alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "white",
         }}
       >
-        📔 {title}
+        <div tw="flex flex-col">
+          <h1 tw="text-3xl">{title}</h1>
+          <p tw="text-gray-500">📔 Michael Huang</p>
+        </div>
       </div>
     ),
     {
@@ -39,7 +39,7 @@ export default async function handler(request: NextRequest) {
       height: 630,
       // Supported options: 'twemoji', 'blobmoji', 'noto', 'openmoji', 'fluent' and 'fluentFlat'
       // Default to 'twemoji'
-      emoji: "twemoji",
+      emoji: "openmoji",
     }
   );
 }

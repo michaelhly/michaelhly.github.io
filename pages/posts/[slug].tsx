@@ -11,7 +11,7 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
-import { VERCEL_URL } from "../../lib/constants";
+import { VERCEL_API_URL } from "../../lib/constants";
 
 type Props = {
   post: PostType;
@@ -24,7 +24,7 @@ export default function Post({ post }: Props) {
   const title = `${post.title}`;
   const ogImageUrl = post.ogImage
     ? post.ogImage.url
-    : `${VERCEL_URL}/api/og?title=${post.title}.png`;
+    : `${VERCEL_API_URL}/og?title=${post.title}`;
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
