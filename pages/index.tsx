@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Head from "next/head";
 
 import Container from "../components/container";
@@ -20,6 +21,7 @@ export default function Index({ allPosts }: Props) {
           <title>Michael Huang</title>
           <meta name="description" content="Michael Huang's website" />
         </Head>
+        <Analytics />
         <Container>
           {allPosts.length > 0 && <Stories posts={allPosts} />}
         </Container>
