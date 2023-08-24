@@ -37,7 +37,7 @@ export default function Post({ post }: Props) {
               <Head>
                 <title>{title}</title>
                 {PREVIEW_IMAGE_META_PREFIXES.map((prefix) => {
-                  const image_property = `${prefix}:image:secure_url`;
+                  const image_property = `${prefix}:image`;
                   const content = post.ogImage
                     ? post.ogImage.url
                     : `${VERCEL_URL}/api/og?title=${post.title}`;
