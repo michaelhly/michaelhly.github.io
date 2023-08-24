@@ -1,8 +1,10 @@
+import { Analytics } from "@vercel/analytics/react";
+import Head from "next/head";
+
 import Container from "../components/container";
 import Stories from "../components/stories";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
-import Head from "next/head";
 import Post from "../interfaces/post";
 import Footer from "../components/footer";
 
@@ -17,6 +19,7 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>Michael Huang</title>
         </Head>
+        <Analytics />
         <Container>
           {allPosts.length > 0 && <Stories posts={allPosts} />}
         </Container>

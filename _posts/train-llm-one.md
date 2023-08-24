@@ -3,7 +3,7 @@ title: "How to train a LLM: Datasets and Preprocessing"
 date: "2023-08-23T05:35:07.322Z"
 ---
 
-Trying to get on the e/acc bandwagon but don't know anything about an AI. I guess I have to start somewhere ... here is me trying to train my own AI.
+Trying to get on the _e/acc_ bandwagon but don't know anything about an AI. I guess I have to start somewhere ... here is me trying to train my own AI.
 
 In this series, we'll be using [BERT](<https://en.wikipedia.org/wiki/BERT_(language_model)>) as our underlying language model. Unlike [GPT](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer) based language models, BERT is a bidirectional transformer model, which makes predictions by examining words in sentences from both directions.
 
