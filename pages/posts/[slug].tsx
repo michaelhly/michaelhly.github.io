@@ -11,7 +11,7 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
-import { VERCEL_URL } from "../../lib/constants";
+import { VERCEL_URL, PREVIEW_IMAGE_META_PREFIXES } from "../../lib/constants";
 
 type Props = {
   post: PostType;
@@ -36,14 +36,13 @@ export default function Post({ post }: Props) {
             <article className="mb-32">
               <Head>
                 <title>{title}</title>
-                {post.ogImage ? (
-                  <meta property="og:image" content={post.ogImage.url} />
-                ) : (
-                  <meta
-                    property="og:image:secure_url"
-                    content={`${VERCEL_URL}/api/og?title=${post.title}`}
-                  />
-                )}
+                {PREVIEW_IMAGE_META_PREFIXES.map((prefix) => {
+                  const image_property = `${prefix}:image:secure_url`;
+                  const content = post.ogImage
+                    ? post.ogImage.url
+                    : `${VERCEL_URL}/api/og?title=${post.title}`;
+                  return <meta property={image_property} content={content} />;
+                })}
               </Head>
               <PostHeader title={post.title} date={post.date} />
               <PostBody content={post.content} />

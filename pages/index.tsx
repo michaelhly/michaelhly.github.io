@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Post from "../interfaces/post";
 import Footer from "../components/footer";
-import { HOME_OG_IMAGE_URL } from "../lib/constants";
+import { WEBSITE_TITLE } from "../lib/constants";
 
 type Props = {
   allPosts: Post[];
@@ -18,8 +18,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Michael Huang</title>
-          <meta name="description" content="Michael Huang's website" />
+          <title>{WEBSITE_TITLE}</title>
         </Head>
         <Analytics />
         <Container>
