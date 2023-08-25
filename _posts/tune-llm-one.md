@@ -23,7 +23,7 @@ The first thing to consider when tuning language models is the datasets we're wo
 
 — Brian Ripley, page 354, [Pattern Recognition and Neural Networks](https://www.amazon.com/Pattern-Recognition-Neural-Networks-Ripley/dp/0521460867/ref=as_li_ss_tl?dchild=1&keywords=Pattern+Recognition+and+Neural+Networks&qid=1597365594&sr=8-3&linkCode=sl1&tag=inspiredalgor-20&linkId=2507606de5f6bab2d4dba3e797eac0e2&language=en_US), 1996
 
-When tuning (or training) our model, we want to aim for a good statistical fit so our model can make good predictions based on our inputs. We want to avoid a situation where our defined outcomes are too simple, and our model cannot make accurate generalizations on the data it has not seen before — this is called _underfitting_. We also want to avoid _overfitting_, where the target outcomes include too much noise and random fluctuations in the training data are picked up and learned as concepts by the model.
+When tuning (or training) our model, we want to aim for a good statistical fit so our model can make good predictions based on our inputs. We want to avoid a situation where our defined outcomes are too simple, and our model cannot make accurate generalizations on the data it has not seen before — this is called _underfitting_. We also want to avoid _overfitting_, where the target outcomes include too much noise, and the model picks up and learns random fluctuations in the training data as concepts.
 
 _Overfitting vs. Underfitting_
 ![Statistical Fit](https://michaelhly.github.io/assets/tune-llm-one/statistical-fit.svg)
@@ -43,7 +43,7 @@ Next, we must do some preprocessing to prepare our datasets for our language mod
  'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}
 ```
 
-From above we see that the `BertTokenizer` from [Hugging Face](https://huggingface.co/bert-base-cased) took our sentence and spat out three sets of numbers:
+From above, we see that the `BertTokenizer` from [Hugging Face](https://huggingface.co/bert-base-cased) took our sentence and spat out three sets of numbers:
 
 `input_ids`: The unique identifiers of the tokens in a sentence.\
 `token_type_ids`: Identifiers describing which sequence a token belongs to if we provide the tokenizer more than one sentence.\
