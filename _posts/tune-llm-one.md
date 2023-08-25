@@ -21,7 +21,7 @@ The first thing to consider when tuning language models is the datasets we're wo
 >
 > Test set: A set of examples used only to assess the performance of a fully-specified classifier.
 
-— Brian Ripley, page 354, [Pattern Recognition and Neural Networks](https://www.amazon.com/Pattern-Recognition-Neural-Networks-Ripley/dp/0521460867/ref=as_li_ss_tl?dchild=1&keywords=Pattern+Recognition+and+Neural+Networks&qid=1597365594&sr=8-3&linkCode=sl1&tag=inspiredalgor-20&linkId=2507606de5f6bab2d4dba3e797eac0e2&language=en_US), 1996
+— Brian Ripley, page 354, [Pattern Recognition and Neural Networks](https://a.co/d/9IutR4h), 1996
 
 When tuning (or training) our model, we want to aim for a good statistical fit so our model can make good predictions based on our inputs. We want to avoid a situation where our defined outcomes are too simple, and our model cannot make accurate generalizations on the data it has not seen before — this is called _underfitting_. We also want to avoid _overfitting_, where the target outcomes include too much noise, and the model picks up and learns random fluctuations in the training data as concepts.
 
@@ -54,4 +54,4 @@ From above, we see that the `BertTokenizer` from [Hugging Face](https://huggingf
 
 Our model will take in these sets of numbers as inputs during the tuning process.
 
-In the next part, we'll look at some hyperparameters and explore metrics we should track to evaluate our process.
+In the [next part](https://michaelhly.com/posts/tune-llm-two), we'll look at some hyperparameters and explore metrics we should track to evaluate our tuning process.
