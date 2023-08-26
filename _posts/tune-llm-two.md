@@ -1,9 +1,9 @@
 ---
-title: "How to Tune a LLM: Hyperparameters and Metrics"
+title: "How to Tune an LLM: Hyperparameters and Metrics"
 date: "2023-08-25T12:00:00.000Z"
 ---
 
-[Last time](https://michaelhly.com/posts/tune-llm-one) we figured out how to prepare data for our language model, now we can initalize our BERT model for fine tuning. But before diving into a bunch of [deep learning](https://en.wikipedia.org/wiki/Deep_learning) jargons on hyperparameters and metrics, I thought it would be useful to build our own mental model on what goes on during the fine tuning process.
+[Last time](https://michaelhly.com/posts/tune-llm-one) we figured out how to prepare data for our language model, and now we can initialize our BERT model for fine-tuning. But before diving into a bunch of [deep learning](https://en.wikipedia.org/wiki/Deep_learning) jargon on hyperparameters and metrics, I thought it would be useful to build our own mental model on what goes on during the fine-tuning process.
 
 ## Backpropagation
 
@@ -11,25 +11,25 @@ When training a language model, we're basically teaching the computer how to mak
 
 We conduct this teaching process on a model (a.k.a. a [neural network](https://en.wikipedia.org/wiki/Neural_network)) through the following process:
 
-1. We assign **weights** (a.k.a. probabilities) to our preprocessed training data and dump it on our model. The training inputs travels through multiple layers of computation nodes, each with its own set of weights, until it reaches the set of target outcomes we've defined. This step is called the _foward pass_.
+1. We assign **weights** (a.k.a. probabilities) to our preprocessed training data and dump it on our model. The training inputs travel through multiple layers of computation nodes, each with its own set of weights, until it reaches the set of target outcomes we've defined. This step is called the _forward pass_.
 2. Next, we calculate how different the model outcome is compared to the outcome we wanted. We can call this difference [loss](https://en.wikipedia.org/wiki/Loss_function) (a.k.a error rate).
 3. We then [backpropagate](https://en.wikipedia.org/wiki/Backpropagation) from the weights of our output nodes to our input nodes to figure out how much each weight in the network contributed to the loss.
 4. Now we change up the input weights we've assigned in step 1, attribute some [_bias_](https://en.wikipedia.org/wiki/Algorithmic_bias), and hope the model will do better next time in the next training session.
 
-These four steps we described is commonly represented by a complicated diagram that looks like this:
+These four steps we described are commonly represented by a complicated diagram that looks like this:
 ![Deep Neural Network](https://michaelhly.github.io/assets/tune-llm-two/deep-neural-network.png)
 
-If you want to go further into the computation behind the backpropogation step like a real pro, I'd watch this [video](https://youtu.be/q8SA3rM6ckI?si=o8JCEpnUNlCudNn-).
+If you want to go further into the computation behind the backpropagation step like a real pro, I'd watch this [video](https://youtu.be/q8SA3rM6ckI?si=o8JCEpnUNlCudNn-).
 
 ## Hyperparameters
 
-Aside from the input weights we must assign, there are also other parameters we can control to influence the machine learning process. Here are four that seemed the most important:
+Aside from the input weights we must assign, there are also other parameters we can control to influence the machine-learning process. Here are four that seemed the most important:
 
 ### learning_rate
 
 The learning rate determines the pace we force our computer through the mundane training process we described earlier. We want to pick the right rate to help our model _minimize_ loss.
 
-- Too small of a learning rate can lead to the model getting stuck. If you have a large dataset and limited compute resources the model can literally "give up" on you.
+- Too small of a learning rate can lead to the model getting stuck. If you have a large dataset and limited computing resources the model can literally "give up" on you.
 - Picking a large learning rate can create an unstable training/tuning process. As a result, the model will make suboptimal ("bad") guesses.
 
 ### weight_decay
@@ -50,7 +50,7 @@ An important metric to track is the [accuracy_score](https://scikit-learn.org/st
 
 I also found this neat helper from [scikit-learn](https://scikit-learn.org/stable/index.html) called [precision_recall_fscore_support](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html#sklearn-metrics-precision-recall-fscore-support).
 
-The metrics are documented as follow:
+The metrics are documented as follows:
 
 > The `precision` is the ratio `tp / (tp + fp)` where\
 > `tp` is the number of true positives\
@@ -78,7 +78,7 @@ The metrics are documented as follow:
 
 The metrics from scikit-learn seem great! But I had no idea how to actually apply the function ...
 
-I flipped through some people's machine learning homework and found that you could use the method like this:
+I flipped through some people's machine-learning homework and found an example of evaluation metrics computed with `precision_recall_fscore_support`:
 
 ```python
 import numpy as np
@@ -92,11 +92,11 @@ def compute_metrics(eval_pred: EvalPrediction):
     return {"precision": precision, "recall": recall, "f1": f1, "support": support}
 ```
 
-And with the help of my friend ChatGPT, I found out that [logits](https://en.wikipedia.org/wiki/Logit) refer to the raw, unnormalized predictions generated by a neural network before they are transformed into probabilities.
+With the help of my friend ChatGPT, I found out that [logits](https://en.wikipedia.org/wiki/Logit) refer to the raw, unnormalized predictions generated by a neural network before they are transformed into probabilities.
 
-ChatGPT also gave me a step by step breakdown on what `np.argmax(logits, axis=-1)` did:
+ChatGPT also gave me a step-by-step breakdown on what `np.argmax(logits, axis=-1)` did:
 ![argmax breakdown](https://michaelhly.github.io/assets/tune-llm-two/argmax-breakdown.png)
 
 For more on probability normalization, I would also look into functions such as [softmax](https://en.wikipedia.org/wiki/Softmax_function), [sparsemax](https://arxiv.org/pdf/1602.02068.pdf), etc.
 
-Now I think we're finally ready to do some fine tuning!
+Now I think we're finally ready to do some fine-tuning!

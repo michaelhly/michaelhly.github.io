@@ -1,15 +1,15 @@
 ---
-title: "How to Tune a LLM: Datasets and Preprocessing"
+title: "How to Tune an LLM: Datasets and Preprocessing"
 date: "2023-08-23T05:35:07.322Z"
 ---
 
-Trying to get on the _e/acc_ bandwagon but don't know anything about an AI. I guess I have to start somewhere ... here is me trying to fine tune my own AI from a [pretrained](https://blogs.nvidia.com/blog/2022/12/08/what-is-a-pretrained-ai-model/) language model.
+Trying to get on the _e/acc_ bandwagon but don't know anything about AI. I guess I have to start somewhere ... here is me trying to fine-tune my own AI from a pre-trained language model.
 
 In this series, we'll be using [BERT](<https://en.wikipedia.org/wiki/BERT_(language_model)>) as our underlying language model. Unlike [GPT](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer) based language models, BERT is a bidirectional transformer model, which makes predictions by examining words in sentences from both directions.
 
 ![Birectional context](https://michaelhly.github.io/assets/tune-llm-one/bidirectional-context.png)
 
-This makes BERT well suited for classification based tasks, where inference is needed on the meaning of the language structure and relationships between words. GPT models are optimized for next-token prediction, and perform better at tasks that require text generation.
+This makes BERT well suited for classification-based tasks, where inference is needed on the meaning of the language structure and relationships between words. GPT models are optimized for next-token prediction and perform better at tasks that require text generation.
 
 ## Datasets
 
@@ -21,7 +21,7 @@ The first thing to consider when tuning language models is the datasets we're wo
 >
 > Test set: A set of examples used only to assess the performance of a fully-specified classifier.
 
-— Brian Ripley, page 354, [Pattern Recognition and Neural Networks](https://a.co/d/9IutR4h), 1996
+_— Brian Ripley, page 354, [Pattern Recognition and Neural Networks](https://a.co/d/9IutR4h), 1996_
 
 When tuning (or training) our model, we want to aim for a good statistical fit so our model can make good predictions based on our inputs. We want to avoid a situation where our defined outcomes are too simple, and our model cannot make accurate generalizations on the data it has not seen before — this is called _underfitting_. We also want to avoid _overfitting_, where the target outcomes include too much noise, and the model picks up and learns random fluctuations in the training data as concepts.
 
@@ -46,7 +46,7 @@ Next, we must do some preprocessing to prepare our datasets for our language mod
 From above, we see that the `BertTokenizer` from [Hugging Face](https://huggingface.co/bert-base-cased) took our sentence and spat out three sets of numbers:
 
 `input_ids`: The unique identifiers of the tokens in a sentence.\
-`token_type_ids`: Identifiers describing which sequence a token belongs to if we provide the tokenizer more than one sentence.\
+`token_type_ids`: Identifiers describing which sequence a token belongs to if we provide the tokenizer with more than one sentence.\
 `attention_mask`: Binary values indicating if the token should be acknowledged or ignored by the model.
 
 - _1_ indicates a token that the model should acknowledge.
