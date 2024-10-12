@@ -5,6 +5,7 @@ type Props = {
   title: string;
   date: string;
   slug: string;
+  hidden: string;
 };
 
 const PostPreview = ({ title, date, slug }: Props) => {

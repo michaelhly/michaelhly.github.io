@@ -1,6 +1,7 @@
 ---
 title: "How to Tune an LLM: Datasets and Preprocessing"
 date: "2023-08-23T05:35:07.322Z"
+hidden: true
 ---
 
 Trying to get on the _e/acc_ bandwagon but don't know anything about AI. I guess I have to start somewhere ... here is me trying to fine-tune my own AI from a pre-trained language model.

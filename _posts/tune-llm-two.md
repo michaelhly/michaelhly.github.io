@@ -1,6 +1,7 @@
 ---
 title: "How to Tune an LLM: Hyperparameters and Metrics"
 date: "2023-08-25T12:00:00.000Z"
+hidden: true
 ---
 
 [Last time](https://michaelhly.com/posts/tune-llm-one) we figured out how to prepare data for our language model, and now we can initialize our BERT model for fine-tuning. But before diving into a bunch of [deep learning](https://en.wikipedia.org/wiki/Deep_learning) jargon on hyperparameters and metrics, I thought it would be useful to build our own mental model on what goes on during the fine-tuning process.
