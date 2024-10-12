@@ -18,6 +18,7 @@ const Stories = ({ posts }: Props) => {
             title={post.title}
             date={post.date}
             slug={post.slug}
+            hidden={post.hidden}
           />
         ))}
       </div>
