@@ -1,7 +1,6 @@
 ---
-title: "A few Node.js packaging configurations"
+title: "Node.js packaging configurations"
 date: "2025-04-13T05:35:07.322Z"
-hidden: true
 ---
 
 Some useful `package.json` manifest configurations I found out this year when packaging Node.js modules. 
