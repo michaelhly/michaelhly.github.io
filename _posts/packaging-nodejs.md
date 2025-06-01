@@ -1,5 +1,5 @@
 ---
-title: "Node.js packaging configurations"
+title: "Packaging an Node.js project"
 date: "2025-04-13T05:35:07.322Z"
 ---
 
