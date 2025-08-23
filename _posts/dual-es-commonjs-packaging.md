@@ -8,7 +8,7 @@ date: "2025-08-23T20:48:14.368Z"
 ## Configurations
 To support multiple build targets in one package, we first need to make that explicit in the TypeScript toolchain. Here, we create `tsconfig.json` files specifying the compiler options necessary for each of our build targets:
 
-```jsonc
+```json
 // tsconfig.esm.json
 {
   "compilerOptions": {
@@ -20,7 +20,7 @@ To support multiple build targets in one package, we first need to make that exp
 }
 ```
 
-```jsonc
+```json
 // tsconfig.cjs.json
 {
   "compilerOptions": {
@@ -33,7 +33,7 @@ To support multiple build targets in one package, we first need to make that exp
 ```
 
 And in `package.json`, we specify the entrypoints for our package when imported:
-```jsonc
+```json
 // package.json
 {
   "exports": {
@@ -52,7 +52,7 @@ See the Node.js documentation for more on [conditional exports](https://nodejs.o
 
 When building, we compile our package twice, transpiling our TypeScript to ESM and CommonJS separately:
 
-```jsonc
+```json
 // Transpiling to ESM
 tsc -P tsconfig.esm.json
 // Transpiling to CommonJS
