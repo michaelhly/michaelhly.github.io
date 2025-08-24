@@ -1,5 +1,5 @@
 ---
-title: "Supporting dual CommonJS/ES module packages"
+title: "Dual CommonJS/ES module packages"
 date: "2025-08-23T20:48:14.368Z"
 ---
 
