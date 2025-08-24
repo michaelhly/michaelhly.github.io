@@ -32,7 +32,7 @@ To support multiple build targets in one package, we first need to make that exp
 }
 ```
 
-And in `package.json`, we specify the entrypoints for our package when imported:
+Then in `package.json`, we specify the entrypoints for our package when imported:
 ```javascript
 // package.json
 {
