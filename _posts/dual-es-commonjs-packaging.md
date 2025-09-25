@@ -72,5 +72,5 @@ dist
     └── index.js
 ```
 
-## Hazards
+## Caution
 ...
