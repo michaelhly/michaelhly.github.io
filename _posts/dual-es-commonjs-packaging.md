@@ -8,7 +8,7 @@ date: "2025-08-23T20:48:14.368Z"
 ## Configurations
 To support multiple build targets in one package, we first need to make that explicit in the TypeScript toolchain. Here, we create `tsconfig.json` files specifying the compiler options necessary for each of our build targets:
 
-```javascript
+```jsonc
 // tsconfig.esm.json
 {
   "compilerOptions": {
@@ -20,7 +20,7 @@ To support multiple build targets in one package, we first need to make that exp
 }
 ```
 
-```javascript
+```jsonc
 // tsconfig.cjs.json
 {
   "compilerOptions": {
@@ -32,10 +32,11 @@ To support multiple build targets in one package, we first need to make that exp
 }
 ```
 
-Then in `package.json`, we specify the entrypoints for our package when imported:
-```javascript
+And in `package.json`, we specify the entrypoints for our package when imported:
+```jsonc
 // package.json
 {
+  "name": "foobar",
   "exports": {
     ".": {
         "import": "./dist/esm/index.js",
@@ -63,14 +64,35 @@ and then in our final build output we should see:
 ```sh
 dist
 ├── cjs
-│   ├── ...
-│   ├── ...
-│   └── index.js
+│   ├── ...
+│   ├── ...
+│   └── index.js
 └── esm
     ├── ...
-    ├── ...
-    └── index.js
+    ├── ...
+    └── index.js
 ```
 
-## Caution
-...
+## Caution: The dual package hazard
+
+Shipping two copies of your code is convenient for end users, but it comes with a subtle trap that the Node.js docs call the [dual package hazard](https://nodejs.org/api/packages.html#dual-package-hazard).
+
+In our apps, `import` and `require` can pull in different copies of `foobar`:
+```js
+// "import" condition → ./dist/esm/index.js
+import { foo, bar } from 'foobar';
+
+// "require" condition → ./dist/cjs/index.js
+const { foo, bar } = require('foobar');
+```
+
+In our monorepo, ESM frontend apps and CommonJS backend services both depend on the same shared packages. If both esm and cjs copies of `foobar` accidentally get loaded in the same process, Node.js evaluates each file independently, so `foobar` is instantiated **twice**, and the process holds two separate instances of it.
+
+This is harmless for a package that only exports pure functions, but it breaks two assumptions that are easy to rely on:
+
+- **Module-level state is duplicated.** Singletons, caches, registries, configuration set at startup, and any "set once, read everywhere" value now exist once per copy. Writes made through the ESM instance are invisible to the CommonJS instance, and vice versa — a notorious source of "I configured it, why is it empty?" bugs.
+- **Identity checks fail across the boundary.** A class defined in the ESM copy is a different object from the same class in the CommonJS copy. An object created by one copy will fail `instanceof` against the other, and `===` comparisons on enums, symbols, or sentinel values won't match.
+
+### Avoiding it
+
+See https://nodejs.org/docs/latest-v18.x/api/packages.html#writing-dual-packages-while-avoiding-or-minimizing-hazards
