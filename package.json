@@ -29,6 +29,9 @@
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "name": "blog",
   "version": "1.0.0",
   "main": "index.js",
