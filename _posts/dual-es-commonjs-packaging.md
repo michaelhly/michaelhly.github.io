@@ -86,12 +86,12 @@ import { foo, bar } from 'foobar';
 const { foo, bar } = require('foobar');
 ```
 
-In our monorepo, ESM frontend apps and CommonJS backend services both depend on the same shared packages. If both esm and cjs copies of `foobar` accidentally get loaded in the same process, Node.js evaluates each file independently, so `foobar` is instantiated **twice**, and the process holds two separate instances of it.
+In our monorepo, ESM frontend apps and CommonJS backend services both depend on certain shared packages like `foobar`. If both esm and cjs copies of `foobar` accidentally get loaded in the same process, Node.js evaluates each file independently, so `foobar` is instantiated **twice**, and the process holds two separate instances of it.
 
-This is harmless for a package that only exports pure functions, but it breaks two assumptions that are easy to rely on:
+For packages that only export pure functions, loading both copies can be harmless. For anything with shared state or cross-module identity, it causes two familiar failure modes:
 
-- **Module-level state is duplicated.** Singletons, caches, registries, configuration set at startup, and any "set once, read everywhere" value now exist once per copy. Writes made through the ESM instance are invisible to the CommonJS instance, and vice versa — a notorious source of "I configured it, why is it empty?" bugs.
-- **Identity checks fail across the boundary.** A class defined in the ESM copy is a different object from the same class in the CommonJS copy. An object created by one copy will fail `instanceof` against the other, and `===` comparisons on enums, symbols, or sentinel values won't match.
+- **Module-level state is split.** Singletons, caches, registries, startup configuration — anything you set once and read everywhere — now lives in both copies independently. Configure through the ESM entry point and the CommonJS one never sees it, and vice versa.
+- **Object identity breaks at the boundary.** `Foo` from the ESM build and `Foo` from the CommonJS build are different constructors. `instanceof` checks fail across the two, and `===` on enums, symbols, or sentinel values won't match either.
 
 ### Avoiding it
 
