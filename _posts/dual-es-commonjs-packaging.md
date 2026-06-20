@@ -75,7 +75,7 @@ dist
 
 ## Caution: The dual package hazard
 
-Shipping two copies of your code is convenient for end users, but it comes with a subtle trap that the Node.js docs call the [dual package hazard](https://nodejs.org/api/packages.html#dual-package-hazard).
+Shipping two copies of your code is convenient for end users, but it comes with a subtle trap that the Node.js docs call the [dual package hazard](https://nodejs.org/api/packages.html#dual-commonjses-module-packages).
 
 In our apps, `import` and `require` can pull in different copies of `foobar`:
 ```js
