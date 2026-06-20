@@ -21,6 +21,5 @@ Placeholder definition. The process of transferring circuit patterns onto a wafe
 
 Placeholder definition. The intentional introduction of impurities into a semiconductor to modulate its electrical properties.
 
-<h2 id="CoWoS">Doping</h2>
-
-...
+<h2 id="cowos">CoWoS</h2>
+Chip-on-Wafer-on-Substrate ...
