@@ -2,7 +2,7 @@
 title: "Demystifying the Semiconductor Value Chain: Core Silicon"
 date: "2026-06-27T20:48:14.368Z"
 ---
-Surging demand for AI data centers has driven significant appreciation in the share prices of semiconductor companies across the value chain. In this series, we'll break down [Nvidia](https://semimarketcap.com/c/nvda)'s GB200 supply chain to understand the components and suppliers that come together to build a modern AI GPU cluster and explore where value is being created along the way.
+Surging demand for AI data centers has driven significant appreciation in the share prices of semiconductor companies across the value chain. In this series, we'll break down [Nvidia](https://semimarketcap.com/c/nvda)'s GB200 supply chain to understand the components and suppliers that come together to build a modern AI GPU cluster, and explore where value is being created along the way.
 
 ![GB200 Spotlight: Core Silicon](/assets/demystifying-semivc-one/gb200-core-silicon.svg)
 
