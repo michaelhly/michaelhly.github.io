@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1000" height="720" fill="#EBEDF2"/>
+<text x="36" y="50" font-size="22" font-weight="600" fill="#2C2C31">Why CoWoS matters</text>
+<text x="36" y="78" font-size="14" fill="#9A9DA6">GPU packaging: conventional substrate vs. TSMC CoWoS (2.5D)</text>
+
+<!-- Card: Without -->
+<rect x="36" y="100" width="452" height="400" rx="16" fill="#FFFFFF" stroke="#E2E3E8"/>
+<circle cx="64" cy="134" r="5" fill="#A8ABB4"/>
+<text x="78" y="139" font-size="14" font-weight="700" fill="#56555E">Without CoWoS</text>
+<g transform="translate(89.5,150) scale(1.15)">
+    <rect x="24" y="150" width="252" height="22" rx="4" fill="#D9DAE0" stroke="#B9BCC6"/>
+    <text x="150" y="165" text-anchor="middle" font-size="9.5" fill="#6B6E76">Organic substrate / PCB</text>
+    <rect x="48" y="108" width="92" height="40" rx="5" fill="#6C5FD6"/>
+    <text x="94" y="132" text-anchor="middle" font-size="11" fill="#FFFFFF" font-weight="600">GPU die</text>
+    <rect x="196" y="116" width="64" height="32" rx="5" fill="#C0BBF0"/>
+    <text x="228" y="136" text-anchor="middle" font-size="10" fill="#3A356B" font-weight="600">GDDR</text>
+    <path d="M138 144 Q168 184 196 144" fill="none" stroke="#9A9DA6" stroke-width="1.3"/>
+    <path d="M132 146 Q166 190 200 146" fill="none" stroke="#9A9DA6" stroke-width="1.3"/>
+    <path d="M126 146 Q164 196 204 146" fill="none" stroke="#9A9DA6" stroke-width="1.3"/>
+    <text x="166" y="104" text-anchor="middle" font-size="9" fill="#A8ABB4">few · long links</text></g>
+<text x="62" y="418" font-size="12.5" fill="#56555E"><tspan fill="#2C2C31" font-weight="700">Memory: </tspan>off-package GDDR</text>
+<text x="62" y="440" font-size="12.5" fill="#56555E"><tspan fill="#2C2C31" font-weight="700">Interconnect: </tspan>hundreds of links, wide pitch</text>
+<text x="62" y="462" font-size="12.5" fill="#56555E"><tspan fill="#2C2C31" font-weight="700">Bandwidth: </tspan>~1 TB/s class</text>
+<text x="62" y="484" font-size="12.5" fill="#8A6A6A"><tspan fill="#7A4A4A" font-weight="700">Limit: </tspan>starved of data on large AI models</text>
+
+<!-- Card: With -->
+<rect x="512" y="100" width="452" height="400" rx="16" fill="#FFFFFF" stroke="#D6D2F2"/>
+<circle cx="540" cy="134" r="5" fill="#6C5FD6"/>
+<text x="554" y="139" font-size="14" font-weight="700" fill="#4A3FB0">With CoWoS</text>
+<g transform="translate(565.5,150) scale(1.15)">
+    <rect x="24" y="162" width="252" height="20" rx="4" fill="#D9DAE0" stroke="#B9BCC6"/>
+    <text x="150" y="176" text-anchor="middle" font-size="9.5" fill="#6B6E76">Package substrate</text>
+    <rect x="34" y="137" width="232" height="22" rx="4" fill="#7B6FE0" stroke="#4A3FB0" stroke-width="2"/>
+    <text x="150" y="151" text-anchor="middle" font-size="10" fill="#FFFFFF" font-weight="700">Silicon interposer (CoWoS)</text>
+    <rect x="46" y="92" width="46" height="38" rx="4" fill="#C0BBF0"/>
+    <text x="69" y="115" text-anchor="middle" font-size="10" fill="#3A356B" font-weight="600">HBM</text>
+    <rect x="104" y="82" width="92" height="48" rx="5" fill="#6C5FD6"/>
+    <text x="150" y="110" text-anchor="middle" font-size="11" fill="#FFFFFF" font-weight="600">GPU die</text>
+    <rect x="208" y="92" width="46" height="38" rx="4" fill="#C0BBF0"/>
+    <text x="231" y="115" text-anchor="middle" font-size="10" fill="#3A356B" font-weight="600">HBM</text>
+    <g stroke="#4A3FB0" stroke-width="1"><line x1="50" y1="130" x2="50" y2="137"/><line x1="55" y1="130" x2="55" y2="137"/><line x1="60" y1="130" x2="60" y2="137"/><line x1="65" y1="130" x2="65" y2="137"/><line x1="70" y1="130" x2="70" y2="137"/><line x1="75" y1="130" x2="75" y2="137"/><line x1="80" y1="130" x2="80" y2="137"/><line x1="85" y1="130" x2="85" y2="137"/><line x1="110" y1="130" x2="110" y2="137"/><line x1="116" y1="130" x2="116" y2="137"/><line x1="122" y1="130" x2="122" y2="137"/><line x1="128" y1="130" x2="128" y2="137"/><line x1="134" y1="130" x2="134" y2="137"/><line x1="140" y1="130" x2="140" y2="137"/><line x1="146" y1="130" x2="146" y2="137"/><line x1="152" y1="130" x2="152" y2="137"/><line x1="158" y1="130" x2="158" y2="137"/><line x1="164" y1="130" x2="164" y2="137"/><line x1="170" y1="130" x2="170" y2="137"/><line x1="176" y1="130" x2="176" y2="137"/><line x1="182" y1="130" x2="182" y2="137"/><line x1="188" y1="130" x2="188" y2="137"/><line x1="212" y1="130" x2="212" y2="137"/><line x1="217" y1="130" x2="217" y2="137"/><line x1="222" y1="130" x2="222" y2="137"/><line x1="227" y1="130" x2="227" y2="137"/><line x1="232" y1="130" x2="232" y2="137"/><line x1="237" y1="130" x2="237" y2="137"/><line x1="242" y1="130" x2="242" y2="137"/><line x1="247" y1="130" x2="247" y2="137"/></g>
+    <text x="150" y="74" text-anchor="middle" font-size="9" fill="#7A6FDA">thousands · short links</text></g>
+<text x="538" y="418" font-size="12.5" fill="#56555E"><tspan fill="#2C2C31" font-weight="700">Memory: </tspan>HBM stacks on interposer</text>
+<text x="538" y="440" font-size="12.5" fill="#56555E"><tspan fill="#2C2C31" font-weight="700">Interconnect: </tspan>thousands of micro-bumps, fine pitch</text>
+<text x="538" y="462" font-size="12.5" fill="#56555E"><tspan fill="#2C2C31" font-weight="700">Bandwidth: </tspan>multiple TB/s (HBM3E)</text>
+<text x="538" y="484" font-size="12.5" fill="#4A3FB0"><tspan fill="#4A3FB0" font-weight="700">Enables: </tspan>data fed fast enough for AI training &amp; inference</text>
+
+<!-- Callout -->
+<rect x="36" y="524" width="928" height="138" rx="12" fill="#F1EFFC"/>
+<rect x="36" y="524" width="6" height="138" rx="3" fill="#6C5FD6"/>
+<text x="58" y="552" font-size="14" font-weight="700" fill="#4A3FB0">Why the interposer is the difference</text>
+<text x="58" y="580" font-size="12.5" fill="#403E52"><tspan font-weight="700">Bandwidth. </tspan>AI chips are limited by how fast memory feeds the compute cores; CoWoS places HBM microns from the GPU for multi-TB/s.</text>
+<text x="58" y="608" font-size="12.5" fill="#403E52"><tspan font-weight="700">Integration. </tspan>The silicon interposer lets Nvidia combine reticle-sized GPU dies and tall HBM stacks in one package.</text>
+<text x="58" y="636" font-size="12.5" fill="#403E52"><tspan font-weight="700">Supply chokepoint. </tspan>CoWoS capacity at TSMC is among the hardest things to scale, so it directly caps how many AI GPUs can be built.</text>
+
+<text x="36" y="694" font-size="11.5" fill="#9A9DA6">Concept diagram; figures representative. Source: TSMC, Nvidia.</text>
+</svg>
