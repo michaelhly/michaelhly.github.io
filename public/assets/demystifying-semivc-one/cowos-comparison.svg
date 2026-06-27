@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 -2 1000 700" font-family="Helvetica, Arial, sans-serif">
-<rect x="0" y="-2" width="1000" height="700" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="676" viewBox="0 -2 1000 676" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="-2" width="1000" height="676" rx="25" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
 <text x="36" y="50" font-size="22" font-weight="600" fill="#2C2C31">Why CoWoS Matters</text>
 <text x="36" y="78" font-size="14" fill="#9A9DA6">GPU packaging: conventional substrate vs. TSMC CoWoS (2.5D)</text>
 

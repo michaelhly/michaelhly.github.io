@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="341" viewBox="-6 -10 660 341" font-family="Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="325" viewBox="-6 -10 660 325" font-family="Helvetica, Arial, sans-serif">
 <style>text{font-family:Helvetica,Arial,sans-serif;}.h{font-size:14px;font-weight:600;}.sub{font-size:9px;font-weight:400;}.tick{font-size:8.5px;font-weight:400;}.val{font-size:8.5px;font-weight:400;}.leg{font-size:8.5px;font-weight:400;}.f{font-size:7.5px;font-weight:400;}</style>
 
-<rect x="-6" y="-10" width="660" height="341" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
+<rect x="-6" y="-10" width="660" height="325" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
 
 <!-- Heading + subtitle -->
 <text class="h" x="24" y="24" fill="#2C2C31">Nvidia — Data Center Segment Revenue</text>
