@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" font-family="Helvetica, Arial, sans-serif">
-<rect x="0" y="0" width="1000" height="720" fill="#EBEDF2"/>
-<text x="36" y="50" font-size="22" font-weight="600" fill="#2C2C31">Why CoWoS matters</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 -2 1000 700" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="-2" width="1000" height="700" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
+<text x="36" y="50" font-size="22" font-weight="600" fill="#2C2C31">Why CoWoS Matters</text>
 <text x="36" y="78" font-size="14" fill="#9A9DA6">GPU packaging: conventional substrate vs. TSMC CoWoS (2.5D)</text>
 
 <!-- Card: Without -->
@@ -46,12 +46,11 @@
 <text x="538" y="484" font-size="12.5" fill="#4A3FB0"><tspan fill="#4A3FB0" font-weight="700">Enables: </tspan>data fed fast enough for AI training &amp; inference</text>
 
 <!-- Callout -->
-<rect x="36" y="524" width="928" height="138" rx="12" fill="#F1EFFC"/>
-<rect x="36" y="524" width="6" height="138" rx="3" fill="#6C5FD6"/>
-<text x="58" y="552" font-size="14" font-weight="700" fill="#4A3FB0">Why the interposer is the difference</text>
+<rect x="36" y="524" width="928" height="110" rx="12" fill="#F1EFFC"/>
+<rect x="36" y="524" width="6" height="110" rx="3" fill="#6C5FD6"/>
+<text x="58" y="552" font-size="14" font-weight="700" fill="#4A3FB0">Importance of the Interposer</text>
 <text x="58" y="580" font-size="12.5" fill="#403E52"><tspan font-weight="700">Bandwidth. </tspan>AI chips are limited by how fast memory feeds the compute cores; CoWoS places HBM microns from the GPU for multi-TB/s.</text>
 <text x="58" y="608" font-size="12.5" fill="#403E52"><tspan font-weight="700">Integration. </tspan>The silicon interposer lets Nvidia combine reticle-sized GPU dies and tall HBM stacks in one package.</text>
-<text x="58" y="636" font-size="12.5" fill="#403E52"><tspan font-weight="700">Supply chokepoint. </tspan>CoWoS capacity at TSMC is among the hardest things to scale, so it directly caps how many AI GPUs can be built.</text>
 
-<text x="36" y="694" font-size="11.5" fill="#9A9DA6">Concept diagram; figures representative. Source: TSMC, Nvidia.</text>
+<text x="36" y="660" font-size="11.5" fill="#9A9DA6">Concept diagram; figures representative. Source: TSMC, Nvidia.</text>
 </svg>
