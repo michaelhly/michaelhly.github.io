@@ -4,7 +4,7 @@
 <text x="36" y="78" font-size="14" fill="#9A9DA6">GPU packaging: conventional substrate vs. TSMC CoWoS (2.5D)</text>
 
 <!-- Card: Without -->
-<rect x="36" y="100" width="452" height="400" rx="16" fill="#FFFFFF" stroke="#E2E3E8"/>
+<rect x="36" y="100" width="452" height="400" rx="14" fill="#FFFFFF" stroke="#E2E3E8"/>
 <circle cx="64" cy="134" r="5" fill="#A8ABB4"/>
 <text x="78" y="139" font-size="14" font-weight="700" fill="#56555E">Without CoWoS</text>
 <g transform="translate(89.5,150) scale(1.15)">
@@ -24,7 +24,7 @@
 <text x="62" y="484" font-size="12.5" fill="#8A6A6A"><tspan fill="#7A4A4A" font-weight="700">Limit: </tspan>starved of data on large AI models</text>
 
 <!-- Card: With -->
-<rect x="512" y="100" width="452" height="400" rx="16" fill="#FFFFFF" stroke="#D6D2F2"/>
+<rect x="512" y="100" width="452" height="400" rx="14" fill="#FFFFFF" stroke="#D6D2F2"/>
 <circle cx="540" cy="134" r="5" fill="#6C5FD6"/>
 <text x="554" y="139" font-size="14" font-weight="700" fill="#4A3FB0">With CoWoS</text>
 <g transform="translate(565.5,150) scale(1.15)">
