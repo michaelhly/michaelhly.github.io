@@ -6,11 +6,9 @@ Surging demand for AI data centers has driven significant appreciation in the sh
 
 ![GB200 Spotlight: Core Silicon](/assets/demystifying-semivc-one/gb200-core-silicon.svg)
 
-The Nvidia GB200 Superchip is built around two Nvidia Blackwell GPUs and one Grace CPU. These processing units perform trillions of calculations per second, supporting the training and inference of models that generate text, images, and other content.
+The Nvidia GB200 Superchip is built around two Nvidia Blackwell GPUs and one Grace CPU. These processing units perform trillions of calculations per second, supporting the training and inference of models that generate text, images, and other content. Nvidia's advantage here isn't only chip design. PyTorch, TensorFlow, and most ML tooling were built on CUDA from the start, so the ecosystem defaults to Nvidia's stack. That dependency is hard to unwind: rivals can ship competitive chips, but replicating CUDA's developer and library footprint is a different problem.
 
-Nvidia's advantage here isn't only silicon. PyTorch, TensorFlow, and most ML tooling were built on CUDA from the start, so the ecosystem defaults to Nvidia's stack. That dependency is hard to unwind: rivals can ship competitive chips, but replicating CUDA's developer and library footprint is a different problem.
-
-While Nvidia designs the core silicon for training and inference, the actual processor chips are manufactured by [TSMC](https://semimarketcap.com/c/tsmc). In particular, Nvidia relies on TSMC's proprietary CoWoS packaging technology, which today is only available at TSMC's Taiwan foundries. CoWoS integrates the main processor chips with high-bandwidth memory (HBM) chips using extremely dense, high-speed connections, allowing the system to move vast amounts of data quickly and efficiently — an essential requirement for large-scale model training. Without CoWoS, models with hundreds of billions or trillions of parameters would struggle to achieve the performance levels required for commercial deployment.
+After Nvidia designs the chips, [TSMC](https://semimarketcap.com/c/tsmc) manufactures them. Nvidia relies on TSMC's proprietary CoWoS packaging technology, which today is only available at TSMC's Taiwan foundries. CoWoS integrates the main processor chips with high-bandwidth memory (HBM) chips using dense, high-speed connections, allowing the system to move vast amounts of data quickly and efficiently, an essential requirement for large-scale model training and inference. Without CoWoS, models with hundreds of billions or trillions of parameters would struggle to achieve the performance levels required for commercial deployment.
 
 ![CoWoS Packaging Comparison](/assets/demystifying-semivc-one/cowos-comparison.svg)
 
@@ -19,4 +17,4 @@ Yet the GPU itself is only part of the story. The GB200 platform relies on a com
 
 ![Nvidia Datacenter Revenue](/assets/demystifying-semivc-one/nvidia-datacenter-revenue.svg)
 
-In the coming installments of Demystifying the Semiconductor Value Chain, we'll work through those surrounding suppliers and bottlenecks — and the role each plays in the value chain.
+In the coming installments of Demystifying the Semiconductor Value Chain, we'll work through those surrounding suppliers and bottlenecks, and the role each plays in the value chain.
