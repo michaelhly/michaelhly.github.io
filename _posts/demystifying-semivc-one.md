@@ -12,7 +12,7 @@ Just as AI model companies depend on Nvidia chips and software, Nvidia depends o
 
 ![CoWoS Packaging Comparison](/assets/demystifying-semivc-one/cowos-comparison.svg)
 
-Nvidia's data center revenue grew every quarter over the past two fiscal years, climbing from $22.6 billion to $62.3 billion. 
+Nvidia's data center revenue grew every quarter over the past two fiscal years, climbing from $22.6 billion to $62.3 billion:
 
 ![Nvidia Datacenter Revenue](/assets/demystifying-semivc-one/nvidia-datacenter-revenue.svg)
 
