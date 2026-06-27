@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="325" viewBox="-6 -10 660 325" font-family="Helvetica, Arial, sans-serif">
+<style>text{font-family:Helvetica,Arial,sans-serif;}.h{font-size:14px;font-weight:600;}.sub{font-size:9px;font-weight:400;}.tick{font-size:8.5px;font-weight:400;}.val{font-size:8.5px;font-weight:400;}.leg{font-size:8.5px;font-weight:400;}.f{font-size:7.5px;font-weight:400;}</style>
+
+<rect x="-6" y="-10" width="660" height="325" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
+
+<!-- Heading + subtitle -->
+<text class="h" x="24" y="24" fill="#2C2C31">Nvidia — Data Center Segment Revenue</text>
+<text class="sub" x="24" y="40" fill="#9A9DA6">Quarterly revenue ($B) · FY2025–FY2026, all reported actuals (no projections)</text>
+
+<!-- Chart card -->
+<rect x="18" y="52" width="612" height="234" rx="10" fill="#FFFFFF" stroke="#E2E3E8" stroke-width="1"/>
+
+<!-- Legend -->
+<rect x="60" y="64" width="9.5" height="8.5" rx="2" fill="#C0BBF0"/>
+<text class="leg" x="77" y="71.5" fill="#6B6E76">FY2025 Data Center</text>
+<rect x="186" y="64" width="9.5" height="8.5" rx="2" fill="#6C5FD6"/>
+<text class="leg" x="203" y="71.5" fill="#6B6E76">FY2026 Data Center</text>
+
+<!-- Gridlines -->
+<g stroke="#C4C4CC" stroke-opacity="0.55" stroke-width="0.8">
+<line x1="64.8" y1="250.000" x2="609.12" y2="250.000"/>
+<line x1="64.8" y1="227.714" x2="609.12" y2="227.714"/>
+<line x1="64.8" y1="205.429" x2="609.12" y2="205.429"/>
+<line x1="64.8" y1="183.143" x2="609.12" y2="183.143"/>
+<line x1="64.8" y1="160.857" x2="609.12" y2="160.857"/>
+<line x1="64.8" y1="138.571" x2="609.12" y2="138.571"/>
+<line x1="64.8" y1="116.286" x2="609.12" y2="116.286"/>
+<line x1="64.8" y1="94.000" x2="609.12" y2="94.000"/>
+</g>
+
+<!-- Y-axis labels -->
+<g class="tick" fill="#6B6E76" text-anchor="end">
+<text x="58.5" y="253.0">$0B</text>
+<text x="58.5" y="230.71">$10B</text>
+<text x="58.5" y="208.43">$20B</text>
+<text x="58.5" y="186.14">$30B</text>
+<text x="58.5" y="163.86">$40B</text>
+<text x="58.5" y="141.57">$50B</text>
+<text x="58.5" y="119.29">$60B</text>
+<text x="58.5" y="97.0">$70B</text>
+</g>
+
+<!-- Bars -->
+<g>
+<rect x="89.542" y="199.634" width="40.262" height="50.366" rx="3" fill="#C0BBF0"/>
+<rect x="154.481" y="191.389" width="40.262" height="58.611" rx="3" fill="#C0BBF0"/>
+<rect x="219.420" y="181.360" width="40.262" height="68.640" rx="3" fill="#C0BBF0"/>
+<rect x="284.359" y="170.663" width="40.262" height="79.337" rx="3" fill="#C0BBF0"/>
+<rect x="349.298" y="162.863" width="40.262" height="87.137" rx="3" fill="#6C5FD6"/>
+<rect x="414.238" y="158.389" width="40.262" height="91.611" rx="3" fill="#6C5FD6"/>
+<rect x="479.177" y="135.897" width="40.262" height="114.103" rx="3" fill="#6C5FD6"/>
+<rect x="544.116" y="111.160" width="40.262" height="138.840" rx="3" fill="#6C5FD6"/>
+</g>
+
+<!-- Bar value labels -->
+<g class="val" fill="#56555E" text-anchor="middle">
+<text x="109.67" y="195.13">$22.6B</text>
+<text x="174.61" y="186.89">$26.3B</text>
+<text x="239.55" y="176.86">$30.8B</text>
+<text x="304.49" y="166.16">$35.6B</text>
+<text x="369.43" y="158.36">$39.1B</text>
+<text x="434.37" y="153.89">$41.1B</text>
+<text x="499.31" y="131.40">$51.2B</text>
+<text x="564.25" y="106.66">$62.3B</text>
+</g>
+
+<!-- X-axis labels -->
+<g class="tick" fill="#6B6E76" text-anchor="middle">
+<text x="109.67" y="263">Q1</text><text x="109.67" y="273">FY25</text>
+<text x="174.61" y="263">Q2</text><text x="174.61" y="273">FY25</text>
+<text x="239.55" y="263">Q3</text><text x="239.55" y="273">FY25</text>
+<text x="304.49" y="263">Q4</text><text x="304.49" y="273">FY25</text>
+<text x="369.43" y="263">Q1</text><text x="369.43" y="273">FY26</text>
+<text x="434.37" y="263">Q2</text><text x="434.37" y="273">FY26</text>
+<text x="499.31" y="263">Q3</text><text x="499.31" y="273">FY26</text>
+<text x="564.25" y="263">Q4</text><text x="564.25" y="273">FY26</text>
+</g>
+
+<!-- Footer -->
+<text class="f" x="24" y="305" fill="#9A9DA6">Source: Nvidia quarterly results (Form 8-K), FY2025–FY2026 — all reported actuals. SEC EDGAR / investor.Nvidia.com</text>
+</svg>
