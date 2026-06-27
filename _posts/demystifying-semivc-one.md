@@ -14,6 +14,6 @@ While Nvidia designs the core silicon chips for AI training and inference, the a
 Nvidia's data center segment grew every quarter over the past two fiscal years, reflecting the accelerating adoption of AI infrastructure. Demand reached a clear inflection point in Q3 FY2026 as cloud providers raced to secure GPU capacity and supply began tightening. This surge was driven not only by Nvidia's hardware leadership, but also by CUDA's emergence as the de facto operating system for AI and TSMC's advanced manufacturing capabilities. Together, these innovations provided the spark for the AI-driven industrial revolution that continues to reshape the global economy.
 Yet the GPU itself is only part of the story. The GB200 platform relies on a complex network of suppliers that provide the memory, networking, packaging, power, and cooling technologies surrounding the chip. Each of these critical supply chain partners captures a portion of the value created by the same wave of AI investment that propelled Nvidia's data center revenue from $22.6 billion to $62.3 billion.
 
-![Nvidia Datacenter Revenue](/assets/demystifying-semivc-one/Nvidia-datacenter-revenue.svg)
+![Nvidia Datacenter Revenue](/assets/demystifying-semivc-one/nvidia-datacenter-revenue.svg)
 
 In the coming installments of Demystifying the Semiconductor Value Chain, we'll explore components that surround the GPU itself and the role each plays in the value chain. 
