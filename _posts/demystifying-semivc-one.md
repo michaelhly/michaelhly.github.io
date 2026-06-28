@@ -2,7 +2,7 @@
 title: "Demystifying the Semiconductor Value Chain: Core Silicon"
 date: "2026-06-27T20:48:14.368Z"
 ---
-Surging demand for AI data centers has driven significant appreciation in the share prices of semiconductor companies across the value chain. In this series, we'll break down [Nvidia](https://semimarketcap.com/c/nvda)'s GB200 supply chain to understand the components and suppliers that come together to build a modern AI GPU cluster, and explore where value is being created along the way.
+Surging demand for AI data centers has driven significant appreciation in the share prices of semiconductor companies across the value chain. In this series, we'll break down [Nvidia](https://semimarketcap.com/c/nvda)'s [GB200](https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing) supply chain to understand the components and suppliers that come together to build a modern AI GPU cluster, and explore where value is being created along the way.
 
 ![GB200 Spotlight: Core Silicon](/assets/demystifying-semivc-one/gb200-core-silicon.svg)
 
@@ -16,4 +16,4 @@ Nvidia's data center revenue grew every quarter over the past two fiscal years, 
 
 ![Nvidia Datacenter Revenue](/assets/demystifying-semivc-one/nvidia-datacenter-revenue.svg)
 
-Demand reached a clear inflection point in [Q3 FY2026](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026) as cloud providers raced to secure GPU capacity while supply tightened across the semiconductor supply chain. Yet the GPU itself is only part of the story. The GB200 platform relies on a complex network of suppliers providing memory, networking, packaging, power, and cooling. Each captures a slice of the same hyperscale buildout that drove the revenue curve as shown above. In the coming installments of Demystifying the Semiconductor Value Chain, we'll work through those surrounding suppliers and bottlenecks, and the role each plays in the value chain.
+Demand reached a clear inflection point in [Q3 FY2026](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026) as cloud providers raced to secure GPU capacity while supply tightened across the semiconductor supply chain. The GPU itself is only part of the story. The GB200 platform relies on a complex network of suppliers providing memory, networking, packaging, power, and cooling. Each captures a slice of the same hyperscale buildout that drove the revenue curve as shown above. In the coming installments of Demystifying the Semiconductor Value Chain, we'll work through those surrounding suppliers and bottlenecks, and the role each plays in the value chain.
