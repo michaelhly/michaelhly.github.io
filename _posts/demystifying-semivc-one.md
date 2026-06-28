@@ -2,7 +2,7 @@
 title: "Demystifying the Semiconductor Value Chain: Core Silicon"
 date: "2026-06-27T20:48:14.368Z"
 ---
-Surging demand for AI data centers has driven significant appreciation in the stock prices of semiconductor companies across the value chain. In this series, we'll break down [Nvidia](https://semimarketcap.com/c/nvda)'s [GB200](https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing) supply chain to map which components and suppliers have captured the data center buildout, and why the market has repriced certain names along the way.
+Surging demand for AI data centers has driven significant appreciation in the stock prices of semiconductor companies across the value chain. In this series, we'll break down [Nvidia](https://semimarketcap.com/c/nvda)'s [GB200](https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing) supply chain to map which components and suppliers have captured the data center build-out, and why the market has repriced certain names along the way.
 
 ![GB200 Spotlight: Core Silicon](/assets/demystifying-semivc-one/gb200-core-silicon.svg)
 
