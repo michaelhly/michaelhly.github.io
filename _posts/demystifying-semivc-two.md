@@ -4,7 +4,7 @@ date: "2026-07-05T20:48:14.368Z"
 ---
 ## The Memory Wall
 
-Imagine being at the line, serving burgers at In-N-Out. For some reason, the freezer with all the ingredients is out in the parking lot. To serve a double-double, you have to walk out of the store, grab all the ingredients, and finally assemble the burger at the line. The lunch rush is here, and orders just stack up while you hurry in and out of the store, hands full of burger patties, lettuce, pickles, and tomatoes.
+Imagine being at the line, serving burgers at In-N-Out. The lunch rush is here, and for some reason the freezer with all the ingredients is out in the parking lot. Each order pulls you off the line, you dash out to the parking-lot freezer for patties, lettuce, pickles, and tomatoes, then hurry back to build the burger. By the time one is done, three more are waiting.
 
 ![Innout Lunch Rush](/assets/demystifying-semivc-two/innout-lunch-rush.png)
 
