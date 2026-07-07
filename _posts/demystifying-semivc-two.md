@@ -2,7 +2,7 @@
 title: "Demystifying the Semiconductor Value Chain: High Bandwidth Memory (HBM)"
 date: "2026-07-05T20:48:14.368Z"
 ---
-# The Memory Wall
+## The Memory Wall
 
 Imagine being at the line, serving burgers at In-N-Out. For some reason, the freezer with all the ingredients is out in the parking lot. To serve a double-double, you have to walk out of the store, grab all the ingredients, and finally assemble the burger at the line. The lunch rush is here, and orders just stack up while you hurry in and out of the store, hands full of burger patties, lettuce, pickles, and tomatoes.
 
@@ -12,7 +12,7 @@ This is the challenge GPUs face when serving AI models with the traditional memo
 
 ![GB200 Spotlight: HBM](/assets/demystifying-semivc-two/gb200-hbm3e-memory.svg)
 
-# The HBM Qualification
+## The HBM Qualification
 To become one of Nvidia's certified HBM vendors, suppliers must pass a stringent qualification process. While individual HBM stacks may pass industry-standard component-level qualifications, that only proves the freezer works sitting alone in a showroom. The real test is the System-in-Package (SiP) qualifcation, where NVIDIA bolts the freezer in next to the grill — mounting the HBM stacks on next to a real GPU — and simulates a full-fledged In-N-Out lunch rush with actual AI workloads hammering the memory at full speed.
 
 ![SiP Qualification](/assets/demystifying-semivc-two/gpu-package-hbm-stack.svg)
@@ -20,7 +20,7 @@ To become one of Nvidia's certified HBM vendors, suppliers must pass a stringent
 This is where hidden problems show up. The grill radiates heat into the freezers: a GPU pushing hundreds of watts sits millimeters from memory that degrades as it warms. Stacks that ran cool on their own start dropping bits in-package. Power is another trap. When everything draws current at once, voltage dips during peak bursts can cause errors no component test ever triggered. NVIDIA also pushes the limits on purpose — nudging belt speed and power up and down to find the first dropped tomato.
 Only after surviving the lunch rush inside NVIDIA's actual kitchen does a supplier's HBM get certified. The bar is brutally high: to this day, only three companies in the world have passed — SK Hynix, Samsung, and Micron. Even they have spent months, sometimes over a year, stuck in qualification before getting the green light.
 
-# The Memory Turnaround 
+## The Memory Turnaround
 Passing the Nvidia's HBM qufliacation has sent the shares of Sk Hynix, Samsung and Micron roaring in 2026, forming today's HBM oligoloply. However it's easy to forget how bad things were just three years ago. After the COVID-era buying spree ended, the memory industry crashed into one of its worst downturns ever. In 2023, SK hynix posted an annual operating loss of nearly 8 trillion won, Samsung's chip division bled around 15 trillion won, and Micron swung to losses too. Memory was dubbed by wall street as a brutal commodity business: identical products, price wars, and profits that evaporated every cycle.
 
 HBM changed the math. It's not a commodity you dump on the spot market — it's a custom, qualification-gated product sold under long-term contracts, at several times the price per bit of regular DRAM. Passing NVIDIA's lunch-rush test became the single most valuable ticket in semiconductors.
