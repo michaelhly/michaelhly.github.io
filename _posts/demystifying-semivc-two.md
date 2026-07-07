@@ -6,7 +6,7 @@ date: "2026-07-05T20:48:14.368Z"
 
 Imagine being at the line, serving burgers at In-N-Out. For some reason, the freezer with all the ingredients is out in the parking lot. To serve a double-double, you have to walk out of the store, grab all the ingredients, and finally assemble the burger at the line. The lunch rush is here, and orders just stack up while you hurry in and out of the store, hands full of burger patties, lettuce, pickles, and tomatoes.
 
-![Innout Lunch Rush](/assets/desmyifying-semvc-two/innout-lunch-rush)
+![Innout Lunch Rush](/assets/demystifying-semivc-two/innout-lunch-rush.png)
 
 This is the challenge GPUs face when serving AI models with the traditional memory setup. To get to all the customers, running faster will not help; we need to get the freezer inside the store. In fact, we can stack 10 freezers next to the grill and use high-speed conveyor belts to instantly dump all the ingredients right into your hands the second you reach out. The stacked freezers we described are the High Bandwidth Memory (HBM) chip modules, placed on each side of the GPU processors:
 
@@ -25,6 +25,6 @@ Passing the Nvidia's HBM qufliacation has sent the shares of Sk Hynix, Samsung a
 
 HBM changed the math. It's not a commodity you dump on the spot market — it's a custom, qualification-gated product sold under long-term contracts, at several times the price per bit of regular DRAM. Passing NVIDIA's lunch-rush test became the single most valuable ticket in semiconductors.
 
-![HBM Driven Profits](/demystifying-semivc-two/gpu-package-hbm-stack.svg/hbm-impact-operating-profits.svg)
+![HBM Driven Profits](/assets/demystifying-semivc-two/hbm-impact-operating-profit.svg)
 
 The results speak for themselves. SK hynix has sold out its entire DRAM, NAND, and HBM capacity through 2026, much of it to NVIDIA, and its most recent quarter set records across every metric — operating profit up 405% year-over-year, with a 72% operating margin, reportedly exceeding even NVIDIA's. HBM now makes up more than half of SK hynix's revenue, up from 25–30% in 2024. The company even eclipsed Samsung to become South Korea's largest public company, crossing a $1 trillion valuation — and Samsung and Micron are riding the same wave, with the structural memory shortage lifting prices and profits across the board.
