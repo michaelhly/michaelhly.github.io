@@ -13,7 +13,7 @@ This is the challenge GPUs face when serving AI models with the traditional memo
 ![GB200 Spotlight: HBM](/assets/demystifying-semivc-two/gb200-hbm3e-memory.svg)
 
 ## The HBM Qualification
-Memory chips undergo extensive testing by the manufacturer, but those tests primarily verify that the chip meets its specifications as an individual component. The real test is the System-in-Package (SiP) qualification, where NVIDIA mounts the HBM stacks next to a real GPU. Then it runs actual AI workloads at full speed, simulating the In-N-Out lunch rush.
+Memory chips undergo extensive testing by the manufacturer, but those tests primarily verify that the chip meets its specifications as an individual component. The real test for GB200 certification is NVIDIA's System-in-Package (SiP) qualification, where the company mounts the HBM stacks next to a real GPU and runs actual AI workloads at full speed, simulating the In-N-Out lunch rush.
 
 ![SiP Qualification](/assets/demystifying-semivc-two/gpu-package-hbm-stack.svg)
 
