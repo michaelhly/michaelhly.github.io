@@ -13,13 +13,13 @@ This is the challenge GPUs face when serving AI models with the traditional memo
 ![GB200 Spotlight: HBM](/assets/demystifying-semivc-two/gb200-hbm3e-memory.svg)
 
 ## The HBM Qualification
-Industry-standard component tests can only prove that the memory chips work alone in isolation. The real test is the System-in-Package (SiP) qualification. NVIDIA mounts the HBM stacks next to a real GPU. Then it runs actual AI workloads at full speed, simulating the In-N-Out lunch rush.
+Memory chips undergo extensive testing by the manufacturer, but those tests primarily verify that the chip meets its specifications as an individual component. The real test is the System-in-Package (SiP) qualification, where NVIDIA mounts the HBM stacks next to a real GPU. Then it runs actual AI workloads at full speed, simulating the In-N-Out lunch rush.
 
 ![SiP Qualification](/assets/demystifying-semivc-two/gpu-package-hbm-stack.svg)
 
 During the lunch rush, the grill radiates heat into the freezers. In the real package, a GPU pushing hundreds of watts sits millimeters from memory that degrades as it heats up; stacks that ran cool on their own can no longer keep its memory fresh when overheated.
 
-Power is the other trap. Alone on the test bench, each freezer has its own outlet. In the kitchen, ten freezers and a grill share one panel — and when everything surges at once during a rush, the voltage sags and equipment that ran flawlessly alone starts glitching.
+Power is the other trap. Alone on the test bench, each freezer has its own outlet; in the kitchen, ten freezers and a grill share one panel. When everything surges at once during a rush, the voltage sags and equipment that ran flawlessly alone starts glitching.
 
 Only after surviving the lunch rush inside NVIDIA's actual kitchen does a supplier's HBM get certified. The bar is brutally high. To this day, only three companies in the world have passed: SK Hynix, Samsung, and Micron. Even they have spent months, sometimes over a year, stuck in qualification before getting the green light.
 
