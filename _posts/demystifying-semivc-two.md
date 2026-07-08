@@ -36,7 +36,7 @@ HBM rewrote the economics. Instead of a commodity dumped on the spot market, it'
 
 ![HBM Driven Profits](/assets/demystifying-semivc-two/hbm-impact-operating-profit.svg)
 
-Nobody embodies the turnaround better than SK Hynix. After losing 8 trillion won in 2023, SK Hynix became the first supplier to pass NVIDIA's qualification, and it remains its top supplier today. Their head start has translated into numbers that would have been unthinkable at the bottom of the downturn:
+Nobody embodies the turnaround better than SK Hynix. After losing 8 trillion won in 2023, SK Hynix became the first supplier to pass NVIDIA's qualification, and it remains NVIDIA's top supplier today. Its head start has translated into numbers that would have been unthinkable at the bottom of the downturn:
 
 - **Sold out through 2026.** There is nothing left to buy. Every bit of DRAM, NAND, and HBM capacity through 2026 is already committed, much of it to NVIDIA.
 - **The most profitable quarter in semiconductor manufacturing history.** Operating profit rose 405% year-over-year at a 72% operating margin — higher than NVIDIA's own 65%.

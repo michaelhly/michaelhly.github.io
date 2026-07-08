@@ -47,7 +47,7 @@
 <text class="t" x="112.0" y="365" text-anchor="middle" dominant-baseline="central" style="fill:#B0700E">HBM3e memory</text>
 <text class="b" x="628" y="368" text-anchor="end" style="fill:#52514E">Memory stacks</text>
 <rect x="52" y="386" width="184" height="48" rx="8" fill="#F1F4F8" stroke="#DCE1E8" stroke-width="0.5"/>
-<text class="t" x="66" y="406" style="fill:#0B0B0B">SK hynix</text>
+<text class="t" x="66" y="406" style="fill:#0B0B0B">SK Hynix</text>
 <text class="b" x="66" y="423" style="fill:#52514E">HBM3e stacks</text>
 <rect x="248" y="386" width="184" height="48" rx="8" fill="#F1F4F8" stroke="#DCE1E8" stroke-width="0.5"/>
 <text class="t" x="262" y="406" style="fill:#0B0B0B">Micron</text>
