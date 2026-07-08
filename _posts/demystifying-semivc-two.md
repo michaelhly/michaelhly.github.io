@@ -17,9 +17,11 @@ Memory chips undergo extensive testing by the manufacturer, but those tests prim
 
 ![SiP Qualification](/assets/demystifying-semivc-two/gpu-package-hbm-stack.svg)
 
-During the lunch rush, the grill radiates heat into the freezers. In the real package, a GPU pushing hundreds of watts sits millimeters from memory that degrades as it heats up; stacks that ran cool on their own can no longer keep its memory fresh when overheated.
+Moving the freezers inside may have solved our memory wall problem, but now they sit inches from a roaring grill. In the real package, a GPU pushing hundreds of watts sits millimeters from memory that degrades as it heats up, and stacks that passed every test on their own can no longer keep data fresh once they overheat.
 
-Power is the other trap. Alone on the test bench, each freezer has its own outlet; in the kitchen, ten freezers and a grill share one panel. When everything surges at once during a rush, the voltage sags and equipment that ran flawlessly alone starts glitching.
+Heat doesn't just spoil the ingredients, it also slows down the conveyor belts. When the memory stacks run hot, they throttle themselves to survive, and the blazing-fast delivery that justified stacking them next to the GPU in the first place quietly drops off. A stack that advertised full bandwidth on the bench may only sustain a fraction of it during the lunch rush.
+
+Power is the other trap. Alone on the test bench, each freezer has its own outlet; in the kitchen, ten freezers and a grill share one panel. When every freezer swtiches on at the same moment the grill fires, the voltage sags and equipment that ran flawlessly in isolation can start glitching.
 
 Only after surviving the lunch rush inside NVIDIA's actual kitchen does a supplier's HBM get certified. The bar is brutally high. To this day, only three companies in the world have passed: SK Hynix, Samsung, and Micron. Even they have spent months, sometimes over a year, stuck in qualification before getting the green light.
 
