@@ -13,7 +13,7 @@ This is the challenge GPUs face when serving AI models with the traditional memo
 ![GB200 Spotlight: HBM](/assets/demystifying-semivc-two/gb200-hbm3e-memory.svg)
 
 ## The HBM Qualification
-Memory chips undergo extensive testing by the manufacturer, but those tests primarily verify that the chip meets its specifications as an individual component. The real test for GB200 certification is NVIDIA's System-in-Package (SiP) qualification, where the company mounts the HBM stacks next to a real GPU and runs actual AI workloads at full speed, simulating the In-N-Out lunch rush.
+Memory chips undergo extensive testing by the manufacturer, but those tests primarily verify that the chip meets its specifications as an individual component. The real test to become approved for the GB200 platform is passing NVIDIA's System-in-Package (SiP) requirements, where the company mounts the HBM stacks next to a real GPU and runs actual AI workloads at full speed, simulating the In-N-Out lunch rush.
 
 ![SiP Qualification](/assets/demystifying-semivc-two/gpu-package-hbm-stack.svg)
 
@@ -28,13 +28,13 @@ Only after surviving the lunch rush inside NVIDIA's actual kitchen does a suppli
 ## The Memory Turnaround
 Passing NVIDIA's HBM qualification has become the toll gate to the AI boom. In 2026, HBM demand has sent the stock prices of all three suppliers flying, and Wall Street now treats the trio as an oligopoly with a moat. It's easy to forget how bad things were just three years ago. After the COVID-era surge in consumer electronics ended, the memory industry crashed into one of its worst downturns ever. Sk Hynix and Micron were massively in the red; Samsung's chip division bled around 15 trillion won. Memory was dubbed by Wall Street as a brutal commodity business plagued by identical products, price wars, and profits that evaporated every cycle.
 
-HBM changed the math. It's not a commodity you dump on the spot market; it's a custom, qualification-gated product sold under long-term contracts, at several times the price per bit of regular DRAM. Passing NVIDIA's lunch-rush test became the single most valuable ticket in semiconductors.
+HBM changed the math. It's not a commodity you dump on the spot market; it's a specialized, qualification-gated product sold under long-term contracts, at several times the price per bit of regular DRAM. Passing NVIDIA's lunch-rush test became the single most valuable ticket in semiconductors.
 
 ![HBM Driven Profits](/assets/demystifying-semivc-two/hbm-impact-operating-profit.svg)
 
 Nobody embodies the turnaround better than SK hynix, after losing 8 trillion won in 2023, SK was the first to pass NVIDIA's qualifcation and still lead as its HBM supplier. The numbers tell the story:
 
-- *Sold out through 2026.* There is nothing left to buy. Every bit of DRAM, NAND, and HBM capacity through 2026 is already committed, much of it to NVIDIA.
-- *The most profitable quarter in semiconductor manufacturing history.*. Operating profit rose 405% year-over-year at a 72% operating margin — higher than NVIDIA's own 65%.
-- *A transformed business.* HBM now makes up more than half of revenue, up from 25–30% in 2024.
-- [*Samsung, dethroned.*](https://www.reuters.com/world/asia-pacific/sk-hynix-overtakes-samsung-become-koreas-most-valuable-company-2026-06-22/) In June, SK hynix became South Korea's most valuable listed company — ending Samsung's 26-year reign at the top — with a market cap around $1.35 trillion.
+- **Sold out through 2026.** There is nothing left to buy. Every bit of DRAM, NAND, and HBM capacity through 2026 is already committed, much of it to NVIDIA.
+- **The most profitable quarter in semiconductor manufacturing history.** Operating profit rose 405% year-over-year at a 72% operating margin — higher than NVIDIA's own 65%.
+- **A transformed business.** HBM now makes up more than half of revenue, up from 25–30% in 2024.
+- [**Samsung, dethroned.**](https://www.reuters.com/world/asia-pacific/sk-hynix-overtakes-samsung-become-koreas-most-valuable-company-2026-06-22/) In June, SK hynix became South Korea's most valuable listed company — ending Samsung's 26-year reign at the top — with a market cap around $1.35 trillion.
