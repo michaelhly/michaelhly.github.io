@@ -39,4 +39,4 @@ Nobody embodies the turnaround better than SK Hynix. After losing 8 trillion won
 
 - **Sold out through 2026.** There is nothing left to buy. Every bit of DRAM, NAND, and HBM capacity through 2026 is already committed, much of it to NVIDIA.
 - **The most profitable quarter in semiconductor manufacturing history.** Operating profit rose 405% year-over-year at a 72% operating margin — higher than NVIDIA's own 65%.
-- [**Samsung, dethroned.**](https://www.reuters.com/world/asia-pacific/sk-hynix-overtakes-samsung-become-koreas-most-valuable-company-2026-06-22/) In June, SK Hynix became South Korea's most valuable listed company — ending Samsung's 26-year reign at the top — with a market cap around $1.35 trillion.
+- [**Samsung, dethroned.**](https://www.reuters.com/world/asia-pacific/sk-hynix-overtakes-samsung-become-koreas-most-valuable-company-2026-06-22/) In June, SK Hynix became South Korea's most valuable listed company, ending Samsung's 26-year reign at the top, with a market cap around $1.35 trillion.
