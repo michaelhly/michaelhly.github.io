@@ -4,7 +4,7 @@ date: "2026-07-05T20:48:14.368Z"
 ---
 ## The Memory Wall
 
-Imagine working the line at In-N-Out during the lunch rush, except, for some reason, the freezer with all your ingredients sits out in the parking lot. Every order pulls you off the line. You sprint to the freezer for patties, lettuce, pickles, and tomatoes, then hurry back to build the burger. By the time one is done, three more are waiting.
+Imagine working the line at In-N-Out during the lunch rush. Except, the freezer with all your ingredients sits out in the parking lot. Every order pulls you off the line. You sprint to the freezer for patties, lettuce, pickles, and tomatoes, then hurry back to build the burger. By the time one is done, three more orders come waiting.
 
 ![Innout Lunch Rush](/assets/demystifying-semivc-two/innout-lunch-rush.png)
 
@@ -13,12 +13,12 @@ This is the challenge GPUs face when serving AI models with a traditional memory
 ![GB200 Spotlight: HBM](/assets/demystifying-semivc-two/gb200-hbm3e-memory.svg)
 
 ## The HBM Qualification
-Memory chips undergo extensive testing by the manufacturer, but those tests primarily verify that the chip meets its specifications as an individual component. The real test to become approved for the GB200 platform is passing NVIDIA's System-in-Package (SiP) requirements, where the company mounts the HBM stacks next to a real GPU and runs actual AI workloads at full speed, simulating the In-N-Out lunch rush.
+Memory chips undergo extensive testing by the manufacturer, but those tests primarily verify that the chip meets its specifications as an individual component. The real test to become approved for the GB200 platform is passing NVIDIA's System-in-Package (SiP) qualification, where they mount the HBM stacks next to a real GPU and simulate the In-N-Out lunch rush by running AI workloads at full speed.
 
 ![SiP Qualification](/assets/demystifying-semivc-two/gpu-package-hbm-stack.svg)
 
 ### Thermal Coupling
-While moving the freezers inside solved our memory wall problem, now its inches from a roaring grill. In the real package, a GPU pushing hundreds of watts sits millimeters from memory that degrades as it heats up. Stacks that aced every test on their own can no longer keep the ingredients fresh once the grill heats them up.
+While moving the freezers inside solved our memory wall problem, now its inches from a roaring grill. In the real package, a GPU pushing hundreds of watts sits millimeters from memory that degrades as it heats up. Stacks that aced every test on their own is having trouble keeping the ingredients fresh with the grill firing so close beside it. 
 
 ### Thermal Throttling
 Heat doesn't just spoil the ingredients, it also slows down the conveyor belts. When the memory stacks run hot, they throttle themselves to avoid damage, and the blazing-fast delivery that justified stacking them next to the GPU in the first place quietly drops off. A stack that advertised full bandwidth on the bench may only sustain a fraction of it during the lunch rush.
@@ -30,6 +30,7 @@ Only after surviving the lunch rush inside NVIDIA's actual kitchen does a suppli
 
 ## The Memory Turnaround
 Passing NVIDIA's HBM qualification has become the toll gate to the AI boom. In 2026, HBM demand has sent the stock prices of all three suppliers flying, and Wall Street now treats the trio as an oligopoly. It's easy to forget how bad things were just three years ago. After the COVID-era surge in consumer electronics ended, the memory industry crashed into one of its worst downturns ever. SK Hynix and Micron were massively in the red; Samsung's chip division bled around 15 trillion won. Memory was dubbed by Wall Street as a brutal commodity business plagued by identical products, price wars, and profits that evaporated every cycle.
+
 
 HBM rewrote the economics. Instead of a commodity dumped on the spot market, it's a specialized, qualification-gated product sold under long-term contracts. HBM commands several times the price per bit of regular DRAM, and passing NVIDIA's qualification process has become the single most valuable ticket in semiconductors.
 
