@@ -4,7 +4,7 @@
   <style>
     text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
     .t14 { font-size: 14px; font-weight: 500; }
-    .t12 { font-size: 12px; font-weight: 400; fill: #6b6a64; }
+    .t12 { font-size: 12px; font-weight: 400; fill: #0B0B0B; }
     .leader { stroke: #9c9a92; stroke-width: 0.7; stroke-dasharray: 3 3; fill: none; }
   </style>
 
