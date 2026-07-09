@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="676" viewBox="0 -2 1000 676" font-family="Helvetica, Arial, sans-serif">
-<rect x="0" y="-2" width="1000" height="676" rx="25" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 -2 1000 720" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="-2" width="1000" height="720" rx="25" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
 <text x="36" y="50" font-size="22" font-weight="600" fill="#2C2C31">Why CoWoS Matters</text>
 <text x="36" y="78" font-size="14" fill="#9A9DA6">GPU packaging: conventional substrate vs. TSMC CoWoS (2.5D)</text>
 
@@ -46,11 +46,12 @@
 <text x="538" y="484" font-size="12.5" fill="#4A3FB0"><tspan fill="#4A3FB0" font-weight="700">Enables:&#160;</tspan>data fed fast enough for AI training &amp; inference</text>
 
 <!-- Callout -->
-<rect x="36" y="524" width="928" height="110" rx="12" fill="#F1EFFC"/>
-<rect x="36" y="524" width="6" height="110" rx="3" fill="#6C5FD6"/>
-<text x="58" y="552" font-size="14" font-weight="700" fill="#4A3FB0">Importance of the Interposer</text>
-<text x="58" y="580" font-size="12.5" fill="#403E52"><tspan font-weight="700">Bandwidth.&#160;</tspan>AI chips are limited by how fast memory feeds the compute cores. CoWoS sits HBM right beside the GPU, cutting the distance data travels for multi-TB/s.</text>
-<text x="58" y="608" font-size="12.5" fill="#403E52"><tspan font-weight="700">Integration.&#160;</tspan>The silicon interposer lets Nvidia combine reticle-sized GPU dies and tall HBM stacks in one package.</text>
+<rect x="36" y="524" width="928" height="150" rx="12" fill="#F1EFFC"/>
+<rect x="36" y="524" width="6" height="150" rx="3" fill="#6C5FD6"/>
+<text x="64" y="556" font-size="14" font-weight="700" fill="#4A3FB0">Importance of the Interposer</text>
+<text x="64" y="584" font-size="12.5" fill="#403E52"><tspan font-weight="700">Efficiency.&#160;</tspan>Shorter links move each bit with less energy, so more power goes to compute.</text>
+<text x="64" y="608" font-size="12.5" fill="#403E52"><tspan font-weight="700">Integration.&#160;</tspan>The silicon interposer lets Nvidia combine large GPU dies and tall HBM stacks in one package.</text>
+<text x="64" y="632" font-size="12.5" fill="#403E52"><tspan font-weight="700">Bandwidth.&#160;</tspan>AI chips are limited by how fast memory feeds the compute cores. CoWoS sits HBM right beside the GPU,<tspan x="64" dy="18">cutting the distance data travels for multi-TB/s.</tspan></text>
 
-<text x="36" y="660" font-size="11.5" fill="#9A9DA6">Values are illustrative. Source: <a href="https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm" target="_blank"><tspan fill="#6C5FD6" text-decoration="underline">TSMC CoWoS</tspan></a>, Nvidia.</text>
+<text x="36" y="702" font-size="11.5" fill="#9A9DA6">Values are illustrative. Source: <a href="https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm" target="_blank"><tspan fill="#6C5FD6" text-decoration="underline">TSMC CoWoS</tspan></a>, Nvidia.</text>
 </svg>
