@@ -8,7 +8,7 @@ Imagine working the line at In-N-Out during the lunch rush. Except, the freezer 
 
 ![Innout Lunch Rush](/assets/demystifying-semivc-two/innout-lunch-rush.png)
 
-This is the challenge GPUs face when serving AI models with a traditional memory setup. Running faster won't help you keep up with the hungry customers piling up at the counter. The fix is to bring the freezer inside the store. Better yet, we can stack ten freezers right next to the grill and rig high-speed conveyor belts that drop every ingredient into your hands the instant you reach out. Those stacked freezers are the stacks of High Bandwidth Memory (HBM) modules, sitting on each side of the GPU:
+This is the challenge GPUs face when serving AI models with a traditional memory setup. Running faster won't help you keep up with the hungry customers piling up at the counter. The fix is to bring the freezer inside the store. Better yet, we can stack ten freezers right next to the grill and rig high-speed conveyor belts that drop ingredients to your hands the instant you reach out. Those stacked freezers are the stacks of High Bandwidth Memory (HBM) modules, sitting on each side of the GPU:
 
 ![GB200 Spotlight: HBM](/assets/demystifying-semivc-two/gb200-hbm3e-memory.svg)
 
