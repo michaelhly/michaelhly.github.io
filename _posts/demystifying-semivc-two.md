@@ -37,7 +37,7 @@ In just a few years, high-bandwidth memory has fundamentally rewritten the econo
 
 ![HBM Driven Profits](/assets/demystifying-semivc-two/hbm-impact-operating-profit.svg)
 
-Nobody company illustrates the memory turnaround better than SK Hynix. After losing 8 trillion won in 2023, SK Hynix made a huge bet on HBM and became the first to pass NVIDIA's qualification. Its head start has translated into numbers that would have been unthinkable at the bottom of the downturn:
+No company illustrates the memory turnaround better than SK Hynix. After losing 8 trillion won in 2023, SK Hynix made a huge bet on HBM and became the first to pass NVIDIA's qualification. Its head start has translated into numbers that would have been unthinkable at the bottom of the downturn:
 
 - **Sold out through 2026.** Every bit of DRAM, NAND, and HBM capacity through 2026 is already committed, much of it to NVIDIA.
 - **The most profitable quarter in semiconductor manufacturing history.** Operating profit rose 405% year-over-year at a 72% operating margin — higher than NVIDIA's own 65%.
