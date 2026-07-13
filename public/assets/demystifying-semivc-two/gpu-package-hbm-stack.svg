@@ -1,4 +1,4 @@
-<svg width="680" height="490" viewBox="0 0 680 490" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="680" height="413" viewBox="0 48 680 413" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>GPU package with HBM stack</title>
   <desc>Cross-section of a GPU package: a GPU compute die and an HBM stack of eight DRAM dies on a base die, both mounted on a silicon interposer, with callouts for heat, stacking, interconnect, and system integration.</desc>
   <style>
