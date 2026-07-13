@@ -1,0 +1,74 @@
+<svg width="680" height="490" viewBox="0 0 680 490" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>GPU package with HBM stack</title>
+  <desc>Cross-section of a GPU package: a GPU compute die and an HBM stack of eight DRAM dies on a base die, both mounted on a silicon interposer, with callouts for heat, stacking, interconnect, and system integration.</desc>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .t14 { font-size: 14px; font-weight: 500; }
+    .t12 { font-size: 12px; font-weight: 400; fill: #0B0B0B; }
+    .leader { stroke: #9c9a92; stroke-width: 0.7; stroke-dasharray: 3 3; fill: none; }
+  </style>
+
+  <rect x="40" y="60" width="440" height="330" rx="16" fill="none" stroke="#9c9a92" stroke-width="0.8" stroke-dasharray="6 5"/>
+  <text class="t12" x="58" y="84">GPU package</text>
+
+  <rect x="60" y="340" width="400" height="34" rx="6" fill="#5F5E5A"/>
+  <text class="t14" x="260" y="361" text-anchor="middle" fill="#F1EFE8">Silicon interposer</text>
+
+  <rect x="90" y="180" width="160" height="160" rx="8" fill="#8F3E22"/>
+  <text class="t14" x="170" y="255" text-anchor="middle" fill="#FAECE7">GPU</text>
+  <text class="t12" x="170" y="276" text-anchor="middle" fill="#F5C4B3">Compute die</text>
+
+  <rect x="270" y="310" width="160" height="30" rx="4" fill="#0F6E56"/>
+  <text class="t12" x="350" y="329" text-anchor="middle" fill="#E1F5EE">Base die</text>
+
+  <line x1="300" y1="118" x2="300" y2="306" stroke="#9c9a92" stroke-width="0.6" opacity="0.5"/>
+  <line x1="330" y1="118" x2="330" y2="306" stroke="#9c9a92" stroke-width="0.6" opacity="0.5"/>
+  <line x1="360" y1="118" x2="360" y2="306" stroke="#9c9a92" stroke-width="0.6" opacity="0.5"/>
+  <line x1="390" y1="118" x2="390" y2="306" stroke="#9c9a92" stroke-width="0.6" opacity="0.5"/>
+
+  <rect x="280" y="286" width="140" height="18" rx="3" fill="#3C3489"/>
+  <rect x="280" y="262" width="140" height="18" rx="3" fill="#3C3489"/>
+  <rect x="280" y="238" width="140" height="18" rx="3" fill="#3C3489"/>
+  <rect x="280" y="214" width="140" height="18" rx="3" fill="#3C3489"/>
+  <rect x="280" y="190" width="140" height="18" rx="3" fill="#3C3489"/>
+  <rect x="280" y="166" width="140" height="18" rx="3" fill="#3C3489"/>
+  <rect x="280" y="142" width="140" height="18" rx="3" fill="#3C3489"/>
+  <rect x="280" y="118" width="140" height="18" rx="3" fill="#3C3489"/>
+
+  <circle cx="286" cy="344" r="2" fill="#D3D1C7"/><circle cx="300" cy="344" r="2" fill="#D3D1C7"/><circle cx="314" cy="344" r="2" fill="#D3D1C7"/><circle cx="328" cy="344" r="2" fill="#D3D1C7"/><circle cx="342" cy="344" r="2" fill="#D3D1C7"/><circle cx="356" cy="344" r="2" fill="#D3D1C7"/><circle cx="370" cy="344" r="2" fill="#D3D1C7"/><circle cx="384" cy="344" r="2" fill="#D3D1C7"/><circle cx="398" cy="344" r="2" fill="#D3D1C7"/><circle cx="412" cy="344" r="2" fill="#D3D1C7"/>
+
+  <path d="M132 176 q5 -7 0 -14 q-5 -7 0 -14" fill="none" stroke="#F0997B" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M164 176 q5 -7 0 -14 q-5 -7 0 -14" fill="none" stroke="#F0997B" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M196 176 q5 -7 0 -14 q-5 -7 0 -14" fill="none" stroke="#F0997B" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M312 112 q5 -7 0 -14 q-5 -7 0 -14" fill="none" stroke="#F0997B" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M348 112 q5 -7 0 -14 q-5 -7 0 -14" fill="none" stroke="#F0997B" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M384 112 q5 -7 0 -14 q-5 -7 0 -14" fill="none" stroke="#F0997B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <text class="t12" x="252" y="106" text-anchor="end">HBM stack</text>
+  <line class="leader" x1="256" y1="110" x2="278" y2="122"/>
+
+  <circle cx="390" cy="92" r="2" fill="#9c9a92"/>
+  <line class="leader" x1="392" y1="92" x2="500" y2="100"/>
+  <text class="t12" x="506" y="104">Handles the heat</text>
+
+  <circle cx="424" cy="200" r="2" fill="#9c9a92"/>
+  <line class="leader" x1="426" y1="200" x2="500" y2="204"/>
+  <text class="t12" x="506" y="208">Tower holds together</text>
+
+  <circle cx="418" cy="344" r="2" fill="#9c9a92"/>
+  <line class="leader" x1="422" y1="344" x2="500" y2="318"/>
+  <text class="t12" x="506" y="322">Every wire runs clean</text>
+
+  <circle cx="480" cy="382" r="2" fill="#9c9a92"/>
+  <line class="leader" x1="482" y1="382" x2="500" y2="388"/>
+  <text class="t12" x="506" y="392">Works as one system</text>
+
+  <rect x="84" y="415" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="84" y="422" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="84" y="429" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="84" y="436" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="80" y="443" width="52" height="6" rx="1.5" fill="#5F5E5A"/>
+  <rect x="158" y="415" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="158" y="422" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="158" y="429" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="158" y="436" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="154" y="443" width="52" height="6" rx="1.5" fill="#5F5E5A"/>
+  <rect x="232" y="415" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="232" y="422" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="232" y="429" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="232" y="436" width="44" height="5" rx="1.5" fill="#3C3489"/><rect x="228" y="443" width="52" height="6" rx="1.5" fill="#5F5E5A"/>
+
+  <text class="t12" x="296" y="436">...</text>
+  <circle cx="314" cy="440" r="2" fill="#9c9a92"/>
+  <line class="leader" x1="316" y1="440" x2="500" y2="440"/>
+  <text class="t12" x="506" y="444">Every copy identical</text>
+</svg>

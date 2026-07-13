@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="16 -3 648 483" width="648" height="483" font-family="Helvetica, Arial, sans-serif"><style>text{font-family:Helvetica,Arial,sans-serif;}.h{font-size:15px;font-weight:600;}.t{font-size:10px;font-weight:600;}.b{font-size:8.5px;font-weight:400;}.f{font-size:8px;font-weight:400;}</style>
 <rect x="16" y="-3" width="648" height="483" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
-<text class="h" x="40" y="32" style="fill:#2C2C31">Nvidia GB200 — Supplier Breakdown</text>
+<text class="h" x="40" y="32" style="fill:#0B0B0B">Nvidia GB200 — Supplier Breakdown</text>
 
 <!-- Package cross-section -->
 <rect x="170" y="48" width="340" height="270" rx="14" fill="#FFFFFF" stroke="#DCE1E8" stroke-width="1"/>
 <rect x="182" y="60" width="316" height="246" rx="8" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
 <rect x="276" y="74" width="128" height="30" rx="5" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
-<text class="t" x="340" y="89" text-anchor="middle" dominant-baseline="central" style="fill:#A8ABB4">Grace CPU</text>
+<text class="t" x="340" y="89" text-anchor="middle" dominant-baseline="central" style="fill:#898781">Grace CPU</text>
 <rect x="196" y="108" width="288" height="16" rx="3" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
-<text class="b" x="340" y="116" text-anchor="middle" dominant-baseline="central" style="fill:#A8ABB4">NVLink-C2C</text>
+<text class="b" x="340" y="116" text-anchor="middle" dominant-baseline="central" style="fill:#898781">NVLink-C2C</text>
 <rect x="196" y="132" width="34" height="120" rx="4" fill="#FCEFD6" stroke="#D9941F" stroke-width="0.5"/>
 <text class="b" x="213" y="192" text-anchor="middle" dominant-baseline="central" style="fill:#B0700E">HBM</text>
 <rect x="450" y="132" width="34" height="120" rx="4" fill="#FCEFD6" stroke="#D9941F" stroke-width="0.5"/>
 <text class="b" x="467" y="192" text-anchor="middle" dominant-baseline="central" style="fill:#B0700E">HBM</text>
 <rect x="238" y="132" width="96" height="120" rx="6" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
-<text class="t" x="286" y="186" text-anchor="middle" dominant-baseline="central" style="fill:#A8ABB4">Blackwell</text>
-<text class="b" x="286" y="204" text-anchor="middle" dominant-baseline="central" style="fill:#A8ABB4">GPU</text>
+<text class="t" x="286" y="186" text-anchor="middle" dominant-baseline="central" style="fill:#898781">Blackwell</text>
+<text class="b" x="286" y="204" text-anchor="middle" dominant-baseline="central" style="fill:#898781">GPU</text>
 <rect x="346" y="132" width="96" height="120" rx="6" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
-<text class="t" x="394" y="186" text-anchor="middle" dominant-baseline="central" style="fill:#A8ABB4">Blackwell</text>
-<text class="b" x="394" y="204" text-anchor="middle" dominant-baseline="central" style="fill:#A8ABB4">GPU</text>
+<text class="t" x="394" y="186" text-anchor="middle" dominant-baseline="central" style="fill:#898781">Blackwell</text>
+<text class="b" x="394" y="204" text-anchor="middle" dominant-baseline="central" style="fill:#898781">GPU</text>
 <rect x="196" y="266" width="14" height="14" rx="2" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
 <rect x="218" y="266" width="14" height="14" rx="2" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
 <rect x="240" y="266" width="14" height="14" rx="2" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
@@ -34,27 +34,27 @@
 <rect x="460" y="266" width="14" height="14" rx="2" fill="#E8E9EC" stroke="#CBCED4" stroke-width="0.5"/>
 
 <!-- Key -->
-<text class="b" x="524" y="92" style="fill:#9A9DA6">Key</text>
-<circle cx="530" cy="120" r="6" fill="#C7CACF"/><text class="b" x="544" y="124" style="fill:#A8ABB4">Core silicon</text>
-<circle cx="530" cy="150" r="6" fill="#D9881A"/><text class="b" x="544" y="154" style="fill:#56555E">Memory</text>
-<circle cx="530" cy="180" r="6" fill="#C7CACF"/><text class="b" x="544" y="184" style="fill:#A8ABB4">Packaging</text>
-<circle cx="530" cy="210" r="6" fill="#C7CACF"/><text class="b" x="544" y="214" style="fill:#A8ABB4">Interconnect</text>
-<circle cx="530" cy="240" r="6" fill="#C7CACF"/><text class="b" x="544" y="244" style="fill:#A8ABB4">Power</text>
+<text class="b" x="524" y="92" style="fill:#898781">Key</text>
+<circle cx="530" cy="120" r="6" fill="#C7CACF"/><text class="b" x="544" y="124" style="fill:#898781">Core silicon</text>
+<circle cx="530" cy="150" r="6" fill="#D9881A"/><text class="b" x="544" y="154" style="fill:#52514E">Memory</text>
+<circle cx="530" cy="180" r="6" fill="#C7CACF"/><text class="b" x="544" y="184" style="fill:#898781">Packaging</text>
+<circle cx="530" cy="210" r="6" fill="#C7CACF"/><text class="b" x="544" y="214" style="fill:#898781">Interconnect</text>
+<circle cx="530" cy="240" r="6" fill="#C7CACF"/><text class="b" x="544" y="244" style="fill:#898781">Power</text>
 
 <!-- Memory suppliers -->
 <rect x="40" y="346" width="600" height="102" rx="12" fill="#FFFFFF" stroke="#E2E3E8" stroke-width="0.5"/>
 <rect x="52" y="354" width="120" height="22" rx="6" fill="#FCEFD6" stroke="#D9941F" stroke-width="0.5"/>
 <text class="t" x="112.0" y="365" text-anchor="middle" dominant-baseline="central" style="fill:#B0700E">HBM3e memory</text>
-<text class="b" x="628" y="368" text-anchor="end" style="fill:#56555E">Memory stacks</text>
+<text class="b" x="628" y="368" text-anchor="end" style="fill:#52514E">Memory stacks</text>
 <rect x="52" y="386" width="184" height="48" rx="8" fill="#F1F4F8" stroke="#DCE1E8" stroke-width="0.5"/>
-<text class="t" x="66" y="406" style="fill:#2C2C31">SK hynix</text>
-<text class="b" x="66" y="423" style="fill:#56555E">HBM3e stacks</text>
+<text class="t" x="66" y="406" style="fill:#0B0B0B">SK Hynix</text>
+<text class="b" x="66" y="423" style="fill:#52514E">HBM3e stacks</text>
 <rect x="248" y="386" width="184" height="48" rx="8" fill="#F1F4F8" stroke="#DCE1E8" stroke-width="0.5"/>
-<text class="t" x="262" y="406" style="fill:#2C2C31">Micron</text>
-<text class="b" x="262" y="423" style="fill:#56555E">HBM3e stacks</text>
+<text class="t" x="262" y="406" style="fill:#0B0B0B">Micron</text>
+<text class="b" x="262" y="423" style="fill:#52514E">HBM3e stacks</text>
 <rect x="444" y="386" width="184" height="48" rx="8" fill="#F1F4F8" stroke="#DCE1E8" stroke-width="0.5"/>
-<text class="t" x="458" y="406" style="fill:#2C2C31">Samsung</text>
-<text class="b" x="458" y="423" style="fill:#56555E">HBM3e stacks</text>
+<text class="t" x="458" y="406" style="fill:#0B0B0B">Samsung</text>
+<text class="b" x="458" y="423" style="fill:#52514E">HBM3e stacks</text>
 
-<text class="f" x="40" y="468" style="fill:#9A9DA6">Source: IntuitionLabs — "Nvidia GB200 Supply Chain" (updated Mar 2026). intuitionlabs.ai/articles/Nvidia-gb200-supply-chain</text>
+<text class="f" x="40" y="468" style="fill:#898781">Source: IntuitionLabs — "Nvidia GB200 Supply Chain" (updated Mar 2026). intuitionlabs.ai/articles/Nvidia-gb200-supply-chain</text>
 </svg>
