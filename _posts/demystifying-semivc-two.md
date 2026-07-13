@@ -17,7 +17,7 @@ Memory chips undergo extensive testing by the manufacturer, but those tests prim
 
 ![SiP Qualification](/assets/demystifying-semivc-two/gpu-package-hbm-stack.svg)
 
-Running workloads with the GPU and memory chips packaged together stress tests three problems that solo bench tests cannot.
+Running workloads with the GPU and memory chips packaged together stress tests three problems that solo bench tests cannot:
 
 ### Thermal Coupling
 Moving the freezers inside solved our memory wall problem, but now its inches from a roaring grill. In the real package, a GPU pushing hundreds of watts sits millimeters from memory that degrades as it heats up. Stacks that were fine on their own now have trouble keeping the ingredients fresh with the grill firing so close. 
