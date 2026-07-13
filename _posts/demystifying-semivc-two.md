@@ -4,7 +4,7 @@ date: "2026-07-05T20:48:14.368Z"
 ---
 ## The Memory Wall
 
-Imagine working at the line at In-N-Out during the lunch rush. Except, the freezer with all your ingredients sits out in the parking lot. Every order pulls you off the line. You have to sprint to the freezer for patties, lettuce, pickles, and tomatoes, then hurry back to build the burger. By the time one is done, three more orders are waiting.
+It's twelve o'clock, noon. You're pulled onto the line at In-N-Out, and the lunch rush just hit. Orders are stacking up faster than you can build them. Somehow, every ingredient you need is locked in a freezer out in the parking lot. Not in the kitchen. Not in the back. Past the cars lined up at the drive-through. Every burger sends you sprinting across the lot for patties, lettuce, pickles, and tomatoes. By the time one is done, three more are waiting.
 
 ![Innout Lunch Rush](/assets/demystifying-semivc-two/innout-lunch-rush.png)
 
