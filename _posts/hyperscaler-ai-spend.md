@@ -1,5 +1,5 @@
 ---
-title: "The AI Hierarchy Among Hyperscalers"
+title: "The Hyperscaler's AI Race"
 subtitle: "Why profitability is the wrong metric when evaluating hyperscaler spend"
 date: "2026-07-19T20:30:51.231Z"
 ---
@@ -16,7 +16,7 @@ Alphabet's story arc in the AI race is a strange one. Its researchers invented t
 
 Today, Alphabet is the only true full stack player in the race. None of the other hyperscalers owns every layer from chip to consumer. It designs its own silicon in the form of TPUs, runs its own data centers, trains frontier models through DeepMind, and distributes them through Google products with billions of users. On top of that, Alphabet wins even when Gemini doesn't, because its TPUs now power Anthropic and its cloud serves OpenAI. Whichever lab takes the crown, Alphabet still collects rent.
 
-![Alphabet's Capex Ramp](/assets/alphabet-capex-ramp.svg)
+![Alphabet's Capex Ramp](/assets/hyperscaler-ai-race/alphabet-capex-ramp.svg)
 
 Alphabet guided 2026 capital expenditure to between $175 billion and $185 billion, roughly double its 2025 spend, and the market has extended the same support it did Amazon during the e-commerce build out in the 2000s. In February, investors bought over $30 billion of Alphabet bonds, and poured another $84.75 billion in an equity raise, with Berkshire Hathaway anchoring $10 billion. With the market for intelligence still forming, investors are pricing something no DCF or amortization schedule can capture. They are betting on Alphabet owning a sizeable portion of the market when artifical intelligence matures.
 
@@ -43,6 +43,6 @@ Unhappy with Llama's progress, Zuckerberg [laid off about 600 people from Meta's
 
 Meta's retreat from open weights also handed the open-source community to the Chinese labs. DeepSeek's V4 series, z.ai's GLM-5, and Moonshot's Kimi K3 are highly capable, and the developer loyalty and fine-tuning ecosystem Meta spent years cultivating around Llama now compounds for Beijing's labs instead. Distillation allows open weight models to learn from the outputs of frontier models, capturing much of their intelligence at a fraction of the training cost. But training a model cheaply is not the same as serving it. Real-time inference for millions of users demands fleets of chips, data centers, and power, exactly the infrastructure the hyperscalers are spending billions to own.
 
-In the AI race, capex is table stakes. For a hyperscaler in 2026, cutting spend signals surrender, not prudence. None of the hyperscalers won by protecting margins. They won by outspending rivals through every platform shift until the competition couldn't keep up. Critics scrutinizing AI capex through quarterly earnings are pricing the wrong risk. It's the same mistake they made on Amazon's fulfillment buildout and Azure's early losses. Expect this spend to keep trickling down the semiconductor value chain through at least 2030. In a platform war this big, the penalty for overspending is a bad earnings call. The penalty for underspending is extinction.
+In the AI race, capex is table stakes. For a hyperscaler in 2026, cutting spend signals surrender, not prudence. None of the hyperscalers won by protecting margins. They won by outspending rivals through every platform shift until the competition couldn't keep up. Critics scrutinizing AI capex through quarterly earnings are pricing the wrong risk. It's the same mistake they made on Amazon's fulfillment buildouts. Expect this spend to keep trickling down the semiconductor value chain through at least 2030. In a platform war this big, the penalty for overspending is a bad earnings call. The penalty for underspending is extinction.
 
 Want to know exactly where those dollars land? My [Unpacked](https://michaelhly.substack.com/p/unpacked-the-nvidia-supply-chain) series breaks down the Nvidia supply chain, layer by layer.
