@@ -1,0 +1,28 @@
+---
+title: "Hyperscaler's and their AI Spend"
+subtitle: "Why profitability is the wrong metric when the penalty of spending too little is extinction"
+date: "2026-07-19T20:30:51.231Z"
+---
+Hyperscalers don't run ordinary businesses like you and me. They don't even run businesses like other public companies. Each of them has been extraordinarily profitable for the last decade, with moats so deep that the US government files antitrust suits against them. In 2017, regulators were keen to observe what quarterly earnings watchers still miss. These companies have never played for profit. They play for dominance, and the profits follow.
+
+![Amazon's Antitrust Paradox](/assets/hyperscaler-ai-spend/amazons-antitrust-paradox.png)
+
+Many people criticize the trillions poured into AI data centers and GPUs, questioning how these massive investments can be justified. To understand the behavior of a hyperscaler, let us step outside of our frame as a public market investor, where profitability is the scoreboard, and see the AI problem from a hyperscaler's point of view. In their world, the cost of losing the race for market dominance dwarfs the backlash from a few quarters of missed earnings. In this article, we recap what capital expenditure has bought each of the four hyperscalers in the AI race since 2023:
+
+![Hyperscaler Race](/assets/hyperscaler-ai-spend/hyperscaler-race-2023-vs-2026.svg)!
+
+## Alphabet
+Alphabet's story arc in the AI race is a strange one. Its researchers invented the [transformer](https://arxiv.org/abs/1706.03762), the architecture underneath every modern large language model, and published it openly in 2017. Then it watched OpenAI turn that invention into ChatGPT, botched [the launch of its own AI bot](https://www.bbc.com/news/business-64576225), and was written off in the AI race. In order to turn things around, Alphabet merged its labs, rebuilt around Gemini, and spent its way from laggard to leader. And since 2023, Alphabet has made major strides in both the consumer and enterprise market:
+- Gemini has surpassed [900 million monthly active users](https://blog.google/innovation-and-ai/sundar-pichai-io-2026) and growing, up from 400 million the previous year
+- Gemini's share of the [LLM API market has grown to 21%](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/?utm_source=chatgpt.com), up from 7% in 2023
+
+Today, Alphabet is the only true full stack player in the race. None of the other hyperscalers owns every layer from chip to consumer. It designs its own silicon in the form of TPUs, runs its own data centers, trains frontier models through DeepMind, and distributes them through Google products with billions of users. On top of that, Alphabet wins even when Gemini doesn't, because its TPUs now power Anthropic and its cloud serves OpenAI. Whichever lab takes the crown, Alphabet still collects rent.
+
+Now let's take a look at its spending:
+![Alphabet's Capex Ramp](/assets/alphabet-capex-ramp.svg)
+
+Alphabet guided 2026 capital expenditure to between $175 billion and $185 billion, roughly double its 2025 spend, and the market has extended the same support it did Amazon during the e-commerce build out in the 2000s. In February, investors bought over $30 billion of Alphabet bonds, and poured another $84.75 billion in an equity raise, with Berkshire Hathaway anchoring $10 billion. With the market for intelligence still forming, investors are pricing something no DCF or amortization schedule can capture. They are betting on Alphabet owning a sizeable portion of the market when artifical intelligence matures.
+
+
+
+
