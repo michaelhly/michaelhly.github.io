@@ -33,7 +33,7 @@ Microsoft made one of the single greatest venture investment in history and has 
 
 ![Microsoft OpenAI Timeline](/assets/microsoft-openai-timeline.svg)
 
-Microsoft's assets remain formidable. Azure continues to be one of the default enterprise clouds for AI models, Copilot rides on hundreds of millions of Office seats, and the OpenAI stake pays off even as interests diverge.
+Microsoft's assets remain formidable. Azure continues to be one of the default enterprise clouds for AI workloads, Copilot rides on hundreds of millions of Office seats, and the OpenAI stake may pay off even as their interests diverge. Microsoft's position was once enviable among the hyperscalers, but no longer a forerunner in the race in 2026.
 
 
 
