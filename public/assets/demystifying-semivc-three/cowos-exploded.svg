@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 610" width="760" height="610" font-family="Helvetica, Arial, sans-serif">
+<style>
+  text{font-family:Helvetica,Arial,sans-serif;}
+  .h{font-size:19px;font-weight:600;fill:var(--title);}
+  .sub{font-size:12.5px;font-weight:400;fill:var(--sub);}
+  .lt{font-size:12.5px;font-weight:600;fill:var(--title);}
+  .ls{font-size:11px;font-weight:400;fill:var(--sub2);}
+  .lb{font-size:10px;font-weight:400;fill:var(--sub);}
+  .f{font-size:9px;font-weight:400;fill:var(--sub);}
+  svg{
+    --card-bg:#EBEDF2; --card-bd:#E2E3E8; --title:#2C2C31; --sub:#9A9DA6; --sub2:#56555E;
+    --leader:#B7BAC2;
+    --sil-top:#F1EFFC; --sil-left:#D8D2F4; --sil-right:#E6E2FA; --sil-bd:#6C5FD6;
+    --mem-top:#E8E9EC; --mem-left:#CBCED4; --mem-right:#DBDDE1; --mem-bd:#A8ABB4;
+    --int-top:#E4F1EE; --int-left:#BFE0D9; --int-right:#D3EAE4; --int-bd:#2F9E8F;
+    --pkg-top:#DEEEEA; --pkg-left:#B4DAD2; --pkg-right:#CCE6DF; --pkg-bd:#2F9E8F;
+    --ball:#C7CACF; --ball-top:#D6D8DD; --ball-bd:#A8ABB4;
+  }
+  @media (prefers-color-scheme: dark){ svg{
+    --card-bg:#16181D; --card-bd:#262A31; --title:#E6E7EA; --sub:#868A94; --sub2:#A9ADB6;
+    --leader:#3C414B;
+    --sil-top:#312B4E; --sil-left:#231E3B; --sil-right:#2A2444; --sil-bd:#8B7FE8;
+    --mem-top:#2A2E36; --mem-left:#1F222A; --mem-right:#24272F; --mem-bd:#565B66;
+    --int-top:#123029; --int-left:#0C231D; --int-right:#0F2A23; --int-bd:#46C2B0;
+    --pkg-top:#0F2A24; --pkg-left:#0A1F1A; --pkg-right:#0C251F; --pkg-bd:#46C2B0;
+    --ball:#3A3F49; --ball-top:#434955; --ball-bd:#4C525D;
+  }}
+</style>
+<rect x="0.5" y="0.5" width="759" height="609" rx="16" fill="var(--card-bg)" stroke="var(--card-bd)" stroke-width="1"/>
+<text class="h" x="34" y="40">CoWoS Package, Exploded</text>
+<text class="sub" x="34" y="62">Where value hides: the layers beneath the die</text>
+
+<!-- alignment guides -->
+<line x1="425.37" y1="140" x2="425.37" y2="520" stroke="var(--leader)" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.5"/>
+<line x1="282.48" y1="140" x2="282.48" y2="520" stroke="var(--leader)" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.5"/>
+<line x1="74.63" y1="140" x2="74.63" y2="520" stroke="var(--leader)" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.5"/>
+
+<!-- stack (bottom to top) -->
+<!-- BGA -->
+<polygon points="96.71,479.50 278.58,584.50 278.58,591.50 96.71,486.50" fill="var(--mem-left)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="403.29,512.50 278.58,584.50 278.58,591.50 403.29,519.50" fill="var(--mem-right)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="221.42,407.50 403.29,512.50 278.58,584.50 96.71,479.50" fill="var(--mem-top)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<ellipse cx="250.00" cy="470.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="230.95" cy="481.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="211.89" cy="492.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="192.84" cy="503.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="173.79" cy="514.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="269.05" cy="481.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="250.00" cy="492.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="230.95" cy="503.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="211.89" cy="514.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="192.84" cy="525.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="288.11" cy="492.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="269.05" cy="503.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="250.00" cy="514.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="230.95" cy="525.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="211.89" cy="536.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="307.16" cy="503.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="288.11" cy="514.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="269.05" cy="525.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="250.00" cy="536.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="230.95" cy="547.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="326.21" cy="514.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="307.16" cy="525.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="288.11" cy="536.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="269.05" cy="547.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<ellipse cx="250.00" cy="558.00" rx="5" ry="3" fill="var(--ball)" stroke="var(--ball-bd)" stroke-width="0.6"/>
+<!-- ABF substrate -->
+<polygon points="74.63,361.25 282.48,481.25 282.48,511.25 74.63,391.25" fill="var(--pkg-left)" stroke="var(--pkg-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="425.37,398.75 282.48,481.25 282.48,511.25 425.37,428.75" fill="var(--pkg-right)" stroke="var(--pkg-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="217.52,278.75 425.37,398.75 282.48,481.25 74.63,361.25" fill="var(--pkg-top)" stroke="var(--pkg-bd)" stroke-width="1" stroke-linejoin="round"/>
+<!-- interposer -->
+<polygon points="100.18,271.50 278.58,374.50 278.58,386.50 100.18,283.50" fill="var(--int-left)" stroke="var(--int-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="399.82,304.50 278.58,374.50 278.58,386.50 399.82,316.50" fill="var(--int-right)" stroke="var(--int-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="221.42,201.50 399.82,304.50 278.58,374.50 100.18,271.50" fill="var(--int-top)" stroke="var(--int-bd)" stroke-width="1" stroke-linejoin="round"/>
+<!-- compute + HBM -->
+<polygon points="150.41,112.50 185.05,132.50 185.05,178.50 150.41,158.50" fill="var(--mem-left)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="219.69,112.50 185.05,132.50 185.05,178.50 219.69,158.50" fill="var(--mem-right)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="185.05,92.50 219.69,112.50 185.05,132.50 150.41,112.50" fill="var(--mem-top)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<line x1="219.69" y1="124.00" x2="185.05" y2="144.00" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="150.41" y1="124.00" x2="185.05" y2="144.00" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="219.69" y1="135.50" x2="185.05" y2="155.50" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="150.41" y1="135.50" x2="185.05" y2="155.50" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="219.69" y1="147.00" x2="185.05" y2="167.00" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="150.41" y1="147.00" x2="185.05" y2="167.00" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<polygon points="193.71,137.50 228.35,157.50 228.35,179.50 193.71,159.50" fill="var(--sil-left)" stroke="var(--sil-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="262.99,137.50 228.35,157.50 228.35,179.50 262.99,159.50" fill="var(--sil-right)" stroke="var(--sil-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="228.35,117.50 262.99,137.50 228.35,157.50 193.71,137.50" fill="var(--sil-top)" stroke="var(--sil-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="237.01,162.50 271.65,182.50 271.65,204.50 237.01,184.50" fill="var(--sil-left)" stroke="var(--sil-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="306.29,162.50 271.65,182.50 271.65,204.50 306.29,184.50" fill="var(--sil-right)" stroke="var(--sil-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="271.65,142.50 306.29,162.50 271.65,182.50 237.01,162.50" fill="var(--sil-top)" stroke="var(--sil-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="280.31,187.50 314.95,207.50 314.95,253.50 280.31,233.50" fill="var(--mem-left)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="349.59,187.50 314.95,207.50 314.95,253.50 349.59,233.50" fill="var(--mem-right)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="314.95,167.50 349.59,187.50 314.95,207.50 280.31,187.50" fill="var(--mem-top)" stroke="var(--mem-bd)" stroke-width="1" stroke-linejoin="round"/>
+<line x1="349.59" y1="199.00" x2="314.95" y2="219.00" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="280.31" y1="199.00" x2="314.95" y2="219.00" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="349.59" y1="210.50" x2="314.95" y2="230.50" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="280.31" y1="210.50" x2="314.95" y2="230.50" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="349.59" y1="222.00" x2="314.95" y2="242.00" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+<line x1="280.31" y1="222.00" x2="314.95" y2="242.00" stroke="var(--mem-bd)" stroke-width="0.6" opacity="0.7"/>
+
+<!-- callouts -->
+<path d="M 340.9 499.5 L 438.0 499.5 L 438.0 480.0 L 452.0 480.0" fill="none" stroke="var(--leader)" stroke-width="1"/>
+<circle cx="340.9" cy="499.5" r="2.5" fill="var(--ball-bd)"/>
+<circle cx="455.0" cy="480.0" r="4" fill="var(--ball-top)" stroke="var(--ball-bd)" stroke-width="1.2"/>
+<text class="lt" x="468" y="484">BGA → board</text>
+<text class="ls" x="468" y="500">Solder-ball array to the PCB</text>
+<text class="lb" x="468" y="515">Commodity interconnect</text>
+<path d="M 353.9 395.0 L 438.0 395.0 L 438.0 360.0 L 452.0 360.0" fill="none" stroke="var(--leader)" stroke-width="1"/>
+<circle cx="353.9" cy="395.0" r="2.5" fill="var(--pkg-bd)"/>
+<circle cx="455.0" cy="360.0" r="4" fill="var(--pkg-top)" stroke="var(--pkg-bd)" stroke-width="1.2"/>
+<text class="lt" x="468" y="364">ABF package substrate</text>
+<text class="ls" x="468" y="380">Ajinomoto ABF · Ibiden / Unimicron</text>
+<text class="lb" x="468" y="395">Near-sole-sourced — least visible, most defensible margin</text>
+<path d="M 339.2 294.0 L 438.0 294.0 L 438.0 270.0 L 452.0 270.0" fill="none" stroke="var(--leader)" stroke-width="1"/>
+<circle cx="339.2" cy="294.0" r="2.5" fill="var(--int-bd)"/>
+<circle cx="455.0" cy="270.0" r="4" fill="var(--int-top)" stroke="var(--int-bd)" stroke-width="1.2"/>
+<text class="lt" x="468" y="274">Silicon interposer</text>
+<text class="ls" x="468" y="290">TSMC — CoWoS</text>
+<text class="lb" x="468" y="305">Captures the packaging margin, not just the fab margin</text>
+<path d="M 332.3 197.5 L 438.0 197.5 L 438.0 144.0 L 452.0 144.0" fill="none" stroke="var(--leader)" stroke-width="1"/>
+<circle cx="332.3" cy="197.5" r="2.5" fill="var(--sil-bd)"/>
+<circle cx="455.0" cy="144.0" r="4" fill="var(--sil-top)" stroke="var(--sil-bd)" stroke-width="1.2"/>
+<text class="lt" x="468" y="148">Logic + HBM dies</text>
+<text class="ls" x="468" y="164">Nvidia GPU dies + SK Hynix HBM stacks</text>
+<text class="lb" x="468" y="179">What everyone sees</text>
+
+<text class="f" x="34" y="592">Stack schematic — not to scale. 2.5D CoWoS: logic + HBM on a silicon interposer over an ABF substrate.</text>
+</svg>
