@@ -23,6 +23,18 @@ Now let's take a look at its spending:
 
 Alphabet guided 2026 capital expenditure to between $175 billion and $185 billion, roughly double its 2025 spend, and the market has extended the same support it did Amazon during the e-commerce build out in the 2000s. In February, investors bought over $30 billion of Alphabet bonds, and poured another $84.75 billion in an equity raise, with Berkshire Hathaway anchoring $10 billion. With the market for intelligence still forming, investors are pricing something no DCF or amortization schedule can capture. They are betting on Alphabet owning a sizeable portion of the market when artifical intelligence matures.
 
+## Amazon
+Amazon's willingness to forgo profits for two decades to build its fulfillment and cloud infrastructure became the central case study in [Lina Khan's antitrust critique](https://yalelawjournal.org/note/amazons-antitrust-paradox). She argued that this strategy exposed a blind spot in modern antitrust law by demonstrating that firms can accumulate structural market power while keeping consumer prices low. And in the AI race, Amazon has largely ignored the glamour contest of frontier models. Instead, it is betting that the real prize isn't building the winning model, but providing the infrastructure every winning model runs on. By 2026, Anthropic trained Claude on AWS and Amazon's custom Trainium chips, while OpenAI signed a seven-year, $38 billion agreement to expand onto AWS. [Anthropic trains and deploys Claude](https://www.anthropic.com/news/anthropic-amazon-compute) on AWS and Amazon's custom Trainium chips, and [OpenAI recently signed](https://openai.com/index/aws-and-openai-partnership/) a seven-year, $38 billion agreement to expand onto AWS.
+
+Amazon's $200 billion in 2026 capex is the largest absolute outlay of any hyperscaler. Betting against Amazon's willingness to spend through skepticism has been a losing trade for twenty-five years. Its goal is to remain in the race and keep the meter running, and nearly every meter in the industry routes through its data centers.
+
+## Microsoft
+Microsoft made one of the single greatest venture investment in history and has spent the last couple of years discovering its limits. Its $13 billion investment in OpenAI made Azure the exclusive cloud provider for all of OpenAI's training, products, and APIs, making Microsoft the sole infrastructure partner behind ChatGPT's rise. 
+
+
+
+
+
 
 
 
