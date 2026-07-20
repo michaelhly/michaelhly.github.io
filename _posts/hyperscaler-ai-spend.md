@@ -1,5 +1,5 @@
 ---
-title: "Hyperscaler's and Their Spend"
+title: "Hyperscalers and Their Spend"
 subtitle: "Why profitability is the wrong metric when evaluating hyperscaler spend"
 date: "2026-07-19T20:30:51.231Z"
 ---
