@@ -7,7 +7,7 @@ Hyperscalers don't run ordinary businesses like you and me. They don't even run 
 
 Many people criticize the trillions poured into AI data centers and GPUs, questioning how these massive investments can be justified. To understand the behavior of a hyperscaler, let us step outside of our frame as a public market investor, where profitability is the scoreboard, and see the AI problem from a hyperscaler's point of view. In their world, the cost of losing the race for market dominance dwarfs the backlash from a few quarters of missed earnings. In this article, we recap what their capital expenditures has bought each of the four hyperscalers in the AI race since 2023:
 
-![Hyperscaler Race](/assets/hyperscaler-ai-race/hyperscaler-race-2023-vs-2026.svg)!
+![Hyperscaler Race](/assets/hyperscaler-ai-race/hyperscaler-race-2023-vs-2026.svg)
 
 ## Alphabet
 Alphabet's story arc in the AI race is a strange one. Its researchers invented the [transformer](https://arxiv.org/abs/1706.03762), the architecture underneath every modern large language model, and published it openly in 2017. Then it watched OpenAI turn that invention into ChatGPT, botched [the launch of its own AI bot](https://www.bbc.com/news/business-64576225), and was written off in the AI race. In order to turn things around, Alphabet merged its labs, rebuilt around Gemini, and spent its way from laggard to leader. And since 2023, Alphabet has made major strides in both the consumer and enterprise markets:
