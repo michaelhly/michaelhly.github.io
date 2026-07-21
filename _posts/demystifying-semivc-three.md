@@ -8,5 +8,5 @@ Then, eighteen months ago, a delivery app put Golden Wok on its front page when 
 
 ![Influencer Streaming at Restaurant](/assets/demystifying-semivc-three/influencer-streaming-at-restaurant.png)
 
-After going viral, my uncle did everything he could to keep up all the eager foodies who wanted to try the chicken. He hired, he prepped more, he stayed open later. And that's when he learned the real lesson of running his restaurant: **You can ramp up your own kitchen to however you want. You can't ramp up your suppliers.** Over the next year and a half, that one dish failed him five times, and never once because of the chicken.
+After going viral, my uncle did everything he could to keep up all the eager foodies who wanted to try the chicken. He hired, he prepped more, he stayed open later. And that's when he learned the real lesson of running his restaurant: **You can ramp up your own kitchen however you want. You can't ramp up your suppliers.** Over the next year and a half, that one dish failed him five times, and never once because of the chicken.
 
