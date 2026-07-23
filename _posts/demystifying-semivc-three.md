@@ -14,3 +14,10 @@ After going viral, my uncle did everything he could to keep up all the eager foo
 The Beggar's chicken has a maximum size, and it isn't set in the kitchen. The lotus sets it. A leaf grows as big as a leaf grows, and it needs to wrap the chicken perfectly. If too big, all the aromatics escape and the chicken bakes dry; if too small, the stuffing leaks out and burns in the oven. If none of the vendors at the farmer's market sells lotus leaves with the right size, my uncle still has to find way to serve the dish. So at MAG7 banquets where the patrons request extra chicken, he wraps two chicken together in an oversized leaf, and serves them side by side as one platter. To __, uncle has to enlist his Taiwanese cousins ...
 
 Three thousand miles away, a man in a leather jacket has the same problem. Nvidia's lotus leaf is the reticle, which limits the largest pattern a lithography machine can print onto a wafer. So the GPU dies Nvidia design cannot exceed the 26 mm × 33 mm exposure field. Blackwell is two maximum-size dies served as one platter, stitched so tightly they behave as a single chip.
+
+...
+
+From here, the two kitchens fail in parallel, layer by layer.
+
+## The Clay
+The next thing to vanish was the clay. The food-safe casing blend comes from exactly three regional suppliers, and every restaurant chasing the same viral dish was calling all three.
