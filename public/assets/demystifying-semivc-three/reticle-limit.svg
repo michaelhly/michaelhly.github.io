@@ -1,0 +1,58 @@
+<svg width="100%" viewBox="0 0 680 258" role="img" xmlns="http://www.w3.org/2000/svg" font-family="&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif">
+<title>An oversized monolithic die vs. Blackwell within the reticle limit</title>
+<desc>A side-by-side comparison. Left: a single monolithic die of a given silicon area overflowing past the reticle boundary, the overflow hatched in coral and marked with a cross, because no single exposure can print a pattern larger than 26 mm by 33 mm. Right: Blackwell drawn as two reticle-limit dies (each 33 mm on the long side by 26 mm) abutted along a die-to-die stitch, both fitting inside the lithography exposure field, marked with a check.</desc>
+<defs>
+<pattern id="nope" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="8" stroke="#993C1D" stroke-width="1.2" opacity="0.55"/>
+</pattern>
+</defs>
+<rect x="0" y="0" width="680" height="258" fill="#ffffff"/>
+
+<!-- divider -->
+<line x1="340" y1="92" x2="340" y2="248" stroke="#d8d6cf" stroke-width="1" stroke-dasharray="3 4"/>
+
+<!-- ===================== PANEL A : Monolith (left) ===================== -->
+<text x="175" y="56" text-anchor="middle" font-size="15" font-weight="500" fill="#0b0b0b">Single Monolithic Die — Oversized</text>
+<text x="175" y="76" text-anchor="middle" font-size="12" font-weight="400" fill="#993C1D">Exceeds the reticle limit  ✗</text>
+
+<!-- one block of silicon -->
+<rect x="76" y="116" width="198" height="78" rx="3" fill="rgb(225,245,238)" stroke="#5f5e5a" stroke-width="1.5"/>
+<!-- overflow region (un-printable) -->
+<rect x="175" y="116" width="99" height="78" fill="rgb(250,236,231)"/>
+<rect x="175" y="116" width="99" height="78" fill="url(#nope)"/>
+<rect x="76" y="116" width="198" height="78" rx="3" fill="none" stroke="#5f5e5a" stroke-width="1.5"/>
+
+<!-- reticle limit overlaid on the printable portion -->
+<rect x="76" y="116" width="99" height="78" fill="none" stroke="#89877f" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="175" y1="108" x2="175" y2="202" stroke="#993C1D" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="125" y="108" text-anchor="middle" font-size="11" fill="#52514e">reticle max (33 mm)</text>
+
+<text x="224" y="150" text-anchor="middle" font-size="12" font-weight="500" fill="rgb(113,43,19)">can't be</text>
+<text x="224" y="166" text-anchor="middle" font-size="12" font-weight="500" fill="rgb(113,43,19)">printed</text>
+
+<text x="175" y="238" text-anchor="middle" font-size="12" fill="#52514e">No single exposure prints past 26 × 33 mm</text>
+
+<!-- ===================== PANEL B : Blackwell (right) ===================== -->
+<text x="505" y="56" text-anchor="middle" font-size="15" font-weight="500" fill="#0b0b0b">Blackwell — Two Dies, Stitched</text>
+<text x="505" y="76" text-anchor="middle" font-size="12" font-weight="400" fill="#15806a">Each die fits the reticle limit  ✓</text>
+
+<!-- reticle exposure field (dashed) around each die -->
+<rect x="406" y="116" width="99" height="78" fill="none" stroke="#89877f" stroke-width="1" stroke-dasharray="5 4"/>
+<rect x="505" y="116" width="99" height="78" fill="none" stroke="#89877f" stroke-width="1" stroke-dasharray="5 4"/>
+
+<!-- the two dies filling their reticles -->
+<rect x="411" y="121" width="89" height="68" rx="3" fill="rgb(225,245,238)" stroke="#1D9E75" stroke-width="1.5"/>
+<rect x="510" y="121" width="89" height="68" rx="3" fill="rgb(225,245,238)" stroke="#1D9E75" stroke-width="1.5"/>
+<text x="455" y="155" text-anchor="middle" font-size="12" font-weight="500" fill="rgb(8,80,65)">Die 1</text>
+<text x="554" y="155" text-anchor="middle" font-size="12" font-weight="500" fill="rgb(8,80,65)">Die 2</text>
+
+<!-- die-to-die stitch on the shared seam -->
+<line x1="505" y1="116" x2="505" y2="194" stroke="#7F77DD" stroke-width="2.5"/>
+<text x="505" y="212" text-anchor="middle" font-size="11" font-weight="400" fill="rgb(83,74,183)">die-to-die stitch</text>
+
+<!-- dimension labels: 33 mm centered over the assembly, 26 mm on the short side -->
+<text x="505" y="108" text-anchor="middle" font-size="11" fill="#52514e">33 mm</text>
+<text x="396" y="155" text-anchor="middle" font-size="11" fill="#52514e" transform="rotate(-90 396 155)">26 mm</text>
+
+<text x="505" y="238" text-anchor="middle" font-size="12" fill="#52514e">Behaves as one chip; printed in two exposures</text>
+</svg>
