@@ -22,4 +22,4 @@ Three thousand miles away, a man in a leather jacket has the same problem. Nvidi
 From here, the two kitchens fail in parallel, layer by layer.
 
 ## The Clay
-The next thing to vanish was the clay. The food-safe casing blend comes from exactly three regional suppliers, and every restaurant chasing the same viral dish was calling all three.
+The next thing, all the clay vanished. The food-safe casing blend comes from exactly three regional suppliers, and every restaurant chasing the same viral dish was calling all three.
