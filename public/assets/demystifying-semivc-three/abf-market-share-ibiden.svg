@@ -55,25 +55,22 @@
 <!-- ===================== ARROW : Ibiden slice → callout ===================== -->
 <path d="M249 146 C 278 130, 298 128, 322 138" fill="none" stroke="#993C1D" stroke-width="2" marker-end="url(#arrowhead)"/>
 <!-- ===================== CALLOUT (right) ===================== -->
-<rect x="336" y="118" width="280" height="218" rx="12" fill="#fcfcfb" stroke="#d8d6cf" stroke-width="1"/>
-<text x="354" y="142" font-size="12.5" font-weight="600" fill="#0b0b0b">Who funded Ibiden's 30%</text>
-<line x1="354" y1="152" x2="598" y2="152" stroke="#e4e2db" stroke-width="1"/>
-
+<rect x="336" y="118" width="280" height="196" rx="12" fill="#fcfcfb" stroke="#d8d6cf" stroke-width="1"/>
 <!-- block 1: government subsidy -->
-<rect x="352" y="160" width="248" height="58" rx="8" fill="#e8f0fb" stroke="#003894" stroke-width="0.5"/>
-<text x="366" y="176" font-size="8.8" font-weight="600" fill="#003894" letter-spacing="0.8">GOVERNMENT SUBSIDY</text>
-<text x="366" y="194" font-size="14" font-weight="600" fill="#002a70">≈$260M <tspan font-size="9.8" font-weight="400" fill="#3d3b37">¥40.5B maximum</tspan></text>
-<text x="366" y="210" font-size="9.6" fill="#3d3b37">METI Ono-plant plan, Apr 2023, under 1/3 of cost.</text>
+<rect x="352" y="134" width="248" height="58" rx="8" fill="#e8f0fb" stroke="#003894" stroke-width="0.5"/>
+<text x="366" y="150" font-size="8.8" font-weight="600" fill="#003894" letter-spacing="0.8">GOVERNMENT SUBSIDY</text>
+<text x="366" y="168" font-size="14" font-weight="600" fill="#002a70">≈$260M <tspan font-size="9.8" font-weight="400" fill="#3d3b37">¥40.5B maximum</tspan></text>
+<text x="366" y="184" font-size="9.6" fill="#3d3b37">METI Ono-plant plan, Apr 2023, under 1/3 of cost.</text>
 
 <!-- block 2: customer prepaid capital -->
-<rect x="352" y="228" width="248" height="58" rx="8" fill="rgb(239,237,250)" stroke="#7F77DD" stroke-width="0.5"/>
-<text x="366" y="244" font-size="8.8" font-weight="600" fill="rgb(83,74,183)" letter-spacing="0.8">CUSTOMER PREPAID CAPITAL</text>
-<text x="366" y="262" font-size="14" font-weight="600" fill="rgb(63,55,150)">≈$520M <tspan font-size="9.8" font-weight="400" fill="#3d3b37">¥81.0B advances received</tspan></text>
-<text x="366" y="278" font-size="9.6" fill="#3d3b37">Held at Mar 31 2026; ¥92.1B a year earlier.</text>
+<rect x="352" y="202" width="248" height="58" rx="8" fill="rgb(239,237,250)" stroke="#7F77DD" stroke-width="0.5"/>
+<text x="366" y="218" font-size="8.8" font-weight="600" fill="rgb(83,74,183)" letter-spacing="0.8">CUSTOMER PREPAID CAPITAL</text>
+<text x="366" y="236" font-size="14" font-weight="600" fill="rgb(63,55,150)">≈$520M <tspan font-size="9.8" font-weight="400" fill="#3d3b37">¥81.0B advances received</tspan></text>
+<text x="366" y="252" font-size="9.6" fill="#3d3b37">Held at Mar 31 2026; ¥92.1B a year earlier.</text>
 
 <!-- block 3: what it buys -->
-<rect x="352" y="296" width="248" height="28" rx="8" fill="#f4f3ee"/>
-<text x="476" y="314" text-anchor="middle" font-size="9.8" font-weight="500" fill="#52514e">¥500B (≈$3.2B) capex → 2.5× capacity by 2028.</text>
+<rect x="352" y="270" width="248" height="28" rx="8" fill="#f4f3ee"/>
+<text x="476" y="288" text-anchor="middle" font-size="9.8" font-weight="500" fill="#52514e">¥500B (≈$3.2B) capex → 2.5× capacity by 2028.</text>
 
 <!-- ===================== SOURCES (stacked) ===================== -->
 <g font-size="9.5" fill="#89877f">
