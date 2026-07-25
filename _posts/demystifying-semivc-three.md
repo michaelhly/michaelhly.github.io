@@ -22,5 +22,10 @@ Three thousand miles away, a man in a leather jacket has the same problem. Nvidi
 From here, the two kitchens fail in parallel, layer by layer:
 ![CoWoS Stack](/assets/demystifying-semivc-three/cowos-stack.svg)
 
+## The Seasoning
+Then his distributor called. The MSG in the stuffing was on allocation, rationed out like wartime butter. Some new-age diet fad had turned sodium into the enemy, and every compoany on earth now needed MSG to promote its sodium-free welness branding. The MSG producer's said their expansion would not complete for another two years. Without any alternatives, Uncle Nelson brought what he could and reformuulated around the rest.
+
+Ajinomoto, the company famous for creating MSG, also makes the insulationg film laminated between every sheet of copper wiring, seasoning the layers of the interconnect board that supports the chiplets. The board, also known as the substrate, is constructed one build-up at a time: film then copper, then film again. Like Kleenex and Scotch tape, Ajinomoto's became the category for this layered board, and today the entire AI buildout funnels through the seasoning company. Blackwell, AMD's Helios, and every hyperscaler's custom ASIC all stand on the layers of the same film. No one has found a qualified substitute yet. Neither, for what it's worth, has my uncle Nelson. He and Jensen share the same supplier, and Ajinomoto seasons both the stuffing and the substrate.
+
 ## The Clay
-The next thing, all the clay vanished. The food-safe casing blend comes from exactly three regional suppliers, and every restaurant chasing the same viral dish was calling all three.
+Next, there was a clay shortage. The food-safe casing blend comes from exactly three regional suppliers, and every restaurant chasing the same viral dish was calling all three.
