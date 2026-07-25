@@ -1,4 +1,4 @@
-<svg width="100%" viewBox="0 0 680 258" role="img" xmlns="http://www.w3.org/2000/svg" font-family="&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif">
+<svg width="100%" viewBox="0 0 680 234" role="img" xmlns="http://www.w3.org/2000/svg" font-family="&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif">
 <title>An oversized monolithic die vs. Blackwell within the reticle limit</title>
 <desc>A side-by-side comparison. Left: a single monolithic die of a given silicon area overflowing past the reticle boundary, the overflow hatched in coral and marked with a cross, because no single exposure can print a pattern larger than 26 mm by 33 mm. Right: Blackwell drawn as two reticle-limit dies (each 33 mm on the long side by 26 mm) separated by a small gap and joined by a die-to-die interconnect (NV-HBI) routed through the package underneath, both fitting inside the lithography exposure field, marked with a check.</desc>
 <defs>
@@ -6,7 +6,8 @@
 <line x1="0" y1="0" x2="0" y2="8" stroke="#993C1D" stroke-width="1.2" opacity="0.55"/>
 </pattern>
 </defs>
-<rect x="0" y="0" width="680" height="258" fill="#ffffff"/>
+<rect x="0" y="0" width="680" height="234" fill="#ffffff"/>
+<g transform="translate(0,-24)">
 
 <!-- divider -->
 <line x1="340" y1="92" x2="340" y2="248" stroke="#d8d6cf" stroke-width="1" stroke-dasharray="3 4"/>
@@ -61,4 +62,5 @@
 <text x="614" y="155" text-anchor="middle" font-size="11" fill="#52514e" transform="rotate(90 614 155)">26 mm</text>
 
 <text x="505" y="238" text-anchor="middle" font-size="12" fill="#52514e">Two separate dies, joined in the package as one GPU</text>
+</g>
 </svg>
