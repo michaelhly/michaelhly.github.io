@@ -39,4 +39,8 @@ Jansen's clay is the substrate, the slab of  fiberglass-reinforced resin that pr
 ## The Rice Straws
 My uncle always said the secret to a good beggar's chicken was a sturdy pack of straws. He followed the tradition his grandfather taught him, in which the straws bound the lotus-wrapped bird and held every seam tight while he packed mud all over to make smooth grey egg. The hidden fiber kept the clay from cracking as it shrank in the heat. When the distributor called the second time to say the rice straws were delayed, it was, quite literally, the straw that almost broke my uncle's back.
 
-Nvidia's Blackwell architecture relies on the same principle. Inside the substrate beneath each chip, woven glass fiber, specifically T-glass, holds brittle laminate together through the heat of assembly and the stress of thermal cycling. The most advanced cloth comes almost exclusively from a single Japanese textile mill, Nitto Boseki. When AI demand surged, there wasn't enough fabric to go around. Thus, prices jumped, and orders backed up for over a year. Procurement teams from trillion-dollar firms all flew to Japan to plead for allocation.
+Nvidia's Blackwell architecture relies on the same principle. Inside the substrate beneath each chip, woven glass fiber, specifically T-glass, holds brittle laminate together through the heat of assembly and the stress of thermal cycling.
+
+![CTE Comparison](/assets/demystifying-semivc-three/cte-comparison.svg)
+
+The most advanced cloth comes almost exclusively from a single Japanese textile mill, Nitto Boseki. When AI demand surged, there wasn't enough fabric to go around. Thus, prices jumped, and orders backed up for over a year. Procurement teams from trillion-dollar firms all flew to Japan to plead for allocation.
