@@ -19,7 +19,8 @@ Three thousand miles away, a man in a leather jacket has the same problem. Nvidi
 
 [TSMC](https://semimarketcap.com/c/tsm)'s own advanced packaging lines hit the same capacity ceiling. Only so many double-die platters can be bonded on its in-house [CoWoS](https://michaelhly.substack.com/i/206253511/cowos-chip-on-wafer-on-substrate) capacity in a given month, and Blackwell's launch blew past that number immediately. Rather than turn away the order, TSMC outsources the overflow to fellow Taiwanese assembly houses, ASE, PTI, and Amkor in the U.S., which fold and bond whatever volume TSMC's own lines can't absorb.
 
-From here, the two kitchens fail in parallel, layer by layer.
+From here, the two kitchens fail in parallel, layer by layer:
+![CoWoS Stack](/assets/demystifying-semivc-three/cowos-stack.svg)
 
 ## The Clay
 The next thing, all the clay vanished. The food-safe casing blend comes from exactly three regional suppliers, and every restaurant chasing the same viral dish was calling all three.
