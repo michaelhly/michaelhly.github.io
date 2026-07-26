@@ -52,11 +52,11 @@ After running the restaurant for over ten years, uncle Nelson had to close down 
 
 This is the accusation leveled at Nvidia. Every quarter, critics trace how many Blackwells were bought with Nvidia's own money, spreading doubts about the circular, debt-adjacent, self-referential financing behind the AI buildout. OpenAI raises billions and places orders. Neoclouds borrow against chips and place orders. But the critics are looking in the wrong direction. For Nvidia to support the buildout, it must first convince its suppliers to scale. For more GPUs to exist, Ibiden, Ajinomoto, and Nitto Boseki must all expand capacity, betting exogenous demand far outside their core business. The signal cannot be the volatile front end of the bullwhip: lumpy, debt-fueled, prone to spikes like the one that killed Golden Wok.
 
-![Nvidia Smoothing the Bullwhip](public/assets/demystifying-semivc-three/bullwhip-transformation.svg)
+![Nvidia Smoothing the Bullwhip](/assets/demystifying-semivc-three/bullwhip-transformation.svg)
 
 Nvidia's spending in prepayments, commitments, and investments is what absorbs the swings until the curve is steady enough to build against. While Golden Wok's backroom piled up with materials he can't repurpose as demand evaporated, Nvidia's prepayment balance is holding steady around $4 to $5 billion even as shipments grew tenfold.
 
-![Nvidia's Prepayments](public/assets/demystifying-semivc-three/)
+![Nvidia's Prepayments](public/assets/demystifying-semivc-three/nvda-prepaid-composition.svg)
 
 
 capacity was being consumed as fast as it was reserved. A stockpile that never grows isn't a stockpile."
