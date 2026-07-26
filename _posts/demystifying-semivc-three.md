@@ -17,7 +17,7 @@ Three thousand miles away, a man in a leather jacket has the same problem. Nvidi
 
 ![Reticle Limit](/assets/demystifying-semivc-three/reticle-limit.svg)
 
-[TSMC](https://semimarketcap.com/c/tsm)'s own advanced packaging lines hit the same capacity ceiling. Only so many double-die platters can be bonded on its in-house [CoWoS](https://michaelhly.substack.com/i/206253511/cowos-chip-on-wafer-on-substrate) capacity in a given month, and Blackwell's launch blew past that number immediately. Rather than turn away the order, TSMC outsources the overflow to fellow Taiwanese assembly houses, ASE, PTI, and Amkor in the U.S., which fold and bond whatever volume TSMC's own lines can't absorb.
+To manufacture Blackwell, [TSMC](https://semimarketcap.com/c/tsm)'s advanced packaging lines hit the same capacity ceiling as the lines at Golden Wok. Only so many double-die packages can be bonded through [CoWoS](https://michaelhly.substack.com/i/206253511/cowos-chip-on-wafer-on-substrate) each month, and the hyperscalers' datacenter build-out has all the assembly lines backed up. To keep all the MAG7 customers happy, TSMC keeps the high-margin chip-to-wafer bonding in-house and offloads overflow work to fellow Taiwanese assembly houses, ASE, PTI, and Amkor in the U.S for specific substrate-assembly, testing, and legacy-packaging steps. Gamers who just want an RTX 50-series card for their PC are turned away, as every available advanced packaging slot gets prioritized for AI accelerators instead.
 
 From here, the two kitchens fail in parallel, layer by layer:
 ![CoWoS Stack](/assets/demystifying-semivc-three/cowos-stack.svg)
