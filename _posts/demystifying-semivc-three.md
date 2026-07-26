@@ -54,11 +54,13 @@ This is the accusation leveled at Nvidia. Every quarter, critics trace how many 
 
 ![Nvidia Smoothing the Bullwhip](/assets/demystifying-semivc-three/bullwhip-transformation.svg)
 
-Nvidia's spending in prepayments, commitments, and investments is what absorbs the swings until the curve is steady enough to build against. While Golden Wok's backroom piled up with materials he can't repurpose as demand evaporated, Nvidia's prepayment balance is holding steady around $4 to $5 billion even as shipments grew tenfold.
+Nvidia's spending in prepayments, commitments, and investments is what absorbs the swings until the curve is steady enough for suppliers to build against. But unlike Golden Wok's backroom, where materials piled up as demand evaporated, Nvidia's prepayment balance has held steady around $4 to $5 billion even as 
+- annual GPU shipments doubled over the course of three years
+- data center revenue grew roughly eightfold since FY2023
+- gross margins expanded from 57% into the seventies
 
 ![Nvidia's Prepayments](/assets/demystifying-semivc-three/nvda-prepaid-composition.svg)
 
-
-capacity was being consumed as fast as it was reserved. A stockpile that never grows isn't a stockpile."
+What the flat line suggests is that Nvidia's suppliers has steadily turned its prepayments into more capacity. Here, the additional output is being consumed as fast as it was reserved and that Nvidia has not accumulated a stockpile at risk of turning into dead inventory down.
 
 None of this settles the question. If AI demand proves to be Golden Wok's lunch line, every prepayment becomes my uncle's clay. But Nelson's real mistake was never paying for it. It was that he was the only one who believed. Nvidia's strategy is to make sure it is never the only one, to pay and commit until everyone believes, from the chatbot to the glass yarn. Whether that's genius or Golden Wok with better margins is still unfolding in real time. Subscribe as we turn to the other stakeholders in the value chain, the companies supplying the memory, power, and networking that make the buildout run.
