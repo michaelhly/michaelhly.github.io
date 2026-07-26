@@ -8,7 +8,7 @@ Then, eighteen months ago, a delivery app put Golden Wok on its front page when 
 
 ![Influencer Streaming at Restaurant](/assets/demystifying-semivc-three/influencer-streaming-at-restaurant.png)
 
-After going viral, my uncle did everything he could to keep up all the eager foodies who wanted to try the chicken. He hired, he prepped more, he stayed open later. And that's when he learned the real lesson of running his restaurant: **You can ramp up your own kitchen however you want. You can't ramp up your suppliers.** Over the next year and a half, that one dish failed him five times, and never once because of the chicken.
+After going viral, my uncle did everything he could to keep up all the eager foodies who wanted to try the chicken. He raised prices, he hired, he prepped more and stayed open later. And that's when he learned the real lesson of running his restaurant: **You can ramp up your own kitchen however you want. You can't ramp up your suppliers.** Over the next year and a half, that one dish failed him five times, and never once because of the chicken.
 
 ## The Assembly
 The Beggar's chicken has a maximum size, and it isn't set in the kitchen. The lotus sets it. A leaf grows as big as a leaf grows, and it needs to wrap the chicken perfectly. If too big, all the aromatics escape, and the chicken bakes dry; if too small, the stuffing leaks out and the mushrooms burn in the oven. If none of the vendors at the farmer's market sell lotus leaves with the right size, my uncle still has to find a way to serve the dish. So at MAG7 banquets, when the patrons request extra chicken, he wraps two chicken together in an oversized leaf, and serves them side by side as one platter. To keep the seams from tearing under the extra weight, Uncle Nelson has to enlist his Taiwanese cousins, who run a catering crew across town and know the double-fold that holds. His own line is already maxed out just keeping up with the singles, customers who just want soup dumplings are have to be turned away.
@@ -47,4 +47,18 @@ Nvidia's Blackwell architecture relies on the same principle. Inside the substra
 
 The most advanced cloth comes almost exclusively from a single Japanese textile mill, Nitto Boseki. When AI demand surged, there wasn't enough fabric to go around. Thus, prices jumped, and orders backed up for over a year. [Procurement teams](https://asia.nikkei.com/business/technology/tech-asia/apple-and-qualcomm-fret-over-strained-supplies-of-japan-s-glass-cloth) from billion-dollar firms all flew to Japan to plead for allocation.
 
-## The Bill
+## The Bullwhip
+After running the restaurant for over ten years, uncle Nelson had to close down Golden Wok. What killed it wasn't the debt. It was that virality is a temporary spike, not durable demand. When orders surged he paid his suppliers upfront, because the clay supplier wasn't going to triple his kiln runs on Nelson's word. Then the line outside vanished, and he was left holding paid-for capacity for customers who had moved on.
+
+This is the accusation leveled at Nvidia. Every quarter, critics trace how many Blackwells were bought with Nvidia's own money, spreading doubts about the circular, debt-adjacent, self-referential financing behind the AI buildout. OpenAI raises billions and places orders. Neoclouds borrow against chips and place orders. But the critics are looking in the wrong direction. For Nvidia to support the buildout, it must first convince its suppliers to scale. For more GPUs to exist, Ibiden, Ajinomoto, and Nitto Boseki must all expand capacity, betting exogenous demand far outside their core business. The signal cannot be the volatile front end of the bullwhip: lumpy, debt-fueled, prone to spikes like the one that killed Golden Wok.
+
+![Nvidia Smoothing the Bullwhip](public/assets/demystifying-semivc-three/bullwhip-transformation.svg)
+
+Nvidia's spending in prepayments, commitments, and investments is what absorbs the swings until the curve is steady enough to build against. While Golden Wok's backroom piled up with materials he can't repurpose as demand evaporated, Nvidia's prepayment balance is holding steady around $4 to $5 billion even as shipments grew tenfold.
+
+![Nvidia's Prepayments](public/assets/demystifying-semivc-three/)
+
+
+capacity was being consumed as fast as it was reserved. A stockpile that never grows isn't a stockpile."
+
+None of this settles the question. If AI demand proves to be Golden Wok's lunch line, every prepayment becomes my uncle's clay. But Nelson's real mistake was never paying for it. It was that he was the only one who believed. Nvidia's strategy is to make sure it is never the only one, to pay and commit until everyone believes, from the chatbot to the glass yarn. Whether that's genius or Golden Wok with better margins is still unfolding in real time. Subscribe as we turn to the other stakeholders in the value chain, the companies supplying the memory, power, and networking that make the buildout run.
