@@ -56,7 +56,7 @@ This is the accusation leveled at Nvidia. Every quarter, critics trace how many 
 
 Nvidia's spending in prepayments, commitments, and investments is what absorbs the swings until the curve is steady enough to build against. While Golden Wok's backroom piled up with materials he can't repurpose as demand evaporated, Nvidia's prepayment balance is holding steady around $4 to $5 billion even as shipments grew tenfold.
 
-![Nvidia's Prepayments](public/assets/demystifying-semivc-three/nvda-prepaid-composition.svg)
+![Nvidia's Prepayments](/assets/demystifying-semivc-three/nvda-prepaid-composition.svg)
 
 
 capacity was being consumed as fast as it was reserved. A stockpile that never grows isn't a stockpile."
