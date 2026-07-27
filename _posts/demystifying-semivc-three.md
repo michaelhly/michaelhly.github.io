@@ -29,7 +29,7 @@ Ajinomoto, the company famous for creating MSG, makes the insulating film lamina
 
 ![From MSG to ABF](/assets/demystifying-semivc-three/abf-from-msg.svg)
 
-Like Scotch tape, the Ajinomoto Build-Up Film (ABF) became the name for an entire category. It is the foundation of semiconductor chip packages, and today the entire AI build-out funnels through it. Blackwell, AMD's Helios, and every hyperscaler's custom ASIC all stand on the same layers of insulation film. No one has found a qualified substitute yet. Neither, for what it's worth, has my uncle Nelson. He and Jensen share the same supplier, and Ajinomoto seasons both the stuffing and the substrate.
+Like Scotch tape, the Ajinomoto Build-Up Film (ABF) became the name for an entire category. It is the foundation of semiconductor chip packages, and today the entire AI build-out funnels through it. Blackwell, AMD's MI400, and every hyperscaler's custom ASIC all stand on the same layers of insulation film. No one has found a qualified substitute yet. Neither, for what it's worth, has my uncle Nelson. He and Jensen share the same supplier, and Ajinomoto seasons both the stuffing and the substrate.
 
 ## The Clay
 The second failure was the clay. There was a shortage. The food-safe casing blend comes from exactly three regional suppliers, and every restaurant chasing the same viral dish was calling all three. So Uncle Nelson did something ten years of thin margins taught him to never do: <u>he prepaid</u>. After maxing out six credit cards and enrolling in seven buy now, pay later financing plans, he advanced his clay suppliers the money to produce more clay just to guarantee his allocation.
