@@ -29,7 +29,7 @@ Ajinomoto, the company famous for creating MSG, makes the insulating film lamina
 
 ![From MSG to ABF](/assets/demystifying-semivc-three/abf-from-msg.svg)
 
-Like Scotch tape, the Ajinomoto Build-Up Film (ABF) became the name for an entire category. It is the foundation of semiconductor chip packages, and today the entire AI build-out funnels through it. Blackwell, AMD's MI400, and every hyperscaler's custom ASIC all stand on the same layers of insulation film. No one has found a qualified substitute yet. Neither, for what it's worth, has my uncle Nelson. He and Jensen share the same supplier, and Ajinomoto seasons both the stuffing and the substrate.
+Like Scotch tape, the Ajinomoto Build-Up Film (ABF) became the name for an entire category. It is the foundation of semiconductor chip packages, and today the entire AI build-out funnels through it. Blackwell, AMD's MI400, and every hyperscaler's custom ASIC all stand on the same layers of insulation film. No one has found a qualified substitute yet. Neither, for what it's worth, has my uncle Nelson. The two Huangs share the same supplier, and Ajinomoto seasons both the stuffing and the substrate.
 
 ## The Clay
 The second failure was the clay shortage. The food-safe casing blend comes from exactly three regional suppliers, and every restaurant chasing the same viral dish was calling all three. So Uncle Nelson did something ten years of thin margins taught him to never do: <b>he prepaid</b>. After maxing out six credit cards and enrolling in seven buy now, pay later plans, he advanced his clay suppliers the money to produce more clay just to guarantee his allocation.
@@ -45,7 +45,7 @@ Nvidia's Blackwell architecture relies on the same principle. Inside the substra
 
 ![CTE Comparison](/assets/demystifying-semivc-three/cte-comparison.svg)
 
-The most advanced cloth comes almost exclusively from a single Japanese textile mill, [Nitto Boseki](https://semimarketcap.com/c/3110.T). When AI demand surged, there wasn't enough fabric to go around. Thus, prices jumped, and orders backed up for over a year. [Procurement teams](https://asia.nikkei.com/business/technology/tech-asia/apple-and-qualcomm-fret-over-strained-supplies-of-japan-s-glass-cloth) from billion-dollar firms all flew to Japan to plead for allocation.
+The most advanced cloth comes almost exclusively from a single Japanese textile mill, [Nitto Boseki](https://semimarketcap.com/c/3110.T). When AI demand surged, there wasn't enough fabric to go around. Prices jumped, and orders backed up for over a year. [Procurement teams](https://asia.nikkei.com/business/technology/tech-asia/apple-and-qualcomm-fret-over-strained-supplies-of-japan-s-glass-cloth) from billion-dollar firms all flew to Japan to plead for allocation.
 
 ## The Bullwhip Effect
 After running the restaurant for over ten years, my uncle had to close down Golden Wok. The viral rush worked its way backward through the supply chain. Suppliers raised their bulk minimums to justify investments needed for new production, and by the time the order reached the straw weaver, a month of viral demand looked like the new normal. Uncle Nelson prepaid at the top of that curve. Then the video cycled out of everyone's feed and the delivery app's orders shrank back to a quarter of the peak, right where they had always been. However, the clay and straws Uncle Nelson had bought kept arriving on schedule and he wasn't able to repurpose the materials for another dish. Only then did the other half of the bullwhip show up, the half nobody warned him about.
@@ -60,7 +60,5 @@ Nvidia's spending in prepayments, commitments, and investments is what absorbs t
 - gross margins expanded from 57% into the seventies
 
 ![Nvidia's Prepayments](/assets/demystifying-semivc-three/nvda-prepaid-composition.svg)
-
-The flat spending suggests that Nvidia's suppliers have steadily turned those prepayments into more capacity. Here, the additional output is being consumed as fast as it was reserved, and Nvidia has not accumulated a stockpile at risk of turning into dead inventory.
 
 The concern itself is legitimate. If AI demand fizzles out like the reservations and delivery orders for the Beggar's chicken, then every prepayment becomes the straws and clay my uncle had bought. But the critics tracing circular financing are watching the wrong end of the whip. Uncle Nelson's mistake was not prepaying for supplies. It was betting on the viral success of his Beggar's chicken by himself. Nvidia's strategy is to introduce artificial intelligence into everyone's lives, from consumers to enterprises alike. To do that, the man in the leather jacket is willing to build up all [five layers of the AI stack](https://blogs.nvidia.com/blog/ai-5-layer-cake/), and that means backstopping OpenAI and the neoclouds, courting China, and [arming open-weight enthusiasts](https://x.com/JensenHuang/status/2080643682408321103). Every prepayment and investment turns his bet into someone else's contract, from the chatbot all the way to the glass yarn. But if supply ultimately outruns demand, someone along the chain will be caught by the bullwhip's snap and meet the same fate as Golden Wok.
