@@ -1,0 +1,64 @@
+<svg width="100%" viewBox="0 0 680 623" role="img" xmlns="http://www.w3.org/2000/svg" font-family="&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif">
+<title>Timeline: how Ajinomoto Build-up Film came out of the MSG seasoning line</title>
+<desc>A vertical timeline on a single rail. The seasoning era, in coral: 1908, Kikunae Ikeda traces the taste of kombu broth to glutamic acid; 1909, AJI-NO-MOTO umami seasoning goes on sale, Ajinomoto crystallizing that glutamic acid into MSG; 1956, molasses and starch are fed to bacteria that excrete glutamic acid at scale, leaving co-products such as amino-acid-rich fermentation liquor and chlorinated paraffin. The rail changes color at a marker, and the semiconductor era continues in teal: 1970s, the Ajinomoto Group begins basic R&amp;D on applications of amino acid chemistry to epoxy resins and their composites, and finds that chlorinated paraffin blended into resin is an unusually good electrical insulator; 1996, Intel approaches Ajinomoto about developing a film-type insulator using amino acid technology; 1999, ABF ships in Intel's Pentium III, which became the highest-volume CPU on the market within two quarters.</desc>
+
+<rect x="0" y="0" width="680" height="623" fill="#ffffff"/>
+
+<!-- ===================== TITLE ===================== -->
+<text x="32" y="38" font-size="16" font-weight="600" fill="#0b0b0b">From Umami to Substrate</text>
+<text x="32" y="60" font-size="11.5" font-weight="400" fill="#89877f" letter-spacing="0.6">HOW A SEASONING CO-PRODUCT BECAME THE FILM UNDER EVERY AI CHIP</text>
+
+<!-- ===================== RAIL ===================== -->
+<line x1="150" y1="120" x2="150" y2="312" stroke="#E3C4B8" stroke-width="2.5"/>
+<line x1="150" y1="312" x2="150" y2="534" stroke="#9FD2C1" stroke-width="2.5"/>
+
+<!-- ===================== ERA 1 : seasoning ===================== -->
+<text x="178" y="110" font-size="9.5" font-weight="600" fill="#993C1D" letter-spacing="0.9">THE SEASONING LINE</text>
+
+<circle cx="150" cy="132" r="5" fill="#993C1D" stroke="#ffffff" stroke-width="2"/>
+<text x="132" y="136" text-anchor="end" font-size="11" font-weight="600" fill="#993C1D">1908</text>
+<text x="178" y="136" font-size="12" font-weight="600" fill="#0b0b0b">Umami is isolated</text>
+<text x="178" y="153" font-size="10.4" fill="#3d3b37">Kikunae Ikeda traces the taste of kombu broth to one compound: glutamic acid.</text>
+
+<circle cx="150" cy="190" r="5" fill="#993C1D" stroke="#ffffff" stroke-width="2"/>
+<text x="132" y="194" text-anchor="end" font-size="11" font-weight="600" fill="#993C1D">1909</text>
+<text x="178" y="194" font-size="12" font-weight="600" fill="#0b0b0b">AJI-NO-MOTO umami seasoning goes on sale</text>
+<text x="178" y="211" font-size="10.4" fill="#3d3b37">Ajinomoto crystallizes that glutamic acid into MSG and sells it as seasoning.</text>
+
+<circle cx="150" cy="248" r="5" fill="#993C1D" stroke="#ffffff" stroke-width="2"/>
+<text x="132" y="252" text-anchor="end" font-size="11" font-weight="600" fill="#993C1D">1956</text>
+<text x="178" y="252" font-size="12" font-weight="600" fill="#0b0b0b">Fermentation at industrial scale</text>
+<text x="178" y="269" font-size="10.4" fill="#3d3b37">Molasses and starch are fed to bacteria that excrete glutamic acid at scale, leaving</text>
+<text x="178" y="283" font-size="10.4" fill="#3d3b37">co-products such as amino-acid-rich fermentation liquor and chlorinated paraffin.</text>
+
+<!-- ===================== THE HAND-OFF ===================== -->
+<path d="M150 304 L158 312 L150 320 L142 312 Z" fill="#7F77DD" stroke="#ffffff" stroke-width="2"/>
+
+<!-- ===================== ERA 2 : semiconductor ===================== -->
+<text x="178" y="336" font-size="9.5" font-weight="600" fill="#15806a" letter-spacing="0.9">THE SEMICONDUCTOR LINE</text>
+
+<circle cx="150" cy="358" r="5" fill="#15806a" stroke="#ffffff" stroke-width="2"/>
+<text x="132" y="362" text-anchor="end" font-size="11" font-weight="600" fill="#15806a">1970s</text>
+<text x="178" y="362" font-size="12" font-weight="600" fill="#0b0b0b">R&amp;D on amino acid chemistry</text>
+<text x="178" y="379" font-size="10.4" fill="#3d3b37">The Ajinomoto Group begins R&amp;D on applications of amino acid chemistry to</text>
+<text x="178" y="393" font-size="10.4" fill="#3d3b37">epoxy resins and their composites. Blended into resin, chlorinated paraffin proves</text>
+<text x="178" y="407" font-size="10.4" fill="#3d3b37">an unusually good electrical insulator, the property ABF would later sell on.</text>
+
+<circle cx="150" cy="444" r="5" fill="#15806a" stroke="#ffffff" stroke-width="2"/>
+<text x="132" y="448" text-anchor="end" font-size="11" font-weight="600" fill="#15806a">1996</text>
+<text x="178" y="448" font-size="12" font-weight="600" fill="#0b0b0b">Intel approaches Ajinomoto</text>
+<text x="178" y="465" font-size="10.4" fill="#3d3b37">Intel approaches Ajinomoto about developing a film-type insulator</text>
+<text x="178" y="479" font-size="10.4" fill="#3d3b37">using amino acid technology.</text>
+
+<circle cx="150" cy="516" r="5" fill="#15806a" stroke="#ffffff" stroke-width="2"/>
+<text x="132" y="520" text-anchor="end" font-size="11" font-weight="600" fill="#15806a">1999</text>
+<text x="178" y="520" font-size="12" font-weight="600" fill="#0b0b0b">ABF ships in Intel's Pentium III</text>
+<text x="178" y="537" font-size="10.4" fill="#3d3b37">The Pentium III became the highest-volume CPU on the market within two quarters,</text>
+<text x="178" y="551" font-size="10.4" fill="#3d3b37">taking ABF into mass production.</text>
+
+<!-- ===================== SOURCES ===================== -->
+<g font-size="9.5" fill="#89877f">
+<text x="32" y="597">Ajinomoto Group, “Ajinomoto Build-up Film (ABF)” and “Sprinting a marathon” — 1970s research, a 1996 request, adoption in 1999.</text>
+<text x="32" y="610">Ajinomoto's own account says “a CPU maker approached the Group”; trade coverage names Intel and the Pentium III.</text>
+</g>
+</svg>
