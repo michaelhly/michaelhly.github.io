@@ -39,9 +39,9 @@ Jensen's clay is the substrate, a layered slab of fiberglass-reinforced resin th
 ![ABF Market Share](/assets/demystifying-semivc-three/abf-market-share-ibiden.svg)
 
 ## The Rice Straws
-The third call was about the rice straws, delayed with no arrival date, and it was, quite literally, the straw that nearly broke my uncle's back. Uncle always said the secret to a good Beggar's chicken was a sturdy pack of straws. He followed the tradition his grandfather taught him, in which the straws bound the lotus-wrapped bird and held every seam tight while he packed mud all over to make a smooth grey egg. The hidden fiber kept the clay from cracking as it shrank in the heat.
+The third call was about the rice straws, delayed with no arrival date, and it was, quite literally, the straw that nearly broke my uncle's back. Uncle always said the secret to a good Beggar's chicken was a sturdy pack of straws. He followed the tradition his grandfather taught him, where the straws tied the lotus-wrapped bird, tightening every seam while he packed mud all over to make a smooth grey egg. The hidden fiber kept the clay from cracking as it shrank in the heat.
 
-Nvidia's Blackwell architecture relies on the same principle. Inside the substrate beneath each chip, woven glass fiber, specifically T-glass, holds brittle laminate together through the heat of assembly and the stress of thermal cycling.
+Nvidia's Blackwell architecture relies on the same principle. Inside the substrate beneath each chip, woven glass fiber, specifically T-glass, holds brittle laminate together through the heat of assembly and the stress of thermal cycling. Woven into the substrate's core, the cloth reinforces the very material that encases it.
 
 ![CTE Comparison](/assets/demystifying-semivc-three/cte-comparison.svg)
 
