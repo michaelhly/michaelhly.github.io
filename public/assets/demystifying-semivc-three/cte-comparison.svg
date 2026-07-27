@@ -2,7 +2,7 @@
 <title>Only T-glass expands at silicon's pace</title>
 <desc>Horizontal bars showing thermal expansion in parts per million per degree Celsius: silicon 2.6, T-glass 2.8 highlighted in blue, standard E-glass 5.5, copper 17, and epoxy resin about 55. A shaded band labelled match zone marks where a material grows at silicon's rate; only T-glass falls inside it.</desc>
 
-<rect x="0" y="0" width="680" height="284" fill="#ffffff"/>
+<rect x="0" y="0" width="680" height="284" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
 
 <!-- ===================== TITLE ===================== -->
 <text x="40" y="28" font-size="16" font-weight="600" fill="#0b0b0b">Only T-glass expands at silicon's pace</text>

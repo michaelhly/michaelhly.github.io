@@ -6,7 +6,7 @@
 <line x1="0" y1="0" x2="0" y2="8" stroke="#993C1D" stroke-width="1.2" opacity="0.55"/>
 </pattern>
 </defs>
-<rect x="0" y="0" width="680" height="234" fill="#ffffff"/>
+<rect x="0" y="0" width="680" height="234" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
 <g transform="translate(0,-24)">
 
 <!-- divider -->

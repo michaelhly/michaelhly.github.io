@@ -2,7 +2,7 @@
 <title>Timeline: how Ajinomoto Build-up Film came out of the MSG seasoning line</title>
 <desc>A vertical timeline on a single rail. The seasoning era, in coral: 1908, Kikunae Ikeda traces the taste of kombu broth to glutamic acid; 1909, AJI-NO-MOTO umami seasoning goes on sale, Ajinomoto crystallizing that glutamic acid into MSG; 1956, molasses and starch are fed to bacteria that excrete glutamic acid at scale, leaving co-products such as amino-acid-rich fermentation liquor and chlorinated paraffin. The rail changes color at a marker, and the semiconductor era continues in teal: 1970s, the Ajinomoto Group begins basic R&amp;D on applications of amino acid chemistry to epoxy resins and their composites, and finds that chlorinated paraffin blended into resin is an unusually good electrical insulator; 1996, Intel approaches Ajinomoto about developing a film-type insulator using amino acid technology; 1999, ABF ships in Intel's Pentium III, which became the highest-volume CPU on the market within two quarters.</desc>
 
-<rect x="0" y="0" width="680" height="623" fill="#ffffff"/>
+<rect x="0" y="0" width="680" height="623" rx="16" fill="#EBEDF2" stroke="#E2E3E8" stroke-width="1"/>
 
 <!-- ===================== TITLE ===================== -->
 <text x="32" y="38" font-size="16" font-weight="600" fill="#0b0b0b">From Umami to Substrate</text>
