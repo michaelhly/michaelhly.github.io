@@ -247,10 +247,10 @@
     <text class="block-title clean-text" x="100" y="36" text-anchor="middle">Clean bits out</text>
     <text class="block-subtitle" x="100" y="58" text-anchor="middle">Ready for laser driver</text>
 
-    <path d="M36 84 V122 M32 84 H40 M32 122 H40" stroke="#8fb3a7" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-    <text class="tiny clean-text" x="24" y="88" text-anchor="middle">1</text>
-    <text class="tiny clean-text" x="24" y="126" text-anchor="middle">0</text>
-    <path class="wave-clean" d="M48 122 V84 H70 V122 H92 V84 H114 V122 H136 V84 H158 V122 H180"/>
+    <path d="M36 100 V138 M32 100 H40 M32 138 H40" stroke="#8fb3a7" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <text class="tiny clean-text" x="24" y="104" text-anchor="middle">1</text>
+    <text class="tiny clean-text" x="24" y="142" text-anchor="middle">0</text>
+    <path class="wave-clean" d="M48 138 V100 H70 V138 H92 V100 H114 V138 H136 V100 H158 V138 H180"/>
     <text class="label" x="100" y="184" text-anchor="middle">clear zeros and ones</text>
   </g>
 
