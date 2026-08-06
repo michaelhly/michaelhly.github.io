@@ -207,28 +207,28 @@
     <text class="block-subtitle" x="208" y="57" text-anchor="middle">rebuilds the bit stream before optical conversion</text>
 
     <g transform="translate(24 88)">
-      <rect class="active-box" x="0" y="0" width="112" height="88" rx="10"/>
-      <text class="step-title active-text" x="56" y="27" text-anchor="middle">1. Reshape</text>
-      <text class="step-copy" x="56" y="50" text-anchor="middle">undo board</text>
-      <text class="step-copy" x="56" y="66" text-anchor="middle">smear</text>
+      <rect class="active-box" x="0" y="0" width="108" height="88" rx="10"/>
+      <text class="step-title active-text" x="54" y="27" text-anchor="middle">1. Reshape</text>
+      <text class="step-copy" x="54" y="50" text-anchor="middle">undo board</text>
+      <text class="step-copy" x="54" y="66" text-anchor="middle">smear</text>
     </g>
 
-    <path class="flow-neutral" d="M148 132 H176"/>
+    <path class="flow-neutral" d="M140 132 H160"/>
 
-    <g transform="translate(180 88)">
-      <rect class="active-box" x="0" y="0" width="112" height="88" rx="10"/>
-      <text class="step-title active-text" x="56" y="27" text-anchor="middle">2. Find timing</text>
-      <text class="step-copy" x="56" y="50" text-anchor="middle">line samples</text>
-      <text class="step-copy" x="56" y="66" text-anchor="middle">with bit slots</text>
+    <g transform="translate(164 88)">
+      <rect class="active-box" x="0" y="0" width="108" height="88" rx="10"/>
+      <text class="step-title active-text" x="54" y="27" text-anchor="middle">2. Find timing</text>
+      <text class="step-copy" x="54" y="50" text-anchor="middle">line samples</text>
+      <text class="step-copy" x="54" y="66" text-anchor="middle">with bit slots</text>
     </g>
 
-    <path class="flow-neutral" d="M304 132 H332"/>
+    <path class="flow-neutral" d="M280 132 H300"/>
 
-    <g transform="translate(336 88)">
-      <rect class="active-box" x="0" y="0" width="56" height="88" rx="10"/>
-      <text class="step-title active-text" x="28" y="27" text-anchor="middle">3.</text>
-      <text class="step-copy" x="28" y="50" text-anchor="middle">pick</text>
-      <text class="step-copy" x="28" y="66" text-anchor="middle">0/1</text>
+    <g transform="translate(304 88)">
+      <rect class="active-box" x="0" y="0" width="88" height="88" rx="10"/>
+      <text class="step-title active-text" x="44" y="27" text-anchor="middle">3. Decide</text>
+      <text class="step-copy" x="44" y="50" text-anchor="middle">pick</text>
+      <text class="step-copy" x="44" y="66" text-anchor="middle">0 or 1</text>
     </g>
 
     <g transform="translate(52 208)">
@@ -254,5 +254,5 @@
     <text class="label" x="100" y="184" text-anchor="middle">clear zeros and ones</text>
   </g>
 
-  <text class="label" x="550" y="566" text-anchor="middle">The digital signal processor does not make the link passive. It burns power to recover a clean digital stream from a degraded electrical one.</text>
+  <text class="label" x="550" y="566" text-anchor="middle">This rebuilding never stops. It is why the cleanup chip can burn five of the module's thirteen watts.</text>
 </svg>
