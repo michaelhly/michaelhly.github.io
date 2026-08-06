@@ -187,7 +187,7 @@
   <g transform="translate(92 226)">
     <rect class="muted-box" x="0" y="0" width="190" height="210" rx="14"/>
     <text class="block-title" x="95" y="36" text-anchor="middle">Board signal</text>
-    <text class="block-subtitle" x="95" y="58" text-anchor="middle">smeared and faint</text>
+    <text class="block-subtitle" x="95" y="58" text-anchor="middle">Smeared and faint</text>
 
     <path class="threshold" d="M28 126 H162"/>
     <path class="wave-faint" d="M28 126 C42 78, 56 174, 70 126 S98 78, 112 126 S140 174, 154 126"/>
@@ -204,7 +204,7 @@
   <g transform="translate(342 194)">
     <rect class="chip" x="0" y="0" width="416" height="274" rx="16"/>
     <text class="block-title" x="208" y="35" text-anchor="middle">Digital signal processor</text>
-    <text class="block-subtitle" x="208" y="57" text-anchor="middle">rebuilds the bit stream before optical conversion</text>
+    <text class="block-subtitle" x="208" y="57" text-anchor="middle">Rebuilds the bit stream before optical conversion</text>
 
     <g transform="translate(24 88)">
       <rect class="active-box" x="0" y="0" width="108" height="88" rx="10"/>
@@ -245,7 +245,7 @@
   <g transform="translate(808 226)">
     <rect class="clean-box" x="0" y="0" width="200" height="210" rx="14"/>
     <text class="block-title clean-text" x="100" y="36" text-anchor="middle">Clean bits out</text>
-    <text class="block-subtitle" x="100" y="58" text-anchor="middle">ready for laser driver</text>
+    <text class="block-subtitle" x="100" y="58" text-anchor="middle">Ready for laser driver</text>
 
     <path d="M36 84 V122 M32 84 H40 M32 122 H40" stroke="#8fb3a7" stroke-width="1.4" fill="none" stroke-linecap="round"/>
     <text class="tiny clean-text" x="24" y="88" text-anchor="middle">1</text>
