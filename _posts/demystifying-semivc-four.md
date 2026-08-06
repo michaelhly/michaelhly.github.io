@@ -18,4 +18,4 @@ For over a decade, silicon photonics demos looked like Patrick Mahomes's college
 ## The Game Manager's Secret
 So why is copper reliable? The answer is simple. A passive copper link is just a piece of metal. There is no laser to degrade, no modulator to drift, nothing inside the cable to wear out or overheat. Its failure modes are predictable and easy for the engineer to catch while building the server rack. And like most game managers, copper comes without a premium. Moving a bit over copper costs a fraction of the power and money of moving it over optics, because the data never has to change form from electrons to photons and back. Copper gets no fanfare for making the short checkdowns that move the ball. But the short links keep the data moving, and nothing gets dropped.
 
-[Copper vs. Optic Links](/assets/demystifying-semivc-four/copper-vs-optical-link-anatomy.svg)
+![Copper vs. Optic Links](/assets/demystifying-semivc-four/copper-vs-optical-link-anatomy.svg)
