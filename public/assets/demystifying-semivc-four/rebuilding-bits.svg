@@ -254,6 +254,6 @@
     <text class="label" x="100" y="184" text-anchor="middle">clear zeros and ones</text>
   </g>
 
-  <text class="label" x="550" y="560" text-anchor="middle">•  The cleanup chip alone burns nearly half the module's power, six to seven watts in an 800G transceiver</text>
-  <text class="label" x="550" y="584" text-anchor="middle">•  Across an 18K GPU cluster, cleanup chips draw about 480 kW, roughly 1.8 kW per server rack</text>
+  <text class="label" x="550" y="560" text-anchor="middle">•  The DSP alone burns nearly half the module's power, six to seven watts in an 800G transceiver</text>
+  <text class="label" x="550" y="584" text-anchor="middle">•  Across an 18K GPU cluster, DSPs draw about 480 kW, roughly 1.8 kW per server rack</text>
 </svg>
