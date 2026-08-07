@@ -263,6 +263,10 @@
       <text class="path-label passive-text" x="544" y="84" text-anchor="middle">electrons stay electrons</text>
       <path class="signal-neutral" d="M176 132 H208"/>
       <path class="signal-neutral" d="M880 132 H912"/>
+      <path d="M200 183 V197 M888 183 V197" stroke="#13916f" stroke-width="1.4" opacity="0.7" stroke-linecap="round"/>
+      <path d="M200 190 H448" stroke="#13916f" stroke-width="1.4" opacity="0.7"/>
+      <path d="M640 190 H888" stroke="#13916f" stroke-width="1.4" opacity="0.7"/>
+      <text class="small-label passive-text" x="544" y="194" text-anchor="middle">short rack reach, ~1-3 m</text>
     </g>
   </g>
 
@@ -313,6 +317,9 @@
       <circle cx="20" cy="58" r="9" fill="#e8f5ff" stroke="#1677bd" stroke-width="2"/>
       <circle cx="126" cy="58" r="9" fill="#e8f5ff" stroke="#1677bd" stroke-width="2"/>
       <text class="micro-label" x="73" y="83" text-anchor="middle">light through glass</text>
+      <path d="M6 112 V124 M140 112 V124" stroke="#1677bd" stroke-width="1.4" opacity="0.65" stroke-linecap="round"/>
+      <path d="M6 118 H140" stroke="#1677bd" stroke-width="1.4" opacity="0.65"/>
+      <text class="micro-label fiber-text" x="73" y="137" text-anchor="middle">50 m to 2 km, depending on optic</text>
     </g>
 
     <path class="signal-optical" d="M660 154 H694"/>
@@ -342,7 +349,7 @@
     </g>
 
     <g transform="translate(48 276)">
-      <text class="small-label" x="0" y="0">Optical links add board-trace signal loss, powered cleanup chips, heat, aging lasers, and connector cleanliness.</text>
+      <text class="small-label" x="0" y="0">Optical links add board-trace signal loss, powered cleanup chips, heat, aging lasers, and dust-sensitive connectors.</text>
     </g>
   </g>
 
