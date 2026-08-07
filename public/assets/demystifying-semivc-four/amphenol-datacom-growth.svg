@@ -1,0 +1,120 @@
+<svg width="1100" height="620" viewBox="0 0 1100 620" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Amphenol's Growth</title>
+  <desc>
+    A bar chart of Amphenol's IT datacom sales for 2023, 2024, and 2025, showing growth from about 2.4 billion dollars to about 8.3 billion dollars as the segment rose from 19 percent to 36 percent of company net sales.
+  </desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-8%" y="-12%" width="116%" height="132%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <style>
+    svg {
+      background: #f7f9fc;
+      color: #172033;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    .page-bg {
+      fill: #f7f9fc;
+    }
+
+    .title {
+      fill: #111827;
+      font-size: 34px;
+      font-weight: 760;
+    }
+
+    .subtitle {
+      fill: #596272;
+      font-size: 16px;
+      font-weight: 450;
+    }
+
+    .eyebrow {
+      fill: #596272;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .panel {
+      fill: #ffffff;
+      stroke: #d8dde7;
+      stroke-width: 1.2;
+      filter: url(#soft-shadow);
+    }
+
+    .bar {
+      fill: #b86f2f;
+    }
+
+    .baseline {
+      stroke: #aeb7c6;
+      stroke-width: 1.4;
+    }
+
+    .bar-value {
+      fill: #202938;
+      font-size: 19px;
+      font-weight: 740;
+    }
+
+    .bar-year {
+      fill: #253044;
+      font-size: 15px;
+      font-weight: 720;
+    }
+
+    .bar-share {
+      fill: #667085;
+      font-size: 12px;
+      font-weight: 560;
+    }
+
+    .plot-label {
+      fill: #6b7280;
+      font-size: 11px;
+      font-weight: 620;
+    }
+
+    .footnote {
+      fill: #6b7280;
+      font-size: 11px;
+      font-weight: 520;
+    }
+  </style>
+
+  <rect class="page-bg" width="1100" height="620"/>
+
+  <text class="eyebrow" x="70" y="54">HOLDING THE COPPER WIRE</text>
+  <text class="title" x="70" y="92">Amphenol's Growth</text>
+  <text class="subtitle" x="70" y="122">Copper-linked AI racks more than tripled Amphenol's IT datacom business in two years.</text>
+
+  <rect class="panel" x="56" y="156" width="988" height="372" rx="18"/>
+
+  <text class="plot-label" x="230" y="206">Implied IT Datacom Sales</text>
+
+  <g>
+    <path class="bar" d="M260 462 L260 397 Q260 393 264 393 L396 393 Q400 393 400 397 L400 462 Z"/>
+    <text class="bar-value" x="330" y="379" text-anchor="middle">~$2.4B</text>
+    <text class="bar-year" x="330" y="492" text-anchor="middle">2023</text>
+    <text class="bar-share" x="330" y="512" text-anchor="middle">19% of sales</text>
+
+    <path class="bar" d="M480 462 L480 359 Q480 355 484 355 L616 355 Q620 355 620 359 L620 462 Z"/>
+    <text class="bar-value" x="550" y="341" text-anchor="middle">~$3.7B</text>
+    <text class="bar-year" x="550" y="492" text-anchor="middle">2024</text>
+    <text class="bar-share" x="550" y="512" text-anchor="middle">24% of sales</text>
+
+    <path class="bar" d="M700 462 L700 226 Q700 222 704 222 L836 222 Q840 222 840 226 L840 462 Z"/>
+    <text class="bar-value" x="770" y="208" text-anchor="middle">~$8.3B</text>
+    <text class="bar-year" x="770" y="492" text-anchor="middle">2025</text>
+    <text class="bar-share" x="770" y="512" text-anchor="middle">36% of sales</text>
+
+    <path class="baseline" d="M230 462 H880"/>
+  </g>
+
+  <text class="footnote" x="550" y="572" text-anchor="middle">Dollar figures implied by the IT datacom share of net sales disclosed in Amphenol 10-K filings.</text>
+</svg>
