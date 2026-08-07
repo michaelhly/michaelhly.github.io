@@ -25,3 +25,14 @@ An optical link is complicated. At each end of every fiber-optic cable sits a sm
 ![Rebuilding Bits](/assets/demystifying-semivc-four/rebuilding-bits.svg)
 
 Nvidia initially planned an [optical 256 GPU scale-up](https://newsletter.semianalysis.com/i/175661160/nvlink-scale-up-interconnect) for the H100 generation and [quietly shelved it](https://pytorchtoatoms.substack.com/p/why-dgx-h100-nvl256-never-shipped) due to the cost, power, and latency of running high-bandwidth scale-up over pluggable optics. A GPU's scale-up links carry roughly nine times the bandwidth of its scale-out network, and delivering that over transceivers would have been ruinously expensive in both dollars and watts, before even asking whether that many plugs could fit on the front of the server. So when AI models outgrew the 8 GPU server, Nvidia followed the old adage to <i>use copper where you can, optics where you must </i>. The GB200 packed all 72 GPUs and their switches into a single liquid-cooled rack, keeping every link inside copper's two meter reach.
+
+Here we compare the GB200's NVLink interconnect system in rack in copper and in optics, side by side:
+
+| | With Copper | With Optics |
+|---|---|---|
+| **Hardware** | 5,184 copper cables, one per differential pair (72 DPs per GPU × 72 GPUs) | 648 1.6T twin-port transceivers per NVL72 rack |
+| **Power** | Passive, no meaningful added draw | ~30W per transceiver ≈ 19.4kW extra per rack |
+| **Cost (BoM)** |  $3k/GPU ($216k/rack) | ~$850 per transceiver → $550,800 per rack in transceivers alone |
+| **Reliability** | ~2 FIT (failures per billion device-hours) | ~1,000–2,000 FIT |
+| **Reach** | ~1-3 m, enough to stay inside one rack (NVL72) | 50 m to 2 km, enough to cross racks and rows (NVL576's L1-to-L2 links) |
+
