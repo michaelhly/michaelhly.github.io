@@ -40,3 +40,7 @@ Nvidia's decision to go with the game manager paid dividends not just for Nvidia
 
 ![Amphenol IT Datacom Growth](/assets/demystifying-semivc-four/amphenol-datacom-growth.svg)
 
+## The Succession Plan 
+Andy Reid built the Chiefs' offense around Alex Smith's strengths, emphasizing easy completions and yards after the catch. By scheming short, quick throws on first down, Reid shrank the field for the quarterback and let the Chiefs' playmakers generate extra yards to move the chains. Smith then became a mentor for Patrick Mahomes, who spent his rookie season learning Reid's system and absorbing Smith's methodical approach to reading defenses and managing the game. When Mahomes took over the following season, he immediately turned those lessons into an MVP campaign.
+
+
