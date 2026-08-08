@@ -1,0 +1,180 @@
+<svg width="1100" height="850" viewBox="0 0 1100 850" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>What $70 Billion Asks For</title>
+  <desc>
+    Two panels. The first compares Lumentum's fiscal 2024 revenue of about 1.4 billion dollars and fiscal 2026 revenue of about 3 billion dollars against the 17 to 23 billion dollars of annual revenue implied by a 70 billion dollar valuation, a six to sevenfold ramp. The second shows the present value of an identical stream of cash flows falling from 100 percent to 91, 83, and 75 percent as its arrival slips from 2027 to 2030 at a 10 percent discount rate.
+  </desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-8%" y="-12%" width="116%" height="132%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <style>
+    svg {
+      background: #f7f9fc;
+      color: #172033;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    .page-bg {
+      fill: #f7f9fc;
+    }
+
+    .title {
+      fill: #111827;
+      font-size: 34px;
+      font-weight: 760;
+    }
+
+    .subtitle {
+      fill: #596272;
+      font-size: 16px;
+      font-weight: 450;
+    }
+
+    .eyebrow {
+      fill: #596272;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .panel {
+      fill: #ffffff;
+      stroke: #d8dde7;
+      stroke-width: 1.2;
+      filter: url(#soft-shadow);
+    }
+
+    .bar {
+      fill: #b86f2f;
+    }
+
+    .bar-implied {
+      fill: #fff3d6;
+      stroke: #c68116;
+      stroke-width: 1.6;
+      stroke-dasharray: 7 5;
+    }
+
+    .bar-ghost {
+      fill: #e8ebf1;
+    }
+
+    .baseline {
+      stroke: #aeb7c6;
+      stroke-width: 1.4;
+    }
+
+    .tick {
+      stroke: #c68116;
+      stroke-width: 1.2;
+      stroke-dasharray: 4 4;
+      opacity: 0.75;
+    }
+
+    .bar-value {
+      fill: #202938;
+      font-size: 19px;
+      font-weight: 740;
+    }
+
+    .bar-year {
+      fill: #253044;
+      font-size: 15px;
+      font-weight: 720;
+    }
+
+    .bar-share {
+      fill: #667085;
+      font-size: 12px;
+      font-weight: 560;
+    }
+
+    .plot-label {
+      fill: #6b7280;
+      font-size: 11px;
+      font-weight: 620;
+    }
+
+    .callout {
+      fill: #8b5610;
+      font-size: 13px;
+      font-weight: 680;
+    }
+
+    .footnote {
+      fill: #6b7280;
+      font-size: 11px;
+      font-weight: 520;
+    }
+  </style>
+
+  <rect class="page-bg" width="1100" height="850"/>
+
+  <text class="eyebrow" x="70" y="54">WHAT THE PRICE ASSUMES</text>
+  <text class="title" x="70" y="92">What Lumentum's Price Asks For</text>
+  <text class="subtitle" x="70" y="122">A $70 billion valuation needs a sixfold ramp, and it gives back a sixth of its value for every two years the handoff slips.</text>
+
+  <!-- Panel A: the implied ramp -->
+  <rect class="panel" x="56" y="156" width="988" height="316" rx="18"/>
+
+  <text class="plot-label" x="90" y="196">LUMENTUM: ANNUAL REVENUE IMPLIED BY A $70B FULLY DILUTED VALUE</text>
+
+  <g>
+    <text class="bar-year" x="286" y="248" text-anchor="end">Fiscal 2024</text>
+    <rect class="bar" x="300" y="226" width="35" height="32" rx="4"/>
+    <text class="bar-value" x="351" y="249">$1.4B</text>
+    <text class="bar-share" x="425" y="249">and a $546M loss</text>
+
+    <text class="bar-year" x="286" y="298" text-anchor="end">Fiscal 2026</text>
+    <rect class="bar" x="300" y="276" width="78" height="32" rx="4"/>
+    <text class="bar-value" x="394" y="299">$3.0B</text>
+    <text class="bar-share" x="464" y="299">32% operating margin, held for one quarter</text>
+
+    <text class="bar-year" x="286" y="348" text-anchor="end">What the price needs</text>
+    <rect class="bar-implied" x="300" y="326" width="594" height="32" rx="4"/>
+    <path class="tick" d="M739 322 V368"/>
+    <text class="bar-share" x="739" y="384" text-anchor="middle">$17B</text>
+    <text class="bar-share" x="894" y="384" text-anchor="middle">$23B</text>
+    <text class="bar-value" x="910" y="349">$17B to $23B</text>
+
+    <path class="baseline" d="M300 216 V362"/>
+    <text class="callout" x="300" y="410">Six to seven times today, at margins the company has held for exactly one quarter.</text>
+  </g>
+
+  <text class="footnote" x="550" y="450" text-anchor="middle">Implied revenue is a back-of-envelope figure assuming a 5% terminal cash yield and a 15-20% free cash flow margin on a $70B fully diluted value.</text>
+
+  <!-- Panel B: the cost of a late handoff -->
+  <rect class="panel" x="56" y="498" width="988" height="300" rx="18"/>
+
+  <text class="plot-label" x="90" y="538">PRESENT VALUE OF THE SAME CASH FLOWS, BY THE YEAR THEY ARRIVE</text>
+
+  <g>
+    <text class="bar-year" x="286" y="585" text-anchor="end">2027</text>
+    <rect class="bar-ghost" x="300" y="566" width="480" height="26" rx="4"/>
+    <rect class="bar" x="300" y="566" width="480" height="26" rx="4"/>
+    <text class="bar-value" x="796" y="586">100%</text>
+
+    <text class="bar-year" x="286" y="623" text-anchor="end">2028</text>
+    <rect class="bar-ghost" x="300" y="604" width="480" height="26" rx="4"/>
+    <rect class="bar" x="300" y="604" width="436" height="26" rx="4"/>
+    <text class="bar-value" x="796" y="624">91%</text>
+
+    <text class="bar-year" x="286" y="661" text-anchor="end">2029</text>
+    <rect class="bar-ghost" x="300" y="642" width="480" height="26" rx="4"/>
+    <rect class="bar" x="300" y="642" width="397" height="26" rx="4"/>
+    <text class="bar-value" x="796" y="662">83%</text>
+
+    <text class="bar-year" x="286" y="699" text-anchor="end">2030</text>
+    <rect class="bar-ghost" x="300" y="680" width="480" height="26" rx="4"/>
+    <rect class="bar" x="300" y="680" width="361" height="26" rx="4"/>
+    <text class="bar-value" x="796" y="700">75%</text>
+
+    <path class="baseline" d="M300 556 V716"/>
+    <text class="callout" x="300" y="746">Only the year moves.</text>
+  </g>
+
+  <text class="footnote" x="550" y="786" text-anchor="middle">An identical stream of cash flows discounted at 10%, indexed to a 2027 arrival. The same arithmetic applies to Coherent or anything else priced on the handoff.</text>
+</svg>
