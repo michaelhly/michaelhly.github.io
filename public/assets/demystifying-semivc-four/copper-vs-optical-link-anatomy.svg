@@ -1,0 +1,374 @@
+<svg width="1200" height="872" viewBox="0 0 1200 872" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Copper vs. Optical Link Anatomy</title>
+  <desc>
+    Anatomy comparison of a copper link and an optical link between a GPU and a switch. Copper stays electrical through a passive metal cable. Optical links use powered modules to clean up the signal, convert electrons to photons, send light through fiber, and convert back to electrons.
+  </desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-8%" y="-12%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+
+    <marker id="arrow-neutral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M2 1.4 L8 5 L2 8.6" fill="none" stroke="#5f6675" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <marker id="arrow-optical" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M2 1.4 L8 5 L2 8.6" fill="none" stroke="#1677bd" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <linearGradient id="copper-cable" x1="248" y1="0" x2="952" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e7fbf2"/>
+      <stop offset="0.5" stop-color="#c9f1e4"/>
+      <stop offset="1" stop-color="#e7fbf2"/>
+    </linearGradient>
+
+    <linearGradient id="fiber-glow" x1="520" y1="0" x2="690" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5bb8ff"/>
+      <stop offset="0.5" stop-color="#9ee7ff"/>
+      <stop offset="1" stop-color="#5bb8ff"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    svg {
+      color: #172033;
+      background: #f7f9fc;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    .page-bg {
+      fill: #f7f9fc;
+    }
+
+    .title {
+      fill: #111827;
+      font-size: 36px;
+      font-weight: 760;
+    }
+
+    .subtitle {
+      fill: #596272;
+      font-size: 17px;
+      font-weight: 450;
+    }
+
+    .eyebrow {
+      fill: #596272;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .lane {
+      fill: #ffffff;
+      stroke: #d8dde7;
+      stroke-width: 1.2;
+      filter: url(#soft-shadow);
+    }
+
+    .lane-title {
+      fill: #111827;
+      font-size: 21px;
+      font-weight: 720;
+    }
+
+    .lane-subtitle {
+      fill: #667085;
+      font-size: 14px;
+      font-weight: 460;
+    }
+
+    .endpoint {
+      fill: #f8fafc;
+      stroke: #aeb7c6;
+      stroke-width: 1.1;
+    }
+
+    .endpoint-title {
+      fill: #202938;
+      font-size: 17px;
+      font-weight: 720;
+    }
+
+    .endpoint-subtitle {
+      fill: #6b7280;
+      font-size: 11px;
+      font-weight: 520;
+    }
+
+    .component-title {
+      fill: #253044;
+      font-size: 14px;
+      font-weight: 720;
+    }
+
+    .component-label {
+      font-size: 12px;
+      font-weight: 680;
+    }
+
+    .small-label {
+      fill: #667085;
+      font-size: 12px;
+      font-weight: 560;
+    }
+
+    .micro-label {
+      fill: #6b7280;
+      font-size: 10.5px;
+      font-weight: 620;
+    }
+
+    .path-label {
+      fill: #566070;
+      font-size: 11px;
+      font-weight: 720;
+    }
+
+    .count-badge {
+      fill: #eef6ff;
+      stroke: #98c7f0;
+      stroke-width: 1;
+    }
+
+    .count-text {
+      fill: #155f97;
+      font-size: 13px;
+      font-weight: 720;
+    }
+
+    .passive {
+      fill: #dcf8ed;
+      stroke: #13916f;
+      stroke-width: 1.2;
+    }
+
+    .passive-text {
+      fill: #08745c;
+    }
+
+    .active {
+      fill: #fff3d6;
+      stroke: #c68116;
+      stroke-width: 1.2;
+    }
+
+    .active-text {
+      fill: #8b5610;
+    }
+
+    .aging {
+      fill: #ffe7df;
+      stroke: #d1633a;
+      stroke-width: 1.2;
+    }
+
+    .aging-text {
+      fill: #a54425;
+    }
+
+    .fiber {
+      fill: #e8f5ff;
+      stroke: #1677bd;
+      stroke-width: 1.2;
+    }
+
+    .fiber-text {
+      fill: #12659f;
+    }
+
+    .transceiver {
+      fill: #fbfcff;
+      stroke: #9aa5b8;
+      stroke-width: 1.2;
+      stroke-dasharray: 6 5;
+    }
+
+    .signal-neutral {
+      stroke: #697386;
+      stroke-width: 2;
+      fill: none;
+      marker-end: url(#arrow-neutral);
+    }
+
+    .signal-optical {
+      stroke: #1677bd;
+      stroke-width: 2.4;
+      fill: none;
+      marker-end: url(#arrow-optical);
+    }
+
+    .footer {
+      fill: #ffffff;
+      stroke: #d8dde7;
+      stroke-width: 1.1;
+    }
+
+    .footer-text {
+      fill: #4b5563;
+      font-size: 13px;
+      font-weight: 520;
+    }
+
+    .footer-strong {
+      fill: #172033;
+      font-size: 13px;
+      font-weight: 760;
+    }
+  </style>
+
+  <rect class="page-bg" width="1200" height="872"/>
+
+  <g aria-hidden="true" opacity="0.55">
+    <path d="M80 104 H1120" stroke="#e5e9f1" stroke-width="1"/>
+    <path d="M80 362 H1120" stroke="#e5e9f1" stroke-width="1"/>
+    <path d="M80 772 H1120" stroke="#e5e9f1" stroke-width="1"/>
+  </g>
+
+  <text class="eyebrow" x="72" y="54">LINK ANATOMY</text>
+  <text class="title" x="72" y="92">Copper vs. Optical Link Anatomy</text>
+  <text class="subtitle" x="72" y="123">Copper stays electrical; optical links convert electrons to photons and back.</text>
+
+  <g transform="translate(56 154)">
+    <rect class="lane" x="0" y="0" width="1088" height="210" rx="18"/>
+    <rect x="0" y="0" width="7" height="210" rx="3.5" fill="#13916f"/>
+
+    <text class="lane-title" x="32" y="42">Copper link</text>
+    <text class="lane-subtitle" x="32" y="65">Passive metal path between GPU and switch</text>
+
+    <g transform="translate(784 28)">
+      <rect class="count-badge" x="0" y="0" width="264" height="34" rx="17"/>
+      <text class="count-text" x="132" y="22" text-anchor="middle">No active parts in the cable</text>
+    </g>
+
+    <g transform="translate(44 96)">
+      <rect class="endpoint" x="0" y="0" width="132" height="72" rx="13"/>
+      <text class="endpoint-title" x="66" y="42" text-anchor="middle">GPU</text>
+    </g>
+
+    <g transform="translate(912 96)">
+      <rect class="endpoint" x="0" y="0" width="132" height="72" rx="13"/>
+      <text class="endpoint-title" x="66" y="42" text-anchor="middle">Switch</text>
+    </g>
+
+    <g>
+      <path d="M200 132 H888" stroke="url(#copper-cable)" stroke-width="52" stroke-linecap="round"/>
+      <path d="M200 132 H888" stroke="#13916f" stroke-width="32" stroke-linecap="round" opacity="0.28"/>
+      <path d="M220 123 H868" stroke="#b86f2f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M220 141 H868" stroke="#b86f2f" stroke-width="5" stroke-linecap="round"/>
+      <rect class="passive" x="360" y="90" width="368" height="84" rx="14"/>
+      <text class="component-title passive-text" x="544" y="124" text-anchor="middle">Passive copper cable</text>
+      <text class="small-label" x="544" y="149" text-anchor="middle">No laser, modulator, cleanup chip, or heat source inside</text>
+      <text class="path-label passive-text" x="544" y="84" text-anchor="middle">electrons stay electrons</text>
+      <path class="signal-neutral" d="M176 132 H208"/>
+      <path class="signal-neutral" d="M880 132 H912"/>
+      <path d="M200 183 V197 M888 183 V197" stroke="#13916f" stroke-width="1.4" opacity="0.7" stroke-linecap="round"/>
+      <path d="M200 190 H448" stroke="#13916f" stroke-width="1.4" opacity="0.7"/>
+      <path d="M640 190 H888" stroke="#13916f" stroke-width="1.4" opacity="0.7"/>
+      <text class="small-label passive-text" x="544" y="194" text-anchor="middle">short rack reach, ~1-3 m</text>
+    </g>
+  </g>
+
+  <g transform="translate(56 402)">
+    <rect class="lane" x="0" y="0" width="1088" height="322" rx="18"/>
+    <rect x="0" y="0" width="7" height="322" rx="3.5" fill="#d1633a"/>
+
+    <text class="lane-title" x="32" y="42">Optical link</text>
+    <text class="lane-subtitle" x="32" y="65">Powered modules convert data into light and back</text>
+
+    <g transform="translate(790 28)">
+      <rect class="count-badge" x="0" y="0" width="258" height="34" rx="17"/>
+      <text class="count-text" x="129" y="22" text-anchor="middle">Active conversion at both ends</text>
+    </g>
+
+    <g transform="translate(36 118)">
+      <rect class="endpoint" x="0" y="0" width="120" height="72" rx="13"/>
+      <text class="endpoint-title" x="60" y="42" text-anchor="middle">GPU</text>
+    </g>
+
+    <path class="signal-neutral" d="M156 154 H220"/>
+
+    <g transform="translate(220 86)">
+      <rect class="transceiver" x="0" y="0" width="260" height="154" rx="14"/>
+      <text class="component-title" x="130" y="29" text-anchor="middle">Transmit module</text>
+      <text class="micro-label" x="130" y="49" text-anchor="middle">chip cleans up the faint signal</text>
+
+      <rect class="active" x="18" y="72" width="106" height="40" rx="7"/>
+      <text class="component-label active-text" x="71" y="89" text-anchor="middle">cleanup chip</text>
+      <text class="component-label active-text" x="71" y="104" text-anchor="middle">(DSP)</text>
+
+      <rect class="aging" x="138" y="72" width="104" height="40" rx="7"/>
+      <text class="component-label aging-text" x="190" y="97" text-anchor="middle">laser</text>
+
+      <rect class="aging" x="18" y="122" width="106" height="26" rx="7"/>
+      <text class="component-label aging-text" x="71" y="140" text-anchor="middle">modulator</text>
+
+      <rect class="fiber" x="138" y="122" width="104" height="26" rx="7"/>
+      <text class="component-label fiber-text" x="190" y="140" text-anchor="middle">connector</text>
+    </g>
+
+    <path class="signal-optical" d="M480 154 H514"/>
+
+    <g transform="translate(514 107)">
+      <rect class="fiber" x="0" y="0" width="146" height="96" rx="15"/>
+      <text class="component-title fiber-text" x="73" y="30" text-anchor="middle">Fiber span</text>
+      <path d="M22 58 C44 38, 66 78, 88 58 S124 42, 124 58" stroke="url(#fiber-glow)" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <circle cx="20" cy="58" r="9" fill="#e8f5ff" stroke="#1677bd" stroke-width="2"/>
+      <circle cx="126" cy="58" r="9" fill="#e8f5ff" stroke="#1677bd" stroke-width="2"/>
+      <text class="micro-label" x="73" y="83" text-anchor="middle">light through glass</text>
+      <path d="M6 112 V124 M140 112 V124" stroke="#1677bd" stroke-width="1.4" opacity="0.65" stroke-linecap="round"/>
+      <path d="M6 118 H140" stroke="#1677bd" stroke-width="1.4" opacity="0.65"/>
+      <text class="micro-label fiber-text" x="73" y="137" text-anchor="middle">50 m to 2 km, depending on optic</text>
+    </g>
+
+    <path class="signal-optical" d="M660 154 H694"/>
+
+    <g transform="translate(694 86)">
+      <rect class="transceiver" x="0" y="0" width="250" height="154" rx="14"/>
+      <text class="component-title" x="125" y="29" text-anchor="middle">Receive module</text>
+      <text class="micro-label" x="125" y="49" text-anchor="middle">turns light back into signal</text>
+
+      <rect class="fiber" x="18" y="72" width="90" height="40" rx="7"/>
+      <text class="component-label fiber-text" x="63" y="97" text-anchor="middle">connector</text>
+
+      <rect class="aging" x="126" y="72" width="96" height="40" rx="7"/>
+      <text class="component-label aging-text" x="174" y="89" text-anchor="middle">light</text>
+      <text class="component-label aging-text" x="174" y="104" text-anchor="middle">sensor</text>
+
+      <rect class="active" x="18" y="118" width="204" height="30" rx="7"/>
+      <text class="component-label active-text" x="120" y="130" text-anchor="middle">receive chip</text>
+      <text class="component-label active-text" x="120" y="143" text-anchor="middle">(TIA + CDR + DSP)</text>
+    </g>
+
+    <path class="signal-neutral" d="M944 154 H964"/>
+
+    <g transform="translate(964 118)">
+      <rect class="endpoint" x="0" y="0" width="96" height="72" rx="13"/>
+      <text class="endpoint-title" x="48" y="42" text-anchor="middle">Switch</text>
+    </g>
+
+    <g transform="translate(48 276)">
+      <text class="small-label" x="0" y="0">Optical links add board-trace signal loss, powered cleanup chips, heat, aging lasers, and dust-sensitive connectors.</text>
+    </g>
+  </g>
+
+  <g transform="translate(132 792)">
+    <rect class="footer" x="0" y="-38" width="936" height="76" rx="14"/>
+
+    <path d="M74 0 H126" class="signal-neutral"/>
+    <text class="footer-text" x="144" y="5">Signal path</text>
+
+    <rect class="passive" x="314" y="-26" width="16" height="16" rx="4"/>
+    <text class="footer-strong" x="340" y="-13">Passive metal</text>
+
+    <rect class="active" x="584" y="-26" width="16" height="16" rx="4"/>
+    <text class="footer-strong" x="610" y="-13">Powered electronics</text>
+
+    <rect class="fiber" x="314" y="10" width="16" height="16" rx="4"/>
+    <text class="footer-strong" x="340" y="23">Fiber/connectors</text>
+
+    <rect class="aging" x="584" y="10" width="16" height="16" rx="4"/>
+    <text class="footer-strong" x="610" y="23">Optical components</text>
+  </g>
+</svg>
