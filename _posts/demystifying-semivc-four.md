@@ -49,6 +49,9 @@ Along the way Nvidia is making major investments around the optics supply chain.
 
 The market is not waiting for the handoff. Experts describe [CPO for scale-up as not a matter of if and why, but when and how](https://newsletter.semianalysis.com/p/co-packaged-optics-cpo-book-scaling), and the price agrees. Lumentum is worth roughly $70 billion fully diluted on about $3 billion of revenue, and Nvidia paid $695.31 a share for its stake in March. At those multiples the market is not paying for a promising rookie. It is already paying for at least three Super Bowls. It is worth doing that arithmetic out loud ...
 
+---
+<i>Paywalled Content</i>
+
 A $70 billion company has to eventually generate something like $3.5 billion a year in cash to justify the price at an ordinary rate of return. At the margins a very good component maker earns, that implies somewhere between $17 and $23 billion of annual revenue. Lumentum did $1.36 billion in fiscal 2024 and lost half a billion dollars doing it. So the price is not really asking whether optics wins. It is asking one company to become six or seven times its current size, at margins it has held for exactly one quarter, and to still be standing there when it arrives.
 
 ![What Lumentum's Price Asks For](/assets/demystifying-semivc-four/implied-valuation-ramp.svg)
