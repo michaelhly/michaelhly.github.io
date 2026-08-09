@@ -1,0 +1,91 @@
+LUMENTUM HOLDINGS (LITE) - FCFF VALUATION,,as of 8 Aug 2026
+
+INPUTS,Value,Source / story element
+Base year revenue ($M),2992.7,FY2026E: Q1 533.8 + Q2 665.5 + Q3 808.4 + Q4 guide 985.0
+Base operating margin,0.145,"GAAP basis, stock comp expensed"
+Target operating margin (yr 10),0.28,"Holds premium on EML/laser moat, below the 35-36% non-GAAP peak"
+Sales-to-capital,1.5,Capital intensity of fab + photonics assembly
+"Effective tax rate, now",0.15,
+"Marginal tax rate, mature",0.25,
+Riskfree rate,0.0466,"10Y UST, 7 Aug 2026"
+Equity risk premium,0.0423,"Damodaran implied ERP, 2026 edition"
+"Beta, now / mature",1.45 / 1.1,Semi-component cyclicality fading toward market
+"Cost of capital, yr 1 / mature",0.1079 / 0.0931,
+Terminal growth,0.0466,Capped at riskfree rate
+Terminal ROIC,0.18,"Premium to cost of capital, sustained by switching costs"
+
+CASH FLOW BUILD
+Year,Revenue growth,Revenue ($M),Op margin,EBIT ($M),Tax rate,NOPAT ($M),Reinvestment ($M),FCFF ($M),Cost of capital,Discount factor,PV of FCFF ($M)
+1,0.864,5578.4,0.1585,884.2,0.16,742.7,1723.8,-981.1,0.1065,0.9038,-886.7
+2,0.45,8088.7,0.172,1391.3,0.17,1154.7,1673.5,-518.8,0.105,0.8179,-424.3
+3,0.3,10515.3,0.1855,1950.6,0.18,1599.5,1617.7,-18.3,0.1035,0.7412,-13.5
+4,0.22,12828.6,0.199,2552.9,0.19,2067.8,1542.2,525.6,0.102,0.6726,353.5
+5,0.16,14881.2,0.2125,3162.3,0.2,2529.8,1368.4,1161.4,0.1005,0.6112,709.8
+6,0.1373,16924.7,0.226,3825.0,0.21,3021.7,1362.3,1659.4,0.0991,0.5561,922.8
+7,0.1146,18864.9,0.2395,4518.2,0.22,3524.2,1293.5,2230.7,0.0976,0.5066,1130.2
+8,0.092,20599.8,0.253,5211.7,0.23,4013.0,1156.5,2856.5,0.0961,0.4622,1320.4
+9,0.0693,22026.9,0.2665,5870.2,0.24,4461.3,951.4,3509.9,0.0946,0.4223,1482.2
+10,0.0466,23053.4,0.28,6454.9,0.25,4841.2,684.3,4156.9,0.0931,0.3863,1605.8
+
+TERMINAL VALUE
+Terminal reinvestment rate,0.2589,= terminal growth / terminal ROIC
+Terminal value ($M),80702.1
+PV of terminal value ($M),31175.3
+Terminal value as % of total,0.8341
+
+VALUATION
+PV of years 1-10 FCFF ($M),6200.0
+PV of terminal value ($M),31175.3
+Value of operating assets ($M),37375.3
+Plus: cash & short-term investments ($M),3172.3
+"Less: debt, incl. convertibles ($M)",3281.8
+Value of equity ($M),37265.8
+Diluted shares (M),96.2
+VALUE PER SHARE ($),387.38
+"Market price, 7 Aug 2026 ($)",890.17
+Price / value,2.3
+
+SENSITIVITY - value per share ($)
+Sales-to-capital \ target margin,22%,25%,28%,32%,36%
+1.0,249,296,343,405,467
+1.5,294,341,387,450,512
+2.0,316,363,410,472,534
+2.5,330,376,423,485,548
+3.0,339,385,432,494,557
+
+REVERSE DCF - what the market price requires
+Target operating margin used,0.32,"Generous, so implied revenue is understated not overstated"
+Implied year-2 revenue growth,0.7205
+Implied FY2031 revenue ($M),25522.0
+Implied FY2036 revenue ($M),48210.0
+Memo: FY2026E revenue ($M),2993.0
+
+AI-CLUSTER OPTICS TAM,,LightCounting; supersedes the pre-AI $20-27B figures
+2025 actual ($M),16500
+2026 actual ($M),26000,+60% YoY
+2030 'stars align' scenario ($M),100000,"LightCounting upside case, NOT a base case"
+"Implied 2026-2030 CAGR, stars align",0.4
+"Implied 2026-2030 CAGR, bumpy ride",0.25,LightCounting's alternative scenario
+
+CROSS-CHECK: OPTICS AS A SHARE OF HYPERSCALER CAPEX,,"Morgan Stanley capex estimates, 28 Jul 2026"
+Year,Hyperscaler capex ($M),AI optics at 3.3% of capex ($M)
+2025,426000,14186
+2026,779000,25941
+2027,1200000,39960
+2028,1400000,46620
+Note,,"2026 optics of $26B is 3.3% of $779B capex. Reaching $100B by 2030 needs both capex growth AND optics rising to roughly 5-6% of capex, which is what the scale-up thesis predicts."
+
+IMPLIED MARKET SHARE - the real question the price is asking
+Fiscal year,Implied LITE revenue ($M),"TAM, stars align ($M)",Implied share,"TAM, bumpy ride ($M)",Implied share
+2027,5578,36400,0.153,32500,0.172
+2028,9597,50960,0.188,40625,0.236
+2029,14576,71344,0.204,50781,0.287
+2030,20036,99882,0.201,63477,0.316
+2031,25522,111867,0.228,71094,0.359
+2032,31350,125291,0.25,79625,0.394
+2033,37083,140326,0.264,89180,0.416
+2034,42181,157166,0.268,99882,0.422
+2035,46063,176026,0.262,111867,0.412
+2036,48210,197149,0.245,125291,0.385
+Memo: FY2026 actual,2993,26000,0.115,,
+Read,,"The price does not require Lumentum to exceed the market. It requires roughly a doubling of share under the bull TAM, or a tripling under the bumpy one, while holding scarcity-era margins."
