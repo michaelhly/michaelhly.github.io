@@ -65,7 +65,7 @@ Nvidia's investment values Lumentum at $67 billion today. That price is a claim 
 
 The fairer way to put that is in market share, because the market itself is moving. LightCounting sizes AI cluster optics at $26 billion in 2026, up 60% in a year, and thinks there is a reasonable chance it reaches $100 billion by 2030 if enough goes right. Lumentum holds about 12% of that today. Nvidia's price needs somewhere between a sixth and a quarter of a market that has itself quadrupled, which is a bet on the market and a bet on Lumentum's share of it, made at the same time and both having to land.
 
-![What Nvidia's Price Asks For](/assets/demystifying-semivc-four/implied-valuation-ramp.svg)
+![What Nvidia's Price Asks For](/assets/demystifying-semivc-four/implied-valuation-ramp-lumentum.svg)
 
 And that is the discount price. The public market pays more. At the roughly $86 billion Lumentum trades for today, the same arithmetic needs $25.5 billion of revenue by fiscal 2031, $48.2 billion by fiscal 2036, and a fifth of a $100 billion market. Nvidia also did not buy common stock. It bought convertible preferred, with downside protection the public shareholder does not get. The most informed buyer in the room paid the smaller price and took the safer security, and the market filled in the optimism afterward.
 
@@ -96,4 +96,10 @@ In 2017, the Chiefs paid up for Patrick Mahomes. Two first-round picks and a thi
 **A modulator** is the component that imprints data onto a beam of light by switching it on and off, or shifting its phase, billions of times a second.
 
 **FIT**, or failures in time, counts expected failures per billion device-hours. Lower is better. A passive copper cable runs around 2 FIT, an optical transceiver around 1,000 to 2,000.
+
+## Appendix B: The Same Arithmetic for Coherent
+
+Nvidia ran the playbook twice on the same morning, but at very different multiples. Its $256.80 per share values Coherent at roughly $52 billion, about 7x revenue against the 22x it paid on Lumentum's much smaller base, so the price runs backward to about $32 billion of revenue by fiscal 2036, four and a half times today versus the thirteenfold asked of Lumentum. The tell is the share math. Coherent already holds about 15% of the market as the number two transceiver supplier, and the price implies 15% of LightCounting's $100 billion bull case, so the market quadrupling covers the entire ramp at constant share. Where Lumentum is a joint bet on the market arriving and on taking a materially bigger slice of it, Coherent is a bet on the market alone. The market's $76 billion adds the share bet back.
+
+![What Nvidia's Price Asks Of Coherent](/assets/demystifying-semivc-four/implied-valuation-ramp-coherent.svg)
 

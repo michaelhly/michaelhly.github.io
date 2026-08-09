@@ -1,0 +1,97 @@
+COHERENT CORP (COHR) - FCFF VALUATION,,as of 8 Aug 2026
+
+INPUTS,Value,Source / story element
+Base year revenue ($M),7052.6,"FY2026E: Q1 1,581.4 + Q2 1,685.6 + Q3 1,805.6 + Q4 guide 1,980.0"
+Base operating margin,0.136,"Non-GAAP op income less stock comp and acquired-intangible amortization; one-time gains/impairments excluded"
+Target operating margin (yr 10),0.25,"Vertically integrated module leader; below component-maker peaks, above assembly-only peers"
+Sales-to-capital,1.5,Capital intensity of InP/SiC fabs + transceiver assembly
+"Effective tax rate, now",0.19,Company normalized non-GAAP rate for FY2026
+"Marginal tax rate, mature",0.25,
+Riskfree rate,0.0466,"10Y UST, 7 Aug 2026"
+Equity risk premium,0.0423,"Damodaran implied ERP, 2026 edition"
+"Beta, now / mature",1.50 / 1.1,"Bottom-up sector beta; raw regression beta ~2.0 overstates a post-merger, post-divestiture book"
+"Cost of capital, yr 1 / mature",0.1073 / 0.0911,Debt-weighted; $3.2B of debt at ~4% of capital
+Terminal growth,0.0466,Capped at riskfree rate
+Terminal ROIC,0.15,"Modules are more contestable than components; vertical integration keeps a spread over the 9.1% cost of capital"
+
+CASH FLOW BUILD
+Year,Revenue growth,Revenue ($M),Op margin,EBIT ($M),Tax rate,NOPAT ($M),Reinvestment ($M),FCFF ($M),Cost of capital,Discount factor,PV of FCFF ($M)
+1,0.3400,9450.5,0.1474,1393.0,0.1900,1128.3,1598.6,-470.3,0.1057,0.9044,-425.3
+2,0.2500,11813.1,0.1588,1875.9,0.1967,1507.0,1575.1,-68.1,0.1040,0.8192,-55.8
+3,0.2000,14175.7,0.1702,2412.7,0.2033,1922.1,1575.1,347.0,0.1024,0.7431,257.9
+4,0.1600,16443.8,0.1816,2986.2,0.2100,2359.1,1512.1,847.0,0.1008,0.6751,571.8
+5,0.1300,18581.5,0.1930,3586.2,0.2167,2809.2,1425.1,1384.1,0.0992,0.6141,850.0
+6,0.1133,20687.2,0.2044,4228.5,0.2233,3284.1,1403.8,1880.3,0.0975,0.5596,1052.2
+7,0.0966,22686.4,0.2158,4895.7,0.2300,3769.7,1332.8,2436.9,0.0959,0.5106,1244.2
+8,0.0800,24500.4,0.2272,5566.5,0.2367,4249.1,1209.3,3039.8,0.0943,0.4666,1418.3
+9,0.0633,26050.8,0.2386,6215.7,0.2433,4703.2,1033.6,3669.6,0.0927,0.4270,1567.0
+10,0.0466,27264.8,0.2500,6816.2,0.2500,5112.1,809.3,4302.8,0.0911,0.3914,1684.0
+
+TERMINAL VALUE
+Terminal reinvestment rate,0.3107,= terminal growth / terminal ROIC
+Terminal value ($M),82973.7
+PV of terminal value ($M),32474.1
+Terminal value as % of total,0.7991
+
+VALUATION
+PV of years 1-10 FCFF ($M),8164.3
+PV of terminal value ($M),32474.1
+Value of operating assets ($M),40638.4
+Plus: cash & short-term investments ($M),2417.7
+Less: debt ($M),3193.8
+"Less: noncontrolling interests, book ($M)",340.0,Denso/Mitsubishi stake in the SiC subsidiary
+Value of equity ($M),39522.3
+Diluted shares (M),201.7
+VALUE PER SHARE ($),195.95
+"Market price, 7 Aug 2026 ($)",379.13
+Price / value,1.93
+"Memo: Nvidia investment price, 2 Mar 2026 ($)",256.8,"7,788,161 new shares, $2.0B"
+
+SENSITIVITY - value per share ($)
+Sales-to-capital \ target margin,20%,22.5%,25%,28%,31%
+1.0,131,153,175,201,227
+1.5,152,174,196,222,249
+2.0,163,185,207,233,259
+2.5,169,191,213,239,266
+3.0,173,195,217,244,270
+
+REVERSE DCF - what the market price requires
+Target operating margin used,0.28,"Generous, so implied revenue is understated not overstated"
+Implied year-2 revenue growth,0.4331,On top of the 34% consensus year 1
+Implied FY2031 revenue ($M),28534
+Implied FY2036 revenue ($M),49593
+Memo: FY2026E revenue ($M),7053
+
+REVERSE DCF - what Nvidia's $256.80 price requires
+Fully diluted value at Nvidia price ($M),51797,"$256.80 x 201.7M diluted shares"
+Implied year-2 revenue growth,0.2987
+Implied FY2030 revenue ($M),18113
+Implied FY2031 revenue ($M),20926
+Implied FY2036 revenue ($M),32146
+
+AI-CLUSTER OPTICS TAM,,LightCounting; same TAM paths as the Lumentum model
+2025 actual ($M),16500
+2026 actual ($M),26000,+60% YoY
+2030 'stars align' scenario ($M),100000,"LightCounting upside case, NOT a base case"
+"Implied 2026-2030 CAGR, stars align",0.4
+"Implied 2026-2030 CAGR, bumpy ride",0.25,LightCounting's alternative scenario
+
+NON-DATACENTER REVENUE DEDUCTION
+FY2026E industrial ($M),1863,"Q1 491.4 + Q2 477.6 + Q3 444.0 + Q4E ~450"
+FY2026E telecom ($M),1200,Roughly a fifth of the D&C segment
+Growth assumption,0.03,"Held near flat, so all implied upside is loaded onto AI-cluster optics"
+
+IMPLIED MARKET SHARE - the real question the price is asking
+Fiscal year,Implied COHR revenue ($M),Implied AI-optics revenue ($M),"TAM, stars align ($M)",Implied share,"TAM, bumpy ride ($M)",Implied share
+2027,9450,6296,36400,0.173,32500,0.194
+2028,13543,10294,50960,0.202,40625,0.253
+2029,18235,14888,71344,0.209,50781,0.293
+2030,23289,19842,99882,0.199,63477,0.313
+2031,28534,24983,111867,0.223,71094,0.351
+2032,33940,30283,125291,0.242,79625,0.380
+2033,39159,35392,140326,0.252,89180,0.397
+2034,43781,39901,157166,0.254,99882,0.399
+2035,47385,43389,176026,0.246,111867,0.388
+2036,49593,45477,197149,0.231,125291,0.363
+Memo: FY2026 estimate,7053,3990,26000,0.153,,
+Read,,"At the market price Coherent must expand share by roughly a third under the bull TAM, or double it under the bumpy one. At Nvidia's $256.80, the stars-align market lets Coherent simply keep the share it already has."

@@ -104,7 +104,7 @@
 
   <text class="eyebrow" x="70" y="54">WHAT THE PRICE ASSUMES</text>
   <text class="title" x="70" y="92">What Nvidia's Price Asks For</text>
-  <text class="subtitle" x="70" y="122">Nvidia's $67 billion investment price needs a thirteenfold revenue ramp and a third more market share than Lumentum holds today.</text>
+  <text class="subtitle" x="70" y="122">Nvidia's $67 billion investment price needs a thirteenfold revenue ramp and 3x the market share Lumentum holds today.</text>
 
   <!-- Panel A: the implied ramp -->
   <rect class="panel" x="56" y="156" width="988" height="340" rx="18"/>
