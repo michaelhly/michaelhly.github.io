@@ -20,7 +20,7 @@ So why is copper reliable? The answer is simple. A passive copper link is just a
 
 ![Copper vs. Optic Links](/assets/demystifying-semivc-four/copper-vs-optical-link-anatomy.svg)
 
-An optical link is complicated. At each end of every fiber-optic cable sits a small plug-in module that uses a laser to turn data into light. But first, the signal has to cross several inches of circuit board to reach the module. The trip leaves it smeared and faint, so a chip inside rebuilds every bit before handing it to the laser. That cleanup chip alone can burn nearly [half the module's power](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10526441). And the lasers themselves age like light bulbs, dimming and drifting until the link finally fails.
+An optical link is complicated. At each end of every fiber-optic cable sits a small plug-in module that uses a laser to turn data into light. But first, the signal has to cross several inches of circuit board to reach the module. The trip leaves it smeared and faint, so a chip inside rebuilds every bit before handing it to the laser. That cleanup chip alone can burn nearly [half the module's power](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10526441). And the lasers themselves wear out, drawing more and more current to hold the same brightness, until one day they cannot.
 
 ![Rebuilding Bits](/assets/demystifying-semivc-four/rebuilding-bits.svg)
 
