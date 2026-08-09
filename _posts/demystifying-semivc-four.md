@@ -77,7 +77,7 @@ Then there is the calendar, which is where the analogy stops being a flourish. M
 
 In 2017, the Chiefs paid up for Patrick Mahomes. Two first-round picks and a third to climb from 27th to 10th, when the league was unsure whether his talent would translate to the NFL. He needed a franchise willing to [be patient](https://www.espn.com/nfl/draft2017/story/_/id/19259218/2017-nfl-draft-kansas-city-chiefs-trade-select-patrick-mahomes) and develop him behind a veteran starter. The sticker price looked steep on draft night, and three seasons later nobody could tell you what the trade had cost. On the other hand, the optics trade does not present the same draft night story. Everyone already knows optics will take over once copper exhausts its physical limits. The dynasty is already in the price, and the only thing left to argue about is what year it starts.
 
-## Appendix: A Glossary
+## Appendix A: Glossary
 
 **Silicon photonics** is the underlying technology for building optical components, lasers aside, out of silicon on standard semiconductor manufacturing lines rather than assembling them from discrete parts.
 
