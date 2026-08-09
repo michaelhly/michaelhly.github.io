@@ -86,9 +86,9 @@ In 2017, the Chiefs paid up for Patrick Mahomes. Two first-round picks and a thi
 
 **NVLink** is Nvidia's proprietary scale-up interconnect. The fifth generation, used in Blackwell, moves 900 GB/s per GPU in one direction.
 
-**A pluggable transceiver** is the small module that plugs into the front of a switch or server and converts electrical signals into light and back. It is the standard way optical links are built today, and its great virtue is that a technician can swap a broken one by hand in seconds.
+**A pluggable transceiver** is the small module that plugs into the front of a switch or server and converts electrical signals into light and back. It is the standard way optical links are built today.
 
-**A digital signal processor**, or DSP, is the chip inside that module that rebuilds the electrical signal after its trip across the circuit board, reshaping the waveform, recovering the timing, and deciding again whether each bit was a zero or a one. It consumes nearly half the module's power.
+**A digital signal processor**, or DSP, is the chip inside a pluggable optical transceiver that rebuilds the electrical signal after it crosses the circuit board. It reshapes the waveform, recovers the timing, and decides again whether each bit was a zero or a one. This process consumes nearly half the transceiver's power.
 
 **Co-packaged optics**, or CPO, moves the optical conversion off the faceplate and onto the same package as the GPU or switch chip. Because the signal no longer crosses the board, the DSP is no longer needed, which is where most of the power savings come from. The tradeoff is that the optics can no longer be unplugged.
 
