@@ -47,6 +47,16 @@ Nvidia is now running a similar succession plan to transition from copper based 
 
 Along the way Nvidia is making major investments around the optics supply chain. In March 2026, it invested [$2 billion into both Lumentum and Coherent](https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html), the two companies are expected to supply the [high-power lasers](https://newsletter.semianalysis.com/i/178153689/external-laser-source-els) at the heart of co-packaged optics, with Lumentum as the sole source for Nvidia's first CPO switches and Coherent entering behind it as the second supplier. Nvidia also [partnered with Corning](https://nvidianews.nvidia.com/news/nvidia-and-corning-announce-long-term-partnership-to-strengthen-us-manufacturing-for-ai-infrastructure), the company that draws the glass fiber itself, committing up to [$3.2 billion](https://www.cnbc.com/2026/05/06/nvidia-corning-optical-factories-nc-texas-ai.html) toward three new plants in North Carolina and Texas that will grow Corning's US optical connectivity capacity tenfold. The money came with multibillion dollar purchase commitments and reserved manufacturing capacity, aimed squarely at the flaws that kept silicon photonics stuck in the lab for a decade. Lasers that fail inside expensive packages, fibers that cannot be attached at volume, optics that cannot be tested at scale, every one of them now has a customer paying to see it solved.
 
+In five months, Nvidia committed roughly $9.7 billion across every layer of the optical supply chain, the lasers, the modulation silicon, the fiber, and the interface to the GPU.
+
+| Company | Amount | Price per share | Announced | Role in the chain |
+|---|---|---|---|---|
+| Lumentum | $2B convertible preferred | $695.31 | Mar 2026 | Sole source for the high-power external lasers in Nvidia's first CPO switches |
+| Coherent | $2B common stock | $256.80 | Mar 2026 | Second-source laser supplier behind Lumentum |
+| Marvell | $2B convertible preferred | $91.84 conversion price | Mar 2026 | Silicon photonics and networking silicon, bundled with NVLink Fusion |
+| Corning | Up to $3.2B, $500M in warrants plus multi-year purchase agreements | $180.00 warrant strike | May 2026 | The fiber itself, funding three new US plants to grow capacity tenfold |
+| Ayar Labs | Participated in the $500M Series E | Private | 2026 | Optical I/O chiplet startup |
+
 The market is not waiting for the handoff. Experts describe [CPO for scale-up as not a matter of if and why, but when and how](https://newsletter.semianalysis.com/p/co-packaged-optics-cpo-book-scaling), and the price agrees. Lumentum is worth roughly $86 billion fully diluted on about $3 billion of revenue, and Nvidia paid $695.31 a share for its stake in March, well under where the stock trades now. At those multiples the market is not paying for a promising rookie. It is already paying for at least three Super Bowls. It is worth doing that arithmetic out loud ...
 
 ---
