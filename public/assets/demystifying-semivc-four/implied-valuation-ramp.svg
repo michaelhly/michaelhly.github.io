@@ -1,7 +1,7 @@
-<svg width="1100" height="850" viewBox="0 0 1100 850" role="img" xmlns="http://www.w3.org/2000/svg">
-  <title>What $70 Billion Asks For</title>
+<svg width="1100" height="1100" viewBox="0 0 1100 1100" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>What $86 Billion Asks For</title>
   <desc>
-    Two panels. The first compares Lumentum's fiscal 2024 revenue of about 1.4 billion dollars and fiscal 2026 revenue of about 3 billion dollars against the 17 to 23 billion dollars of annual revenue implied by a 70 billion dollar valuation, a six to sevenfold ramp. The second shows the present value of an identical stream of cash flows falling from 100 percent to 91, 83, and 75 percent as its arrival slips from 2027 to 2030 at a 10 percent discount rate.
+    Two panels. The first shows the revenue ramp implied by Lumentum's $85.6 billion fully diluted value: $1.4 billion in fiscal 2024, $3.0 billion in fiscal 2026, then $25.5 billion by fiscal 2031 and $48.2 billion by fiscal 2036, a sixteenfold increase. The second plots a downward-sloping curve of every combination of 2030 market size and market share that would justify the $86 billion price, given that the valuation fixes Lumentum's 2030 revenue at about $20 billion. Three points are marked along it. A $63 billion market requires 32 percent share, a $100 billion market requires 20 percent share, and holding today's 12 percent share would require the market to reach $167 billion. Combinations below the curve mean the price is too high.
   </desc>
 
   <defs>
@@ -58,20 +58,9 @@
       stroke-dasharray: 7 5;
     }
 
-    .bar-ghost {
-      fill: #e8ebf1;
-    }
-
     .baseline {
       stroke: #aeb7c6;
       stroke-width: 1.4;
-    }
-
-    .tick {
-      stroke: #c68116;
-      stroke-width: 1.2;
-      stroke-dasharray: 4 4;
-      opacity: 0.75;
     }
 
     .bar-value {
@@ -111,70 +100,118 @@
     }
   </style>
 
-  <rect class="page-bg" width="1100" height="850"/>
+  <rect class="page-bg" width="1100" height="1100"/>
 
   <text class="eyebrow" x="70" y="54">WHAT THE PRICE ASSUMES</text>
   <text class="title" x="70" y="92">What Lumentum's Price Asks For</text>
-  <text class="subtitle" x="70" y="122">A $70 billion valuation needs a sixfold ramp, and it gives back a sixth of its value for every two years the handoff slips.</text>
+  <text class="subtitle" x="70" y="122">An $86 billion valuation needs a sixteenfold revenue ramp and roughly double the market share it holds today.</text>
 
   <!-- Panel A: the implied ramp -->
-  <rect class="panel" x="56" y="156" width="988" height="316" rx="18"/>
+  <rect class="panel" x="56" y="156" width="988" height="340" rx="18"/>
 
-  <text class="plot-label" x="90" y="196">LUMENTUM: ANNUAL REVENUE IMPLIED BY A $70B FULLY DILUTED VALUE</text>
-
-  <g>
-    <text class="bar-year" x="286" y="248" text-anchor="end">Fiscal 2024</text>
-    <rect class="bar" x="300" y="226" width="35" height="32" rx="4"/>
-    <text class="bar-value" x="351" y="249">$1.4B</text>
-    <text class="bar-share" x="425" y="249">and a $546M loss</text>
-
-    <text class="bar-year" x="286" y="298" text-anchor="end">Fiscal 2026</text>
-    <rect class="bar" x="300" y="276" width="78" height="32" rx="4"/>
-    <text class="bar-value" x="394" y="299">$3.0B</text>
-    <text class="bar-share" x="464" y="299">32% operating margin, held for one quarter</text>
-
-    <text class="bar-year" x="286" y="348" text-anchor="end">What the price needs</text>
-    <rect class="bar-implied" x="300" y="326" width="594" height="32" rx="4"/>
-    <path class="tick" d="M739 322 V368"/>
-    <text class="bar-share" x="739" y="384" text-anchor="middle">$17B</text>
-    <text class="bar-share" x="894" y="384" text-anchor="middle">$23B</text>
-    <text class="bar-value" x="910" y="349">$17B to $23B</text>
-
-    <path class="baseline" d="M300 216 V362"/>
-    <text class="callout" x="300" y="410">Six to seven times today, at margins the company has held for exactly one quarter.</text>
-  </g>
-
-  <text class="footnote" x="550" y="450" text-anchor="middle">Implied revenue is a back-of-envelope figure assuming a 5% terminal cash yield and a 15-20% free cash flow margin on a $70B fully diluted value.</text>
-
-  <!-- Panel B: the cost of a late handoff -->
-  <rect class="panel" x="56" y="498" width="988" height="300" rx="18"/>
-
-  <text class="plot-label" x="90" y="538">PRESENT VALUE OF THE SAME CASH FLOWS, BY THE YEAR THEY ARRIVE</text>
+  <text class="plot-label" x="90" y="196">LUMENTUM: ANNUAL REVENUE IMPLIED BY AN $86B FULLY DILUTED VALUE</text>
 
   <g>
-    <text class="bar-year" x="286" y="585" text-anchor="end">2027</text>
-    <rect class="bar-ghost" x="300" y="566" width="480" height="26" rx="4"/>
-    <rect class="bar" x="300" y="566" width="480" height="26" rx="4"/>
-    <text class="bar-value" x="796" y="586">100%</text>
+    <text class="bar-year" x="286" y="245" text-anchor="end">Fiscal 2024</text>
+    <rect class="bar" x="300" y="222" width="15" height="32" rx="4"/>
+    <text class="bar-value" x="327" y="245">$1.4B</text>
+    <text class="bar-share" x="397" y="245">and a $546M loss</text>
 
-    <text class="bar-year" x="286" y="623" text-anchor="end">2028</text>
-    <rect class="bar-ghost" x="300" y="604" width="480" height="26" rx="4"/>
-    <rect class="bar" x="300" y="604" width="436" height="26" rx="4"/>
-    <text class="bar-value" x="796" y="624">91%</text>
+    <text class="bar-year" x="286" y="290" text-anchor="end">Fiscal 2026</text>
+    <rect class="bar" x="300" y="267" width="33" height="32" rx="4"/>
+    <text class="bar-value" x="345" y="290">$3.0B</text>
+    <text class="bar-share" x="415" y="290">32% operating margin, held for two quarters</text>
 
-    <text class="bar-year" x="286" y="661" text-anchor="end">2029</text>
-    <rect class="bar-ghost" x="300" y="642" width="480" height="26" rx="4"/>
-    <rect class="bar" x="300" y="642" width="397" height="26" rx="4"/>
-    <text class="bar-value" x="796" y="662">83%</text>
+    <text class="bar-year" x="286" y="335" text-anchor="end">Fiscal 2031</text>
+    <rect class="bar-implied" x="300" y="312" width="286" height="32" rx="4"/>
+    <text class="bar-value" x="598" y="335">$25.5B</text>
+    <text class="bar-share" x="684" y="335">(implied)</text>
+    <text class="bar-share" x="754" y="335">eight times today</text>
 
-    <text class="bar-year" x="286" y="699" text-anchor="end">2030</text>
-    <rect class="bar-ghost" x="300" y="680" width="480" height="26" rx="4"/>
-    <rect class="bar" x="300" y="680" width="361" height="26" rx="4"/>
-    <text class="bar-value" x="796" y="700">75%</text>
+    <text class="bar-year" x="286" y="380" text-anchor="end">Fiscal 2036</text>
+    <rect class="bar-implied" x="300" y="357" width="540" height="32" rx="4"/>
+    <text class="bar-value" x="855" y="380">$48.2B</text>
+    <text class="bar-share" x="938" y="380">(implied)</text>
 
-    <path class="baseline" d="M300 556 V716"/>
-    <text class="callout" x="300" y="746">Only the year moves.</text>
+    <path class="baseline" d="M300 212 V393"/>
   </g>
 
-  <text class="footnote" x="550" y="786" text-anchor="middle">An identical stream of cash flows discounted at 10%, indexed to a 2027 arrival. The same arithmetic applies to Coherent or anything else priced on the handoff.</text>
+  <path fill="#b86f2f" stroke="none" d="M90 414 L99 419.5 L90 425 Z"/>
+  <text class="callout" x="110" y="424">Sixteen times today's revenue, at margins earned during a shortage that is expected to end.</text>
+
+  <path fill="none" stroke="#e8ecf2" stroke-width="1" d="M90 442 H1010"/>
+  <circle cx="94" cy="458" r="1.9" fill="#b3bbc7"/>
+  <text class="footnote" x="110" y="462">Reverse discounted cash flow on an $85.6B fully diluted value ($890.17 x 96.2M diluted shares, 7 Aug 2026).</text>
+  <circle cx="94" cy="473" r="1.9" fill="#b3bbc7"/>
+  <text class="footnote" x="110" y="477">Assumes a 32% operating margin after stock compensation, a 9.3% mature cost of capital, and terminal growth capped at the 4.66% Treasury yield.</text>
+
+  <!-- Panel B: every world in which $86B is the right price -->
+  <rect class="panel" x="56" y="520" width="988" height="540" rx="18"/>
+
+  <text class="plot-label" x="90" y="556">COMBINATIONS OF MARKET SIZE AND LUMENTUM'S MARKET SHARE</text>
+  <text class="bar-share" x="90" y="578">The price implies about $20B of Lumentum revenue in 2030. Whether that is a fifth of the market or a third depends on how big the market gets.</text>
+
+  <!-- region under the curve: not enough market, not enough share -->
+  <path fill="#fdf2e6" stroke="none" d="M 200.0 612.8 L 237.0 666.3 L 274.0 701.9 L 311.0 727.3 L 348.0 746.4 L 385.0 761.3 L 422.0 773.1 L 459.0 782.9 L 496.0 790.9 L 533.0 797.8 L 570.0 803.7 L 607.0 808.8 L 644.0 813.2 L 681.0 817.1 L 718.0 820.6 L 755.0 823.8 L 792.0 826.6 L 829.0 829.1 L 866.0 831.4 L 903.0 833.5 L 940.0 835.5 L 940.0 880.0 L 200.0 880.0 Z"/>
+
+  <!-- gridlines -->
+  <path fill="none" stroke="#e6eaf0" stroke-width="1" d="M200 840 H940 M200 800 H940 M200 760 H940 M200 720 H940 M200 680 H940 M200 640 H940 M200 600 H940"/>
+  <path fill="none" stroke="#e6eaf0" stroke-width="1" d="M348 600 V880 M496 600 V880 M644 600 V880 M792 600 V880"/>
+
+  <!-- the iso-value curve -->
+  <path fill="none" stroke="#b86f2f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M 200.0 612.8 L 214.8 637.1 L 229.6 657.4 L 244.4 674.5 L 259.2 689.2 L 274.0 701.9 L 288.8 713.0 L 303.6 722.9 L 318.4 731.6 L 333.2 739.4 L 348.0 746.4 L 362.8 752.8 L 377.6 758.6 L 392.4 763.8 L 407.2 768.7 L 422.0 773.1 L 436.8 777.2 L 451.6 781.1 L 466.4 784.6 L 481.2 787.9 L 496.0 790.9 L 510.8 793.8 L 525.6 796.5 L 540.4 799.0 L 555.2 801.4 L 570.0 803.7 L 584.8 805.8 L 599.6 807.8 L 614.4 809.7 L 629.2 811.5 L 644.0 813.2 L 658.8 814.8 L 673.6 816.4 L 688.4 817.9 L 703.2 819.3 L 718.0 820.6 L 732.8 821.9 L 747.6 823.2 L 762.4 824.3 L 777.2 825.5 L 792.0 826.6 L 806.8 827.6 L 821.6 828.6 L 836.4 829.6 L 851.2 830.5 L 866.0 831.4 L 880.8 832.3 L 895.6 833.1 L 910.4 833.9 L 925.2 834.7 L 940.0 835.5"/>
+
+  <!-- today's share, as a reference -->
+  <path fill="none" stroke="#8b95a7" stroke-width="1.2" stroke-dasharray="5 4" d="M200 832 H940"/>
+  <text x="208" y="826" fill="#6b7280" font-size="11" font-weight="600">Lumentum's share today, 12%</text>
+
+  <!-- axes -->
+  <path fill="none" stroke="#b9c1cf" stroke-width="1.3" d="M200 600 V880 H940"/>
+  <g fill="#6b7280" font-size="11" font-weight="600" text-anchor="middle">
+    <text x="200" y="900">$30B</text>
+    <text x="348" y="900">$60B</text>
+    <text x="496" y="900">$90B</text>
+    <text x="644" y="900">$120B</text>
+    <text x="792" y="900">$150B</text>
+    <text x="940" y="900">$180B</text>
+  </g>
+  <text x="570" y="926" fill="#596272" font-size="12" font-weight="700" text-anchor="middle">Size of the AI-cluster optics market in 2030</text>
+
+  <g fill="#6b7280" font-size="11" font-weight="600" text-anchor="end">
+    <text x="186" y="884">0%</text>
+    <text x="186" y="844">10%</text>
+    <text x="186" y="804">20%</text>
+    <text x="186" y="764">30%</text>
+    <text x="186" y="724">40%</text>
+    <text x="186" y="684">50%</text>
+    <text x="186" y="644">60%</text>
+    <text x="186" y="604">70%</text>
+  </g>
+  <text x="128" y="740" fill="#596272" font-size="12" font-weight="700" text-anchor="middle" transform="rotate(-90 128 740)">Share Lumentum must hold</text>
+
+  <!-- region annotations -->
+  <text x="430" y="660" fill="#9aa4b4" font-size="11.5" font-weight="640">Above the curve, the price is justified</text>
+  <text x="300" y="866" fill="#c09466" font-size="11.5" font-weight="640">Below it, $86 billion is too much</text>
+
+  <!-- marked scenarios -->
+  <circle cx="365.3" cy="753.8" r="6.5" fill="#b86f2f" stroke="#ffffff" stroke-width="2.4"/>
+  <text x="386" y="736" fill="#202938" font-size="13.5" font-weight="730">If the ramp is slower</text>
+  <text x="386" y="752" fill="#667085" font-size="11.5" font-weight="560">a $63B market needs 32% share</text>
+
+  <circle cx="545.3" cy="799.9" r="6.5" fill="#b86f2f" stroke="#ffffff" stroke-width="2.4"/>
+  <text x="566" y="782" fill="#202938" font-size="13.5" font-weight="730">If the boom holds</text>
+  <text x="566" y="798" fill="#667085" font-size="11.5" font-weight="560">a $100B market needs 20% share</text>
+
+  <circle cx="875.7" cy="832.0" r="6.5" fill="#b86f2f" stroke="#ffffff" stroke-width="2.4"/>
+  <text x="938" y="856" fill="#202938" font-size="13.5" font-weight="730" text-anchor="end">If share stays at 12%</text>
+  <text x="938" y="872" fill="#667085" font-size="11.5" font-weight="560" text-anchor="end">the market has to reach $167B</text>
+
+  <path fill="#b86f2f" stroke="none" d="M90 946 L99 951.5 L90 957 Z"/>
+  <text class="callout" x="110" y="956">Lumentum can get there by growing the market, by taking more of it, or by some mix. It cannot skip both.</text>
+
+  <path fill="none" stroke="#e8ecf2" stroke-width="1" d="M90 974 H1010"/>
+  <circle cx="94" cy="990" r="1.9" fill="#b3bbc7"/>
+  <text class="footnote" x="110" y="994">The $20B of 2030 revenue is solved from the valuation, so the curve is simply that figure divided by market size.</text>
+  <circle cx="94" cy="1009" r="1.9" fill="#b3bbc7"/>
+  <text class="footnote" x="110" y="1013">Market estimates from LightCounting, which put AI-cluster optics at $26B in 2026 and sees a reasonable chance of $100B by 2030.<tspan x="110" dy="15">The $63B point assumes a slower ramp after the current shortage clears.</tspan></text>
 </svg>
