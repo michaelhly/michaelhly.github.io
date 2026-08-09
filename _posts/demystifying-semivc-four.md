@@ -80,6 +80,8 @@ In 2017, the Chiefs paid up for Patrick Mahomes. Two first-round picks and a thi
 
 ## Appendix: A Glossary
 
+**Silicon photonics** is the underlying technology for building optical components, lasers aside, out of silicon on standard semiconductor manufacturing lines rather than assembling them from discrete parts.
+
 **Scale-up** is the tight, high-bandwidth mesh that binds a group of GPUs into what behaves like a single machine, so that every GPU can talk to every other one at full speed. Nvidia's version is NVLink. Because the bandwidth is enormous and the latency budget is tiny, these links have always run on copper, which is why their two-meter reach caps how large that single machine can get.
 
 **Scale-out** is the ordinary datacenter network, InfiniBand or Ethernet, that connects those machines to each other to form a cluster of thousands. It carries roughly a ninth of the per-GPU bandwidth of scale-up and has to span racks and rows, so it went optical years ago. Scale-up is the huddle, scale-out is the rest of the league.
@@ -88,11 +90,9 @@ In 2017, the Chiefs paid up for Patrick Mahomes. Two first-round picks and a thi
 
 **A pluggable transceiver** is the small module that plugs into the front of a switch or server and converts electrical signals into light and back. It is the standard way optical links are built today.
 
-**A digital signal processor**, or DSP, is the chip inside a pluggable optical transceiver that rebuilds the electrical signal after it crosses the circuit board. It reshapes the waveform, recovers the timing, and decides again whether each bit was a zero or a one. This process consumes nearly half the transceiver's power.
+**A digital signal processor**, or DSP, is the chip that rebuilds the electrical signal after it crosses the circuit board. The majority of pluggable optical transceivers shipping today carry one. It reshapes the waveform, recovers the timing, and decides again whether each bit was a zero or a one. This process consumes nearly half the transceiver's power.
 
 **Co-packaged optics**, or CPO, moves the optical conversion off the faceplate and onto the same package as the GPU or switch chip. Because the signal no longer crosses the board, the DSP is no longer needed, which is where most of the power savings come from. The tradeoff is that the optics can no longer be unplugged.
-
-**Silicon photonics** is the underlying technology for building optical components, lasers aside, out of silicon on standard semiconductor manufacturing lines rather than assembling them from discrete parts.
 
 **A modulator** is the component that imprints data onto a beam of light by switching it on and off, or shifting its phase, billions of times a second.
 
