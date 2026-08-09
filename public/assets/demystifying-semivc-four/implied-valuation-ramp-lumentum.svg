@@ -1,5 +1,5 @@
 <svg width="1100" height="1100" viewBox="0 0 1100 1100" role="img" xmlns="http://www.w3.org/2000/svg">
-  <title>What Nvidia's Price Asks For</title>
+  <title>What Nvidia's Price Asks of Lumentum</title>
   <desc>
     Two panels. The first shows the revenue ramp implied by the $66.9 billion fully diluted value at Nvidia's $695.31 investment price: $1.4 billion in fiscal 2024, $3.0 billion in fiscal 2026, then $19.9 billion by fiscal 2031 and $37.7 billion by fiscal 2036, a thirteenfold increase. The second plots a downward-sloping curve of every combination of 2030 market size and market share that would justify the $67 billion price, given that the valuation fixes Lumentum's 2030 revenue at about $15.6 billion. Three points are marked along it. A $63 billion market requires 25 percent share, a $100 billion market requires 16 percent share, and holding today's 12 percent share would require the market to reach $130 billion. Combinations below the curve mean the price is too high.
   </desc>
@@ -103,8 +103,8 @@
   <rect class="page-bg" width="1100" height="1100"/>
 
   <text class="eyebrow" x="70" y="54">WHAT THE PRICE ASSUMES</text>
-  <text class="title" x="70" y="92">What Nvidia's Price Asks For</text>
-  <text class="subtitle" x="70" y="122">Nvidia's $67 billion investment price needs a thirteenfold revenue ramp and a third more market share than Lumentum holds today.</text>
+  <text class="title" x="70" y="92">What Nvidia's Price Asks of Lumentum</text>
+  <text class="subtitle" x="70" y="122">Nvidia's $67 billion investment price needs a thirteenfold revenue ramp and 3x the market share Lumentum holds today.</text>
 
   <!-- Panel A: the implied ramp -->
   <rect class="panel" x="56" y="156" width="988" height="340" rx="18"/>
