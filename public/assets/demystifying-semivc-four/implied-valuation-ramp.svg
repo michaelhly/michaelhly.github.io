@@ -100,7 +100,7 @@
     }
   </style>
 
-  <rect class="page-bg" width="1100" height="1100"/>
+  <rect class="page-bg" width="1100" height="1100" rx="26"/>
 
   <text class="eyebrow" x="70" y="54">WHAT THE PRICE ASSUMES</text>
   <text class="title" x="70" y="92">What Nvidia's Price Asks For</text>

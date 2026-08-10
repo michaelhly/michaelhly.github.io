@@ -218,7 +218,7 @@
     }
   </style>
 
-  <rect class="page-bg" width="1200" height="872"/>
+  <rect class="page-bg" width="1200" height="872" rx="28"/>
 
   <g aria-hidden="true" opacity="0.55">
     <path d="M80 104 H1120" stroke="#e5e9f1" stroke-width="1"/>

@@ -87,7 +87,7 @@
     }
   </style>
 
-  <rect class="page-bg" width="1100" height="620"/>
+  <rect class="page-bg" width="1100" height="620" rx="26"/>
 
   <text class="eyebrow" x="70" y="54">HOLDING THE COPPER WIRE</text>
   <text class="title" x="70" y="92">Amphenol's Growth</text>
