@@ -31,7 +31,7 @@ When AI models outgrew the 8-GPU server, Nvidia followed the adage, *use copper 
 | | With Copper | With Optics |
 |---|---|---|
 | **Hardware** | 5,184 copper cables, one per differential pair (72 DPs per GPU × 72 GPUs) | 648 1.6T twin-port transceivers per NVL72 rack |
-| **Power** | Passive, no meaningful added draw | ~30W per transceiver ≈ 19.4kW extra per rack |
+| **Power** | Passive cable, no transceivers to power | ~30W per transceiver ≈ 19.4kW extra per rack |
 | **Cost (BoM)** | $3k/GPU ($216k/rack) | ~$850–1,000 per transceiver → $551k–648k per rack in transceivers alone |
 | **Reliability** | ~2 FIT (failures per billion device-hours) | ~1,000–2,000 FIT |
 | **Reach** | ~2 m, enough to stay inside one rack (NVL72) | 50 m to 2 km, enough to cross racks and rows (NVL576's L1-to-L2 links) |
