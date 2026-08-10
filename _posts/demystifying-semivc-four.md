@@ -30,11 +30,11 @@ When AI models outgrew the 8-GPU server, Nvidia followed the adage, *use copper 
 
 | | With Copper | With Optics |
 |---|---|---|
-| **Hardware** | 5,184 copper cables (72 GPUs × 18 NVLink ports × 4 wire pairs per port) | 648 1.6T twin-port transceivers per NVL72 rack |
-| **Power** | Passive cable, no transceivers to power | ~30W per transceiver ≈ 19.4kW extra per rack |
-| **Cost (BoM)** | $3k/GPU ($216k/rack) | ~$850–1,000 per transceiver → $551k–648k per rack in transceivers alone |
-| **Reliability** | ~2 FIT (failures per billion device-hours) | ~1,000–2,000 FIT |
-| **Reach** | ~2 m, enough to stay inside one rack (NVL72) | 50 m to 2 km, enough to cross racks and rows (NVL576's L1-to-L2 links) |
+| Hardware | **5,184** copper cables<br>(72 GPUs × 18 NVLink ports × 4 wire pairs per port) | **648** 1.6T twin-port transceivers<br>(1,296 NVLink ports ÷ 4 ports per transceiver × 2 ends per link) |
+| Power | **Passive cable**<br>(no transceivers to power) | ≈ **19.4kW** extra per rack<br>(~30W per transceiver) |
+| Reach | **~2 m**<br>(enough to stay inside one rack) | **50 m to 2 km**<br>(enough to cross racks and rows) |
+| Reliability | **~2 FIT**<br>(failures per billion device-hours) | **~1,000–2,000 FIT** |
+| Cost (BoM) | **&lt; $216k/rack**<br>(&lt; $3k/GPU) | **$551k–648k** per rack in transceivers alone<br>(~$850–1,000 per transceiver) |
 
 Nvidia's decision to go with the game manager paid dividends not just for Nvidia, but for everyone holding the wire. The clearest winner was Amphenol, the connector maker that custom-engineered the NVLink spine cartridge for the GB200 NVL72. By 2025, Amphenol's IT Datacom business accounted for more than a third of company sales, with that segment's fourth-quarter sales growing 110% year over year on the back of AI infrastructure spending. Customers were ordering faster than Amphenol could ship, placing $1.31 of fourth-quarter orders for every dollar it sold. A connector company that spent nearly a century selling unglamorous metal had become one of the most direct ways to invest in the AI build-out.
 
