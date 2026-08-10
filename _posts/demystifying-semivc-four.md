@@ -1,8 +1,8 @@
 ---
 title: "Demystifying the Semiconductor Value Chain: Interconnect"
-date: "2026-08-05T20:48:14.368Z"
+date: "2026-08-10T00:09:17.000Z"
 ---
-In April 2017, the Kansas City Chiefs traded up to draft Patrick Mahomes with the tenth overall pick. Everyone knew that Mahomes was the future of the franchise. The coaches knew, the fans knew, and so did the person he was drafted to replace.
+In April 2017, the Kansas City Chiefs traded up to draft Patrick Mahomes with the tenth overall pick. Everyone knew that Mahomes was meant to be the future of the franchise. The coaches knew, the fans knew, and so did the person he was drafted to replace.
 
 ![Alex Smith and Patrick Mahomes](/assets/demystifying-semivc-four/alex-smith-patrick-mahomes.png)
 
