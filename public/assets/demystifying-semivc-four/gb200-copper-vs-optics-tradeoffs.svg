@@ -1,0 +1,159 @@
+<svg width="1100" height="710" viewBox="0 0 1100 710" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>The GB200 Tradeoffs</title>
+  <desc>
+    A table comparing copper and optics for the GB200 NVL72 scale-up fabric across hardware count, power, cost, reliability, and reach. Copper uses 5,184 passive cables at 3 thousand dollars per GPU with about 2 FIT, while optics would need 648 transceivers burning 19.4 kilowatts extra at up to 648 thousand dollars per rack with 1,000 to 2,000 FIT.
+  </desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-8%" y="-12%" width="116%" height="132%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <style>
+    svg {
+      background: #f7f9fc;
+      color: #172033;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    .page-bg {
+      fill: #f7f9fc;
+    }
+
+    .title {
+      fill: #111827;
+      font-size: 34px;
+      font-weight: 760;
+    }
+
+    .subtitle {
+      fill: #596272;
+      font-size: 16px;
+      font-weight: 450;
+    }
+
+    .eyebrow {
+      fill: #596272;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .panel {
+      fill: #ffffff;
+      stroke: #d8dde7;
+      stroke-width: 1.2;
+      filter: url(#soft-shadow);
+    }
+
+    .chip-copper {
+      fill: #ffe7df;
+    }
+
+    .chip-optics {
+      fill: #eef6ff;
+    }
+
+    .chip-copper-text {
+      fill: #b04c26;
+      font-size: 15px;
+      font-weight: 740;
+      text-anchor: middle;
+    }
+
+    .chip-optics-text {
+      fill: #1677bd;
+      font-size: 15px;
+      font-weight: 740;
+      text-anchor: middle;
+    }
+
+    .row-label {
+      fill: #253044;
+      font-size: 15px;
+      font-weight: 720;
+    }
+
+    .cell-main {
+      fill: #202938;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .cell-sub {
+      fill: #667085;
+      font-size: 13.5px;
+      font-weight: 480;
+    }
+
+    .row-sep {
+      stroke: #e7ebf2;
+      stroke-width: 1;
+    }
+
+    .footnote {
+      fill: #6b7280;
+      font-size: 11px;
+      font-weight: 520;
+    }
+  </style>
+
+  <rect class="page-bg" width="1100" height="710" rx="26"/>
+
+  <text class="eyebrow" x="70" y="54">USE COPPER WHERE YOU CAN, OPTICS WHERE YOU MUST</text>
+  <text class="title" x="70" y="92">The GB200 Tradeoffs</text>
+  <text class="subtitle" x="70" y="122">What one NVL72 rack of scale-up links costs with copper and with optics.</text>
+
+  <rect class="panel" x="56" y="156" width="988" height="490" rx="18"/>
+
+  <rect class="chip-copper" x="372" y="176" width="150" height="34" rx="17"/>
+  <text class="chip-copper-text" x="447" y="199">With Copper</text>
+  <rect class="chip-optics" x="762" y="176" width="150" height="34" rx="17"/>
+  <text class="chip-optics-text" x="837" y="199">With Optics</text>
+
+  <!-- Hardware -->
+  <text class="row-label" x="88" y="264">Hardware</text>
+  <text class="cell-main" x="260" y="264">5,184 copper cables</text>
+  <text class="cell-sub" x="260" y="288">72 GPUs × 18 NVLink ports × 4 wire pairs per port</text>
+  <text class="cell-main" x="655" y="264">648 1.6T twin-port transceivers</text>
+  <text class="cell-sub" x="655" y="288">per NVL72 rack</text>
+
+  <path class="row-sep" d="M80 308 H1020"/>
+
+  <!-- Power -->
+  <text class="row-label" x="88" y="340">Power</text>
+  <text class="cell-main" x="260" y="340">Passive cable</text>
+  <text class="cell-sub" x="260" y="364">no transceivers to power</text>
+  <text class="cell-main" x="655" y="340">~30W per transceiver</text>
+  <text class="cell-sub" x="655" y="364">≈ 19.4kW extra per rack</text>
+
+  <path class="row-sep" d="M80 384 H1020"/>
+
+  <!-- Cost -->
+  <text class="row-label" x="88" y="416">Cost (BoM)</text>
+  <text class="cell-main" x="260" y="416">$3k per GPU</text>
+  <text class="cell-sub" x="260" y="440">$216k per rack</text>
+  <text class="cell-main" x="655" y="416">~$850–1,000 per transceiver</text>
+  <text class="cell-sub" x="655" y="440">$551k–648k per rack in transceivers alone</text>
+
+  <path class="row-sep" d="M80 460 H1020"/>
+
+  <!-- Reliability -->
+  <text class="row-label" x="88" y="492">Reliability</text>
+  <text class="cell-main" x="260" y="492">~2 FIT</text>
+  <text class="cell-sub" x="260" y="516">failures per billion device-hours</text>
+  <text class="cell-main" x="655" y="492">~1,000–2,000 FIT</text>
+
+  <path class="row-sep" d="M80 536 H1020"/>
+
+  <!-- Reach -->
+  <text class="row-label" x="88" y="566">Reach</text>
+  <text class="cell-main" x="260" y="566">~2 m</text>
+  <text class="cell-sub" x="260" y="588">enough to stay inside one rack (NVL72)</text>
+  <text class="cell-main" x="655" y="566">50 m to 2 km</text>
+  <text class="cell-sub" x="655" y="588">enough to cross racks and rows</text>
+  <text class="cell-sub" x="655" y="610">(NVL576's L1-to-L2 links)</text>
+
+  <text class="footnote" x="550" y="682" text-anchor="middle">Figures for the GB200 NVL72. FIT counts failures per billion device-hours.</text>
+</svg>

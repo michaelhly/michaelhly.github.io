@@ -1,5 +1,5 @@
 <svg width="1200" height="872" viewBox="0 0 1200 872" role="img" xmlns="http://www.w3.org/2000/svg">
-  <title>Copper vs. Optical Link Anatomy</title>
+  <title>Copper vs. Optical Link</title>
   <desc>
     Anatomy comparison of a copper link and an optical link between a GPU and a switch. Copper stays electrical through a passive metal cable. Optical links use powered modules to clean up the signal, convert electrons to photons, send light through fiber, and convert back to electrons.
   </desc>
@@ -227,7 +227,7 @@
   </g>
 
   <text class="eyebrow" x="72" y="54">LINK ANATOMY</text>
-  <text class="title" x="72" y="92">Copper vs. Optical Link Anatomy</text>
+  <text class="title" x="72" y="92">Copper vs. Optical Link</text>
   <text class="subtitle" x="72" y="123">Copper stays electrical; optical links convert electrons to photons and back.</text>
 
   <g transform="translate(56 154)">
@@ -258,8 +258,7 @@
       <path d="M220 123 H868" stroke="#b86f2f" stroke-width="5" stroke-linecap="round"/>
       <path d="M220 141 H868" stroke="#b86f2f" stroke-width="5" stroke-linecap="round"/>
       <rect class="passive" x="360" y="90" width="368" height="84" rx="14"/>
-      <text class="component-title passive-text" x="544" y="124" text-anchor="middle">Passive copper cable</text>
-      <text class="small-label" x="544" y="149" text-anchor="middle">No laser, modulator, cleanup chip, or heat source inside</text>
+      <text class="component-title passive-text" x="544" y="137" text-anchor="middle">Passive copper cable</text>
       <text class="path-label passive-text" x="544" y="84" text-anchor="middle">electrons stay electrons</text>
       <path class="signal-neutral" d="M176 132 H208"/>
       <path class="signal-neutral" d="M880 132 H912"/>
