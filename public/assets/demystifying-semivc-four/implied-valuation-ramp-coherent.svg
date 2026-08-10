@@ -1,0 +1,216 @@
+<svg width="1100" height="1100" viewBox="0 0 1100 1100" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>What Nvidia's Price Asks of Coherent</title>
+  <desc>
+    Two panels. The first shows the revenue ramp implied by the $51.8 billion fully diluted value at Nvidia's $256.80 investment price: $4.7 billion in fiscal 2024, $7.1 billion in fiscal 2026, then $20.9 billion by fiscal 2031 and $32.1 billion by fiscal 2036, a four-and-a-half-fold increase. The second plots a downward-sloping curve of every combination of 2030 market size and market share that would justify the $52 billion price, given that the valuation fixes Coherent's fiscal 2030 AI-cluster optics revenue at about $14.7 billion. Three points are marked along it. A $63 billion market requires 23 percent share, a $100 billion market requires 15 percent share, which is about the share Coherent holds today, and a $150 billion market would let share slip below 10 percent. Combinations below the curve mean the price is too high.
+  </desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-8%" y="-12%" width="116%" height="132%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <style>
+    svg {
+      color: #172033;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    .page-bg {
+      fill: #f7f9fc;
+    }
+
+    .title {
+      fill: #111827;
+      font-size: 34px;
+      font-weight: 760;
+    }
+
+    .subtitle {
+      fill: #596272;
+      font-size: 16px;
+      font-weight: 450;
+    }
+
+    .eyebrow {
+      fill: #596272;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .panel {
+      fill: #ffffff;
+      stroke: #d8dde7;
+      stroke-width: 1.2;
+      filter: url(#soft-shadow);
+    }
+
+    .bar {
+      fill: #b86f2f;
+    }
+
+    .bar-implied {
+      fill: #fff3d6;
+      stroke: #c68116;
+      stroke-width: 1.6;
+      stroke-dasharray: 7 5;
+    }
+
+    .baseline {
+      stroke: #aeb7c6;
+      stroke-width: 1.4;
+    }
+
+    .bar-value {
+      fill: #202938;
+      font-size: 19px;
+      font-weight: 740;
+    }
+
+    .bar-year {
+      fill: #253044;
+      font-size: 15px;
+      font-weight: 720;
+    }
+
+    .bar-share {
+      fill: #667085;
+      font-size: 12px;
+      font-weight: 560;
+    }
+
+    .plot-label {
+      fill: #6b7280;
+      font-size: 11px;
+      font-weight: 620;
+    }
+
+    .callout {
+      fill: #8b5610;
+      font-size: 13px;
+      font-weight: 680;
+    }
+
+    .footnote {
+      fill: #6b7280;
+      font-size: 11px;
+      font-weight: 520;
+    }
+  </style>
+
+  <rect class="page-bg" width="1100" height="1100" rx="26"/>
+
+  <text class="eyebrow" x="70" y="54">WHAT THE PRICE ASSUMES</text>
+  <text class="title" x="70" y="92">What Nvidia's Price Asks of Coherent</text>
+  <text class="subtitle" x="70" y="122">Nvidia's $52 billion investment price needs a four-and-a-half-fold revenue ramp and maintained market share.</text>
+
+  <!-- Panel A: the implied ramp -->
+  <rect class="panel" x="56" y="156" width="988" height="340" rx="18"/>
+
+  <text class="plot-label" x="90" y="196">COHERENT: ANNUAL REVENUE IMPLIED BY NVIDIA'S $51.8B INVESTMENT PRICE</text>
+
+  <g>
+    <text class="bar-year" x="286" y="245" text-anchor="end">Fiscal 2024</text>
+    <rect class="bar" x="300" y="222" width="53" height="32" rx="4"/>
+    <text class="bar-value" x="365" y="245">$4.7B</text>
+    <text class="bar-share" x="435" y="245">and a $1.84 GAAP loss per share</text>
+
+    <text class="bar-year" x="286" y="290" text-anchor="end">Fiscal 2026</text>
+    <rect class="bar" x="300" y="267" width="79" height="32" rx="4"/>
+    <text class="bar-value" x="391" y="290">$7.1B</text>
+    <text class="bar-share" x="461" y="290">20% non-GAAP operating margin, at the top of the cycle</text>
+
+    <text class="bar-year" x="286" y="335" text-anchor="end">Fiscal 2031</text>
+    <rect class="bar-implied" x="300" y="312" width="235" height="32" rx="4"/>
+    <text class="bar-value" x="547" y="335">$20.9B</text>
+    <text class="bar-share" x="633" y="335">(implied)</text>
+    <text class="bar-share" x="703" y="335">three times today</text>
+
+    <text class="bar-year" x="286" y="380" text-anchor="end">Fiscal 2036</text>
+    <rect class="bar-implied" x="300" y="357" width="361" height="32" rx="4"/>
+    <text class="bar-value" x="676" y="380">$32.1B</text>
+    <text class="bar-share" x="759" y="380">(implied)</text>
+
+    <path class="baseline" d="M300 212 V393"/>
+  </g>
+
+  <path fill="#b86f2f" stroke="none" d="M90 414 L99 419.5 L90 425 Z"/>
+  <text class="callout" x="110" y="424">Four and a half times today's revenue, with margins nearly doubling. A big ask, yet half of what the market's own $379 price demands.</text>
+
+  <path fill="none" stroke="#e8ecf2" stroke-width="1" d="M90 442 H1010"/>
+  <circle cx="94" cy="458" r="1.9" fill="#b3bbc7"/>
+  <text class="footnote" x="110" y="462">Reverse discounted cash flow on a $51.8B fully diluted value ($256.80 x 201.7M diluted shares, Nvidia's March 2026 investment price).</text>
+  <circle cx="94" cy="473" r="1.9" fill="#b3bbc7"/>
+  <text class="footnote" x="110" y="477">Assumes a 28% operating margin after stock compensation, a 9.1% mature cost of capital, and terminal growth capped at the 4.66% Treasury yield.</text>
+
+  <!-- Panel B: every world in which $52B is the right price -->
+  <rect class="panel" x="56" y="520" width="988" height="540" rx="18"/>
+
+  <text class="plot-label" x="90" y="556">COMBINATIONS OF MARKET SIZE AND COHERENT'S MARKET SHARE</text>
+  <text class="bar-share" x="90" y="578">The price implies about $14.7B of AI-cluster optics revenue in fiscal 2030. Whether that is a tenth of the market or a quarter depends on how big the market gets.</text>
+
+  <!-- region under the curve: not enough market, not enough share -->
+  <path fill="#fdf2e6" stroke="none" d="M 200.0 684.5 L 237.0 723.6 L 274.0 749.6 L 311.0 768.3 L 348.0 782.2 L 385.0 793.1 L 422.0 801.8 L 459.0 808.9 L 496.0 814.8 L 533.0 819.8 L 570.0 824.1 L 607.0 827.9 L 644.0 831.1 L 681.0 834.0 L 718.0 836.5 L 755.0 838.8 L 792.0 840.9 L 829.0 842.8 L 866.0 844.4 L 903.0 846.0 L 940.0 847.4 L 940.0 880.0 L 200.0 880.0 Z"/>
+
+  <!-- gridlines -->
+  <path fill="none" stroke="#e6eaf0" stroke-width="1" d="M200 840 H940 M200 800 H940 M200 760 H940 M200 720 H940 M200 680 H940 M200 640 H940 M200 600 H940"/>
+  <path fill="none" stroke="#e6eaf0" stroke-width="1" d="M348 600 V880 M496 600 V880 M644 600 V880 M792 600 V880"/>
+
+  <!-- the iso-value curve -->
+  <path fill="none" stroke="#b86f2f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M 200.0 684.5 L 214.8 702.2 L 229.6 717.1 L 244.4 729.6 L 259.2 740.3 L 274.0 749.6 L 288.8 757.8 L 303.6 765.0 L 318.4 771.4 L 333.2 777.1 L 348.0 782.2 L 362.8 786.9 L 377.6 791.1 L 392.4 795.0 L 407.2 798.5 L 422.0 801.8 L 436.8 804.8 L 451.6 807.6 L 466.4 810.2 L 481.2 812.6 L 496.0 814.8 L 510.8 816.9 L 525.6 818.9 L 540.4 820.7 L 555.2 822.5 L 570.0 824.1 L 584.8 825.7 L 599.6 827.2 L 614.4 828.5 L 629.2 829.9 L 644.0 831.1 L 658.8 832.3 L 673.6 833.4 L 688.4 834.5 L 703.2 835.6 L 718.0 836.5 L 732.8 837.5 L 747.6 838.4 L 762.4 839.3 L 777.2 840.1 L 792.0 840.9 L 806.8 841.7 L 821.6 842.4 L 836.4 843.1 L 851.2 843.8 L 866.0 844.4 L 880.8 845.1 L 895.6 845.7 L 910.4 846.3 L 925.2 846.9 L 940.0 847.4"/>
+
+  <!-- today's share, as a reference -->
+  <path fill="none" stroke="#8b95a7" stroke-width="1.2" stroke-dasharray="5 4" d="M200 819 H940"/>
+  <text x="208" y="813" fill="#6b7280" font-size="11" font-weight="600">Coherent's share today, about 15%</text>
+
+  <!-- axes -->
+  <path fill="none" stroke="#b9c1cf" stroke-width="1.3" d="M200 600 V880 H940"/>
+  <g fill="#6b7280" font-size="11" font-weight="600" text-anchor="middle">
+    <text x="200" y="900">$30B</text>
+    <text x="348" y="900">$60B</text>
+    <text x="496" y="900">$90B</text>
+    <text x="644" y="900">$120B</text>
+    <text x="792" y="900">$150B</text>
+    <text x="940" y="900">$180B</text>
+  </g>
+  <text x="570" y="926" fill="#596272" font-size="12" font-weight="700" text-anchor="middle">Size of the AI-cluster optics market in 2030</text>
+
+  <g fill="#6b7280" font-size="11" font-weight="600" text-anchor="end">
+    <text x="186" y="884">0%</text>
+    <text x="186" y="844">10%</text>
+    <text x="186" y="804">20%</text>
+    <text x="186" y="764">30%</text>
+    <text x="186" y="724">40%</text>
+    <text x="186" y="684">50%</text>
+    <text x="186" y="644">60%</text>
+    <text x="186" y="604">70%</text>
+  </g>
+  <text x="128" y="740" fill="#596272" font-size="12" font-weight="700" text-anchor="middle" transform="rotate(-90 128 740)">Share Coherent must hold</text>
+
+  <!-- region annotations -->
+  <text x="430" y="660" fill="#9aa4b4" font-size="11.5" font-weight="640">Above the curve, the price is justified</text>
+  <text x="300" y="866" fill="#c09466" font-size="11.5" font-weight="640">Below it, $52 billion is too much</text>
+
+  <!-- marked scenarios -->
+  <circle cx="362.8" cy="786.9" r="6.5" fill="#b86f2f" stroke="#ffffff" stroke-width="2.4"/>
+  <text x="383" y="769" fill="#202938" font-size="13.5" font-weight="730">If the ramp is slower</text>
+  <text x="383" y="785" fill="#667085" font-size="11.5" font-weight="560">a $63B market needs 23% share</text>
+
+  <circle cx="545.3" cy="821.3" r="6.5" fill="#b86f2f" stroke="#ffffff" stroke-width="2.4"/>
+  <text x="566" y="796" fill="#202938" font-size="13.5" font-weight="730">If the stars align</text>
+  <text x="566" y="812" fill="#667085" font-size="11.5" font-weight="560">the $100B bull case needs 15%, today's share</text>
+
+  <circle cx="792" cy="840.9" r="6.5" fill="#b86f2f" stroke="#ffffff" stroke-width="2.4"/>
+  <text x="812" y="855" fill="#202938" font-size="13.5" font-weight="730">If the market overshoots</text>
+  <text x="812" y="871" fill="#667085" font-size="11.5" font-weight="560">$150B lets share slip below 10%</text>
+
+  <path fill="#b86f2f" stroke="none" d="M90 946 L99 951.5 L90 957 Z"/>
+  <text class="callout" x="110" y="956">Nvidia's price is a bet on the market, not on share gains. If the $100B bull case arrives, Coherent only has to hold serve.</text>
+
+  <path fill="none" stroke="#e8ecf2" stroke-width="1" d="M90 974 H1010"/>
+  <circle cx="94" cy="990" r="1.9" fill="#b3bbc7"/>
+  <text class="footnote" x="110" y="994">The $14.7B of fiscal 2030 AI-optics revenue is solved from the valuation, after holding industrial and telecom revenue near $3.4B.</text>
+  <circle cx="94" cy="1009" r="1.9" fill="#b3bbc7"/>
+  <text class="footnote" x="110" y="1013">Market estimates from LightCounting, which put AI-cluster optics at $26B in 2026 and sees a reasonable chance of $100B by 2030.<tspan x="110" dy="15">At the $379 market price the same arithmetic needs $19.8B of revenue, a 20% share of the same $100B market.</tspan></text>
+</svg>
