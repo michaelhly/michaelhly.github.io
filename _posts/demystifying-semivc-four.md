@@ -2,11 +2,11 @@
 title: "Demystifying the Semiconductor Value Chain: Interconnect"
 date: "2026-08-10T00:09:17.000Z"
 ---
-In April 2017, the Kansas City Chiefs traded up to the tenth overall pick to draft Patrick Mahomes. Everyone knew that Mahomes was meant to be the future of the franchise. The coaches knew, the fans knew, and so did the person he was drafted to replace.
+In April 2017, the Kansas City Chiefs traded up to the tenth overall pick to select quarterback Patrick Mahomes. Everyone knew that he was meant to be the future of the franchise. The coaches knew, the fans knew, and so did the person he was drafted to replace.
 
 ![Alex Smith and Patrick Mahomes](/assets/demystifying-semivc-four/alex-smith-patrick-mahomes.png)
 
-And then he sat in his first season. Chiefs coach Andy Reid chose Alex Smith as the starting quarterback. Around the league, Smith was viewed as the archetypal “game manager,” a label scouts often used dismissively. He didn’t have an overpowering arm, preferred the safe checkdown over the risky throw, and rarely forced the ball into tight windows. But Smith was a reliable veteran, and his consistency earned Reid’s trust to start every Sunday.
+Instead, Mahomes spent his first season on the bench as Chiefs coach Andy Reid chose Alex Smith as the starter. Around the league, Smith was viewed as the archetypal “game manager,” a label scouts often used dismissively. He didn’t have an overpowering arm, preferred the safe checkdown over the risky throw, and rarely forced the ball into tight windows. But Smith was a reliable veteran, and his consistency earned Reid’s trust to start every Sunday.
 
 The AI build-out has its own Alex Smith. It is a piece of copper wire. Its eventual replacement, optical links, will move data faster and farther, and the handoff is already written into the industry roadmap. Yet when hyperscalers assemble the 100K+ GPU clusters driving today’s AI boom, the highest-bandwidth links in the machine still run on copper. What it lacks in flash, it makes up for in reliability — the one thing that matters most in a production deployment.
 
