@@ -66,7 +66,7 @@ Experts say CPO-based scale-up is no longer a question of if or why, but when an
 ---
 <i>Paywalled Content</i>
 
-Lumentum and Coherent are two of the most obvious stocks for investors who want exposure to the lasers in the co-packaged optics scale up. But before paying today's multiples, three questions matter. What future is already in the price? If that future arrives, who keeps the money? When will the money arrive, and what is the cost of waiting?
+Lumentum is of the most obvious stocks for investors who want exposure to the lasers in the co-packaged optics scale up. But before paying today's multiples, three questions matter. What future is already in the price? If that future arrives, who keeps the money? When will the money arrive, and what is the cost of waiting?
 
 ## What future is already in the price?
 To keep the exercise conservative, we start from Nvidia’s entry price. That price valued Lumentum at roughly $67 billion on a fully diluted basis. For that valuation to work, the company needs future profits to be large enough, and arrive soon enough, to justify what investors are paying today at an even higher multiple. Running the price backward at an ordinary cost of capital of about 10%, with operating margins held at 32% throughout, Lumentum needs roughly $19.9 billion in revenue by FY2031 and $37.7 billion by FY2036. That is seven times and twelve times the $3 billion year the company just closed. If we measure off the $5 billion run rate Lumentum just guided to in their latest earnings, then the twelvefold ramp shrinks to seven and a half. Whether we start from the trailing $3 billion revenue base or management’s guided $5 billion run rate changes how demanding the growth story looks.
@@ -78,7 +78,7 @@ Impossible numbers? Not quite, because the market underneath is growing almost a
 ## If the future arrives, who keeps the money?
 The market will probably grow. The harder question is how much of that growth Lumentum keeps. That depends on market share, margins, and how much pricing power it has with Nvidia.
 
-**Customer concentration.** In the March quarter, one customer accounted for 26% of Lumentum’s revenue, up from 17% a year earlier, while the top two together reached 38%. The filings do not name them, but the pattern is not hard to read. Getting designed into Nvidia’s platform brings volume. It also gives the buyer more leverage. For Lumentum, the same concentration that proves the opportunity also defines the risk.
+**Customer concentration.** In the March quarter, one customer accounted for 26% of Lumentum’s revenue, up from 17% a year earlier, while the top two together reached 38%. The filings do not name them, but the pattern is not hard to read. Getting designed into Nvidia’s platform brings volume, it also gives the buyer more leverage. For Lumentum, the same concentration that proves the opportunity also defines the risk.
 
 **The customer is keeping leverage.** Nvidia invested two billion dollars into Lumentum and Coherent on the same morning, signed non-exclusive agreements with both, and said more partners would follow. The purchase commitment is real, "multi-billion" in Nvidia's own press release, but no filing gives a number. Volume visibility helps but it does not guarantee pricing power. The Chiefs eventually paid Mahomes $450 million because he was irreplaceable. Nvidia has spent $4 billion making sure no laser maker is.
 
