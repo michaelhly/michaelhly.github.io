@@ -61,7 +61,7 @@ Along the way, Nvidia has been buying its way into the optics supply chain, and 
 | Marvell | $2B convertible preferred | $91.84 conversion price | Mar 2026 | Silicon photonics and networking silicon, bundled with NVLink Fusion |
 | Corning | $500M for warrants, <br> rising to $3.2B if the traditional warrant is exercised in full | $180.00 traditional warrant strike | May 2026 | The fiber itself, alongside a partnership funding three new US plants |
 
-The market is not waiting for the handoff. Experts say CPO-based scale-up is no longer a question of if or why, but when and how, and the claim is reflected in prices. Nvidia paid $695.31 per share for its Lumentum stake at 84 times this year’s expected adjusted earnings. At the time of writing, the stock has traded well above that level. The public is now paying more than 100 times earnings, a valuation that would need multiple Super Bowls to justify. It is worth doing the arithmetic out loud ...
+Experts say CPO-based scale-up is no longer a question of if or why, but when and how. And the market is already pricing the transition as if the outcome is visible from here. Nvidia paid $695.31 per share for its Lumentum stake at 84 times this year’s expected adjusted earnings. At the time of writing, the stock has traded well above that level, leaving public investors paying over 100 times earnings at a valuation that would need multiple Super Bowls to justify. So it is worth doing the arithmetic out loud ...
 
 ---
 <i>Paywalled Content</i>
