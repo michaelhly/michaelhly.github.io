@@ -66,9 +66,9 @@ Experts say CPO-based scale-up is no longer a question of if or why, but when an
 ---
 <i>Paywalled Content</i>
 
-Lumentum and Coherent are two of the most obvious tickets for investors who want exposure to the lasers in the co-packaged optics scale up. However, we should ask ourselves three questions about what the current valuations are telling us. What future is already in the price? If that future arrives, who keeps the money? And when does the money arrive, and what is waiting worth? Before answering them, hold on to one detail the table above does not show. Measured against revenue, Nvidia paid about 22 times trailing sales for Lumentum and about 7 times for Coherent, the same buyer pricing the same lasers three times apart on the same day. Both stocks have since traded above what Nvidia paid, which means anyone buying today is paying more than the most informed customer in the industry paid, and, as we will show, getting less.
+Lumentum and Coherent are two of the most obvious stocks for investors who want exposure to the lasers in the co-packaged optics scale up. But before paying today's multiples, three questions matter. What future is already in the price? If that future arrives, who keeps the money? When will the money arrive, and what is the cost of waiting?
 
-## What Future Is Already in the Price?
+## What future is already in the price?
 We model the conservative case from Nvidia’s entry price, which values Lumentum at $67 billion fully diluted (closer to $70 billion if you count every share the convertible-note conversions have since created). A price is a claim on profits the company has not earned yet, and the later they arrive, the less they count. Running the price backward at an ordinary cost of capital of about 10%, with operating margins held at 32% throughout, Lumentum needs roughly $19.9 billion in revenue by FY2031 and $37.7 billion by FY2036. That is seven times and twelve times the $3 billion fiscal year the company just closed.
 
 Impossible numbers? Not quite, because the market underneath is growing almost as fast as the price demands. LightCounting, the industry forecaster, sizes optical interconnects inside AI clusters at $26 billion in 2026, up 60% in a year, with a reasonable chance of $100 billion by 2030 if enough goes right. Lumentum’s $3 billion in revenue puts its share somewhere near 12%, and the true figure is lower, because the company stopped reporting a cloud-versus-telecom split when it reorganized into a single segment this year, leaving telecom and industrial revenue hiding inside the total. The $67 billion mark requires about 18% of the market’s projected size by 2031. That is two bets stacked, one on the market and one on Lumentum’s market share, and both have to land.
@@ -79,7 +79,7 @@ There is a wrinkle in the arithmetic that did not exist a week ago. Lumentum clo
 
 One more number to ignore, and one to take seriously. The headline says Lumentum lost $6.9 billion this year. It did not, in any sense that matters. The loss is a one-time, non-cash charge from converting its convertible notes into stock, a wealth transfer to noteholders that shows up properly in the share count, where we have already counted it. The number to take seriously is stock compensation, which the company’s preferred non-GAAP margins add back as if paying engineers in shares were free. It ran $191 million this year, about 6% of revenue. Our 32% margin sits between the 17% Lumentum earned under GAAP and the 40% it now guides to before stock compensation, which is roughly where we think the truth lives.
 
-## If the Future Arrives, Who Keeps the Money?
+## If the future arrives, who keeps the money?
 The market growing is the safest of the assumptions baked into the price, though a safe bet can still pay late. Share and margins are really one question. Will Lumentum ever hold pricing power over its one dominant customer? Nvidia answered that question before anyone thought to ask it, and this quarter’s filings let us check the answer against the evidence.
 
 **The customer is becoming the company.** In the March quarter, a single customer accounted for 26% of Lumentum’s revenue, up from 17% a year earlier, and the top two together reached 38%. The filings do not name them, but you can guess. Concentration like that is what winning the design looks like. It is also what losing your negotiating leverage looks like, and both readings are true at once.
@@ -90,7 +90,7 @@ The market growing is the safest of the assumptions baked into the price, though
 
 The Chiefs eventually paid Mahomes $450 million because he was irreplaceable. Nvidia has spent $4 billion making sure no laser maker ever is.
 
-## When Does the Money Arrive, and What Is Waiting Worth?
+## When does the money arrive, and what is the cost of waiting?
 Mahomes cost Kansas City a rookie contract, and the first ring arrived inside it. Optics is being paid at the top of the market and asked to deliver afterward. SemiAnalysis puts the real scale-up handoff past Rubin Ultra, out toward Feynman. A GPU generation runs roughly two years, and at a ten percent discount rate, a dollar that arrives two years late is worth 83 cents. Every dollar riding on the handoff takes that haircut, and none of the physics has to be wrong for it to happen.
 
 To be fair, the calendar just moved in optics’ favor, and you should know it. In this quarter’s earnings release, Lumentum’s CEO pointed to rising demand for high-power CPO lasers and an initial order for external laser modules as "the first signs that optics are starting to penetrate in-rack connectivity." In-rack is copper’s home turf, the two-meter world this whole post has been about, and an initial order for exactly the lasers Nvidia’s money was reserving is not nothing. But an initial order is a scouting report, not a starting job. The rookie is throwing in practice. The veteran still starts on Sunday.
