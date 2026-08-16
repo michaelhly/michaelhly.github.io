@@ -65,3 +65,7 @@ But the copies have a fragile invariant because the models must stay identical. 
 `all_reduce(model.grads)` is a collective operation. Every GPU contributes the gradients it computed from its own slice, and those gradients get averaged together across the whole cluster. Then the same averaged result flows back to every GPU. However, we cannot compute an average until the last contribution arrives. The fastest GPU must wait for the slowest one in every single iteration, yet no line in the loop say to wait. The averaging creates a barrier, realigning the whole cluster to a common clock. This happens millions of times over the months a training run lasts. 
 
 
+## The Waveform
+Each loop iteration has two electrical modes. During the forward and backward passes, a GPU's tensor cores are saturated and the chip runs near full power at 1200 watts. During all-reduce, the chip is sharing gradients over the network and sits idle until the average comes back. Power falls by hundreds of watts. 
+
+[GPU Waveform](/assets/training-waveform/single_gpu_square_wave.svg)
