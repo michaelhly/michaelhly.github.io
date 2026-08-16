@@ -1,0 +1,67 @@
+---
+title: "The Line of Code that Shakes the Grid"
+date: "2026-08-16T16:30:51.231Z"
+---
+Training a large language model might sound like a complicated process, but surprisingly it’s basically just a few lines of code inside a for loop. At a 100k GPUs, one of the lines is why the Federal Energy Regulatory Commission (FERC) moved to put data centers into the [same reliability regime as power plants](https://www.ferc.gov/media/e-1-rd26-7-000).
+
+## Gradients, from Scratch
+A neural network is a function with billions of tunable parameters, and training is the process of nudging each one in the direction that makes the AI model’s predictions less wrong. Every parameter gets its own number, and that number answers one question: If I nudge this parameter up a little, does the model’s mistake get bigger or smaller, and by how much? That number is the gradient. 
+
+The obvious way to get these numbers is by brute force. Nudge one parameter, re-run the entire model, and measure what changed. Then do it again for the next parameter. That sounds like a lot of work, and for billions of parameters it’s billions of forward passes per step. Luckily there’s a trick every deep learning framework is built on. We can track every arithmetic operation as it happens, then replay the chain rule backwards.  One pass gets us every gradient at once. Here is what a parameter value looks like in Python:
+```py
+class Value:
+    def __init__(self, data, children=(), local_grads=()):
+        self.data = data              # the number
+        self.grad = 0                 # d(loss)/d(this), filled in later
+        self._children = children     # what produced this value
+        self._local_grads = local_grads
+
+    def __mul__(self, other):
+        # d(a*b)/da = b, and d(a*b)/db = a
+        return Value(self.data * other.data, (self, other),
+                     (other.data, self.data))
+
+    def __add__(self, other):
+        return Value(self.data + other.data, (self, other), (1, 1))
+
+    def backward(self):
+        self.grad = 1  # d(loss)/d(loss) = 1
+        for v in reversed(topological_order(self)):
+            for child, local in zip(v._children, v._local_grads):
+                child.grad += local * v.grad   # chain rule
+```
+Every multiply and add returns a new  Value that remembers its inputs and the local derivative of the operation. Do a bunch of math with these objects and you have a computation graph . Call `.backward()` on the final result and the chain rule walks the graph in reverse, depositing a gradient on every node it passes.
+
+```py
+a = Value(2.0)
+b = Value(3.0)
+loss = a * b + a      # loss = 8.0
+loss.backward()
+a.grad                # 4.0. nudge a up by 0.001, loss rises by ~0.004
+b.grad                # 2.0
+```
+This mechanism is called [autograd](https://docs.pytorch.org/docs/2.13/notes/autograd.html). PyTorch’s `loss.backward()` is this exact algorithm, run over tensors instead of scalars, on hardware that does trillions of these multiply-and-add steps per second. 
+
+## The Loop
+With gradients in hand, training is essentially a four-line loop:
+```py
+for step in range(num_steps):
+    logits = model(tokens)           # forward: predict the next token
+    loss   = cross_entropy(logits)   # how surprised were we?
+    loss.backward()                  # gradients for every parameter
+    optimizer.step()                 # nudge each parameter downhill
+```
+Here, the forward pass runs the input through the model. The loss measures how poorly the model predicted the next token. Through the chain rule, the backward pass computes which direction each parameter should move and how far. And finally, the optimizer nudges all the parameters accordingly.
+
+## 100k GPUs
+A frontier model trains on trillions of tokens, far more than what one GPU can handle in any useful amount of time. We need 100k GPUs chewing through that pile at once, and we need them all training the same model. So we give every GPU its own complete copy of the model and hand each one a different slice of the tokens. And each GPU runs the same four-line loop on its own slice. This is called data parallelism.
+
+But the copies have a fragile invariant because the models must stay identical. If one of the GPUs updates its parameters using only what it learned from its own slice of data, it now holds a slightly different model than from everyone else. Within a few hundred steps, we’re no longer training one model; we’re end up training a hundred thousand models that drifted apart. To address this issue, we add an extra step to our loop:
+```diff
+    loss.backward()             # every parameter now holds its .grad
++   all_reduce(model.grads)     # average gradients across every GPU
+    optimizer.step()
+```
+`all_reduce(model.grads)` is a collective operation. Every GPU contributes the gradients it computed from its own slice, and those gradients get averaged together across the whole cluster. Then the same averaged result flows back to every GPU. However, we cannot compute an average until the last contribution arrives. The fastest GPU must wait for the slowest one in every single iteration, yet no line in the loop say to wait. The averaging creates a barrier, realigning the whole cluster to a common clock. This happens millions of times over the months a training run lasts. 
+
+
