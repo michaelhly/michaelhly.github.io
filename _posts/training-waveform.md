@@ -2,7 +2,7 @@
 title: "The Line of Code that Shakes the Grid"
 date: "2026-08-16T16:30:51.231Z"
 ---
-Training a large language model might sound like a complicated process, but surprisingly it’s basically just a few lines of code inside a for loop. At a 100k GPUs, one of the lines is why the Federal Energy Regulatory Commission (FERC) moved to put data centers into the [same reliability regime as power plants](https://www.ferc.gov/media/e-1-rd26-7-000).
+Training a large language model is a few lines of code in a `for` loop. Run that loop on 100k GPUs, and one of the lines is why the Federal Energy Regulatory Commission (FERC) moved to put data centers into the [same reliability regime as power plants](https://www.ferc.gov/media/e-1-rd26-7-000).
 
 ## Gradients, from Scratch
 A neural network is a function with billions of tunable parameters, and training is the process of nudging each one in the direction that makes the AI model’s predictions less wrong. Every parameter gets its own number, and that number answers one question: If I nudge this parameter up a little, does the model’s mistake get bigger or smaller, and by how much? That number is the gradient. 
