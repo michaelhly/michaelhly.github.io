@@ -81,3 +81,12 @@ Every power plant has a governor, a mechanical feedback that senses the turbine 
 ![Training Frequence vs. Governor and Turbine Resonance](/assets/training-waveform/training_frequency_vs_governor_and_turbine_resonance.svg)
 
 And like any large spinning object, a turbine shaft has speeds at which it naturally wants to shake, the way a wine glass rings at one particular pitch. Those natural rates sit right inside the range where training loops swing. A gradient update in one state can mechanically fatigue a turbine shaft in another.
+
+## Shipping the Fix
+In August 2025, Microsoft, OpenAI, and Nvidia published a joint paper, "Power Stablization for AI Training Datacenters", documenting the problem in their live clusters. Microsoft had co-developed a power-smoothing feature with Nvidia that enforces minimum power floors and ramp limits that keep a trough above the safe threshold.
+
+![Training Run with Power Smoothing](/assets/training-waveform/training_run_with_smoothing.png)
+
+Nvidia GPUs now ship a feature whose purpose is to waste electricity so a utility's turbine doesn't shake apart. Various companies have all implemented power stabilization measures across software, hardware and rack level stack. 
+
+Then the problem escaped engineering. NERC, the body that polices grid reliability, stood up a Large Loads Task Force in 2024 and spent 2025 escalating through reports and alerts. In May 2026 it issued its highest-tier alert, citing large-load swings happening in seconds, too fast for operators to manually correct. Two months later, FERC ordered NERC to write mandatory reliability standards for what it now calls computational loads, pulling data-center operators toward the same reliability regime that has governed power plants for two decades. The AI power story is usually told as a bottleneck: not enough gigawatts, not enough interconnects, not enough turbines on backorder. But how much is only one of the questions. The model you asked a question this morning was trained on infrastructure like this. A 100,000-GPU training run doesn’t just consume power. It sculpts it, second by second, into a waveform the grid has never had to digest.
