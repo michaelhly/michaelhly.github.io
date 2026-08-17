@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 580" role="img" aria-label="Diagram showing synchronized AI training load pulses becoming turbine shaft stress through governor lag and torsional resonance risk.">
+  <defs>
+    <marker id="stress-arrow" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 z" fill="#5b6675"/>
+    </marker>
+    <marker id="red-arrow" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M 0 0 L 10 4 L 0 8 z" fill="#e23d3d"/>
+    </marker>
+    <linearGradient id="shaft-gradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#8c96a4"/>
+      <stop offset="0.5" stop-color="#e5ebf2"/>
+      <stop offset="1" stop-color="#798493"/>
+    </linearGradient>
+    <style>
+      .ink { fill: #17212f; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .muted { fill: #5b6675; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .title { font-size: 18px; font-weight: 750; }
+      .caption { font-size: 13px; }
+      .label { font-size: 13px; font-weight: 650; }
+      .small { font-size: 12px; }
+      .key-text { fill: #17212f; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 12px; font-weight: 600; }
+      .panel { fill: #f7f9fc; stroke: #ccd5e2; stroke-width: 1.2; }
+      .axis { stroke: #ccd5e2; stroke-width: 1.2; }
+      .training { fill: none; stroke: #1684f8; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+      .governor { fill: none; stroke: #1d9a77; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+      .lag { fill: rgba(226, 61, 61, 0.18); stroke: rgba(226, 61, 61, 0.42); stroke-width: 1; }
+      .arrow { stroke: #5b6675; stroke-width: 1.6; fill: none; marker-end: url(#stress-arrow); }
+      .stress-arrow { stroke: #e23d3d; stroke-width: 3; fill: none; marker-end: url(#red-arrow); }
+      .shaft { fill: url(#shaft-gradient); stroke: #8792a2; stroke-width: 1.4; }
+      .ring { fill: #b6bfca; stroke: #788391; stroke-width: 1.5; }
+      .hot { fill: rgba(226, 61, 61, 0.16); stroke: #e23d3d; stroke-width: 2.5; }
+      .resonance { fill: none; stroke: #f2a124; stroke-width: 2.8; stroke-linecap: round; stroke-dasharray: 7 7; }
+      .chip { fill: rgba(22, 132, 248, 0.12); stroke: #1684f8; stroke-width: 1.5; }
+      .plant { fill: rgba(29, 154, 119, 0.12); stroke: #1d9a77; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <text class="ink title" x="28" y="34">How a training loop becomes turbine stress</text>
+  <text class="muted caption" x="28" y="58">Synchronized GPU work creates fast demand pulses; plant controls lag; the rotor absorbs repeated twisting.</text>
+
+  <rect class="panel" x="28" y="82" width="824" height="132" rx="8"/>
+  <text class="ink label" x="50" y="110">1. Training demand pulses</text>
+  <text class="muted small" x="50" y="132">GPUs ramp together after each synchronization barrier.</text>
+  <line class="axis" x1="270" y1="180" x2="810" y2="180"/>
+  <line class="axis" x1="270" y1="110" x2="270" y2="180"/>
+  <path class="training" d="M270 174 L296 174 L296 118 L336 118 L336 174 L366 174 L366 118 L407 118 L407 174 L438 174 L438 118 L479 118 L479 174 L510 174 L510 118 L552 118 L552 174 L583 174 L583 118 L624 118 L624 174 L655 174 L655 118 L696 118 L696 174 L727 174 L727 118 L768 118 L768 174 L808 174"/>
+  <rect class="chip" x="94" y="150" width="36" height="30" rx="5"/>
+  <rect class="chip" x="138" y="150" width="36" height="30" rx="5"/>
+  <rect class="chip" x="182" y="150" width="36" height="30" rx="5"/>
+  <line class="arrow" x1="226" y1="164" x2="258" y2="164"/>
+  <text class="muted small" x="305" y="202">time</text>
+  <text class="muted small" x="664" y="105">load rises and falls in formation</text>
+
+  <rect class="panel" x="28" y="238" width="824" height="132" rx="8"/>
+  <text class="ink label" x="50" y="266">2. Mechanical response lags</text>
+  <text class="muted small" x="50" y="288">The grid changes how hard it pulls before the turbine changes how hard it pushes.</text>
+  <line class="axis" x1="270" y1="336" x2="810" y2="336"/>
+  <line class="axis" x1="270" y1="266" x2="270" y2="336"/>
+  <path class="lag" d="M292 329 L292 276 L332 276 L332 329 L363 329 L363 276 L404 276 L404 329 L435 329 L435 276 L476 276 L476 329 L507 329 L507 276 L549 276 L549 329 L580 329 L580 276 L621 276 L621 329 L652 329 L652 276 L693 276 L693 329 L724 329 L724 276 L765 276 L765 329 L806 329 L806 329 L292 329"/>
+  <path class="training" d="M270 329 L296 329 L296 276 L336 276 L336 329 L366 329 L366 276 L407 276 L407 329 L438 329 L438 276 L479 276 L479 329 L510 329 L510 276 L552 276 L552 329 L583 329 L583 276 L624 276 L624 329 L655 329 L655 276 L696 276 L696 329 L727 329 L727 276 L768 276 L768 329 L808 329"/>
+  <path class="governor" d="M270 329 C295 329 306 329 323 316 C343 301 355 286 380 284 C408 282 419 301 437 315 C458 331 479 333 501 316 C522 301 532 286 558 284 C586 282 597 301 616 315 C637 331 657 333 680 316 C701 301 711 286 737 284 C765 282 777 302 808 316"/>
+  <rect class="plant" x="106" y="304" width="104" height="34" rx="5"/>
+  <text class="muted small" x="118" y="326">governor lag</text>
+  <line class="arrow" x1="226" y1="322" x2="258" y2="322"/>
+  <text class="muted small" x="614" y="258">red area = mismatch absorbed by rotor</text>
+
+  <rect class="panel" x="28" y="394" width="824" height="158" rx="8"/>
+  <text class="ink label" x="50" y="422">3. Rotor absorbs repeated twisting</text>
+  <text class="muted small" x="50" y="444">Near a natural torsional frequency, small twists can build into fatigue stress.</text>
+  <line class="arrow" x1="226" y1="464" x2="258" y2="464"/>
+  <g transform="translate(302 0)">
+    <rect class="shaft" x="42" y="460" width="388" height="28" rx="14"/>
+    <ellipse class="ring" cx="42" cy="474" rx="20" ry="45"/>
+    <ellipse class="ring" cx="430" cy="474" rx="20" ry="45"/>
+    <rect class="hot" x="205" y="448" width="58" height="52" rx="8"/>
+    <path class="stress-arrow" d="M156 445 C190 416 236 416 270 445"/>
+    <path class="stress-arrow" d="M316 503 C282 532 236 532 202 503"/>
+    <path class="resonance" d="M48 525 C98 502 134 502 184 525 S270 548 320 525 S392 502 430 525"/>
+  </g>
+  <g>
+    <path class="stress-arrow" d="M768 438 C784 426 806 426 822 438"/>
+    <text class="key-text" x="758" y="462">twisting stress</text>
+    <rect class="hot" x="758" y="476" width="22" height="18" rx="4"/>
+    <text class="key-text" x="790" y="490">fatigue zone</text>
+    <line class="resonance" x1="758" y1="520" x2="782" y2="520"/>
+    <text class="key-text" x="790" y="524">torsional mode</text>
+  </g>
+
+  <path class="arrow" d="M450 214 C450 224 450 228 450 238"/>
+  <path class="arrow" d="M450 370 C450 380 450 384 450 394"/>
+</svg>
