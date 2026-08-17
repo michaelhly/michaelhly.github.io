@@ -7,7 +7,7 @@ Training a large language model is a few lines of code in a `for` loop. Run that
 ## Gradients, from Scratch
 A neural network is a function with billions of tunable parameters, and training is the process of nudging each one in the direction that makes the AI model’s predictions less wrong. Every parameter gets its own number, and that number answers one question: If I nudge this parameter up a little, does the model’s mistake get bigger or smaller, and by how much? That number is the gradient. 
 
-The obvious way to get these numbers is by brute force. Nudge one parameter, re-run the entire model, and measure what changed. Then do it again for the next parameter. That sounds like a lot of work, and for billions of parameters it’s billions of forward passes per step. Luckily there’s a trick every deep learning framework is built on. We can track every arithmetic operation as it happens, then replay the chain rule backwards.  One pass gets us every gradient at once. Here is what a parameter value looks like in Python:
+We could get these numbers by brute force. Nudge one parameter, run the input through the entire model again, and measure what changed. For a model with billions of parameters, that would mean rerunning the entire model billions of times just to take one training step. Real training gets the same answer without trying every parameter one by one. It records the arithmetic that produces the answer, then walks that record backward with the chain rule. One forward pass and one backward pass get us every gradient at once. Here is what a parameter value looks like in Python:
 ```py
 class Value:
     def __init__(self, data, children=(), local_grads=()):
@@ -30,8 +30,7 @@ class Value:
             for child, local in zip(v._children, v._local_grads):
                 child.grad += local * v.grad   # chain rule
 ```
-Every multiply and add returns a new  Value that remembers its inputs and the local derivative of the operation. Do a bunch of math with these objects and you have a computation graph . Call `.backward()` on the final result and the chain rule walks the graph in reverse, depositing a gradient on every node it passes.
-
+Every multiply and add returns a new `Value` that remembers its inputs and the local derivative of the operation. Stack enough of these operations together, and their links form a computation graph. When we call `.backward()` on the final result, the chain rule walks that graph in reverse, depositing a gradient on every node it passes.
 ```py
 a = Value(2.0)
 b = Value(3.0)
