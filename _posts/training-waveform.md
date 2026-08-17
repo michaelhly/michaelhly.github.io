@@ -39,9 +39,8 @@ loss.backward()
 a.grad                # 4.0. nudge a up by 0.001, loss rises by ~0.004
 b.grad                # 2.0
 ```
-This mechanism is called [autograd](https://docs.pytorch.org/docs/2.13/notes/autograd.html). PyTorch’s `loss.backward()` does the same reverse walk over tensors instead of single numbers. And Modern AI chips do the underlying multiply-adds by the trillions.
+This mechanism is called [autograd](https://docs.pytorch.org/docs/2.13/notes/autograd.html). PyTorch’s `loss.backward()` does the same reverse walk over tensors instead of single numbers. Modern AI chips do the underlying multiply-adds by the trillions.
 
-## The Loop
 With gradients in hand, training is essentially a four-line loop:
 ```py
 for step in range(num_steps):
@@ -53,9 +52,9 @@ for step in range(num_steps):
 Here, the forward pass runs the input through the model. The loss measures how poorly the model predicted the next token. Through the chain rule, the backward pass computes which direction each parameter should move and how far. And finally, the optimizer nudges all the parameters accordingly.
 
 ## 100k GPUs
-A frontier model trains on trillions of tokens, far more than what one GPU can handle in any useful amount of time. We need 100k GPUs chewing through that pile at once, and we need them all training the same model. So we give every GPU its own complete copy of the model and hand each one a different slice of the tokens. And each GPU runs the same four-line loop on its own slice. This is called data parallelism.
+A frontier model trains on trillions of tokens, far more than one GPU can process in any useful amount of time. At that scale, need 100k GPUs working through the pile at once. In the simplest version, every GPU holds a copy of the model and sees a different slice of the data. Each one runs the same training loop, computes its own gradients, and then the fleet combines what they found. This is called data parallelism.
 
-But the copies have a fragile invariant because the models must stay identical. If one of the GPUs updates its parameters using only what it learned from its own slice of data, it now holds a slightly different model than from everyone else. Within a few hundred steps, we’re no longer training one model; we’re end up training a hundred thousand models that drifted apart. To address this issue, we add an extra step to our loop:
+But those copies come with a fragile invariant. They have to stay identical. If one of the GPUs updates its parameters using only what it learned from its own slice of data, it now holds a slightly different model from everyone else. Within a few hundred steps, we’re no longer training one model. We end up training 100k models that have drifted apart. So we add one more step to our loop:
 ```diff
     loss.backward()             # every parameter now holds its .grad
 +   all_reduce(model.grads)     # average gradients across every GPU
