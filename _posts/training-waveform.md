@@ -68,6 +68,16 @@ But the copies have a fragile invariant because the models must stay identical. 
 ## The Waveform
 Each loop iteration has two electrical modes. During the forward and backward passes, a GPU's tensor cores are saturated and the chip runs near full power at 1200 watts. During all-reduce, the chip is sharing gradients over the network and sits idle until the average comes back. Power falls by hundreds of watts. 
 
-[GPU Waveform](/assets/training-waveform/single_gpu_square_wave.svg)
+![GPU Waveform](/assets/training-waveform/single_gpu_square_wave.svg)
 
-A training cluster is unlike any other load on the electric grid. Run a chatbot for millions of users on identical GPUs and the power draw fluctuates too, but the chat messages arrive at random moments, so the blips cancel out. The barrier removes the randomness. In every training iteration, `all_reduce(model.grads)` takes any GPU that drifted ahead and holds it until the cluster is back in formation. The synchronization isn't an accident that better engineering could remove. It's produced, deliberately and continuously, by the [definition of the training job](https://docs.pytorch.org/docs/2.13/notes/ddp.html#distributed-data-parallel). Every GPU peaks together and dips together, so the waves don't smooth each other out. They stack.
+A training cluster is unlike any other load on the electric grid. Run a chatbot for millions of users on identical GPUs and the power draw fluctuates too, but the chat messages arrive at random moments, so the blips cancel out. The barrier removes the randomness. In every training iteration, `all_reduce(model.grads)` takes any GPU that drifted ahead and holds it until the cluster is back in formation. The synchronization isn't an accident that better engineering could remove. It's produced, deliberately and continuously, by the [definition of the training job](https://docs.pytorch.org/docs/2.13/notes/ddp.html#distributed-data-parallel). Every GPU peaks together and dips together, so the waves don't smooth each other out. They stack. The power draw appear and vanishes every second or so, oscillating with the rhythm of a for loop.
+
+The size of the power swings is manageable. The speed is the threat, which collides with how power plants work.
+
+![Governor Control System](/assets/training-waveform/governor_control_system.png)
+
+Every power plant has a governor, a mechanical feedback that senses the turbine slowing under load and opens the steam valve wider to compensate. But the valve takes a few seconds to respond, and the training loop swings faster than that. The turbine can't correct a swing it can't keep up with, so it absorbs it instead, speeding up and slowing down, vibrating.
+
+![Training Frequence vs. Governor and Turbine Resonance](/assets/training-waveform/training_frequency_vs_governor_and_turbine_resonance.svg)
+
+And like any large spinning object, a turbine shaft has speeds at which it naturally wants to shake, the way a wine glass rings at one particular pitch. Those natural rates sit right inside the range where training loops swing. A gradient update in one state can mechanically fatigue a turbine shaft in another.
