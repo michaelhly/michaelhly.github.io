@@ -60,8 +60,7 @@ But those copies come with a fragile invariant. They have to stay identical. If 
 +   all_reduce(model.grads)     # average gradients across every GPU
     optimizer.step()
 ```
-`all_reduce(model.grads)` is a collective operation. Every GPU contributes the gradients it computed from its own slice, and those gradients get averaged together across the whole cluster. Then the same averaged result flows back to every GPU. However, we cannot compute an average until the last contribution arrives. The fastest GPU must wait for the slowest one in every single iteration, yet no line in the loop say to wait. The averaging creates a barrier, realigning the whole cluster to a common clock. This happens millions of times over the months a training run lasts. 
-
+`all_reduce(model.grads)` is a collective operation. Each GPU sends out the gradients it learned from its own slice of data. The cluster averages those gradients together, then sends the shared result back so every GPU can update its copy of the model to stay in sync. But the average cannot finish until the last GPU contributes, so the fastest GPUs must wait for the slowest. In effect, the averaging step becomes a synchronization barrier, pulling the cluster back to the same clock every iteration. Over a months-long training run, the cluster repeats this synchronization millions of times.
 
 ## The Waveform
 Each loop iteration has two electrical modes. During the forward and backward passes, a GPU's tensor cores are saturated and the chip runs near full power at 1200 watts. During all-reduce, the chip is sharing gradients over the network and sits idle until the average comes back. Power falls by hundreds of watts. 
