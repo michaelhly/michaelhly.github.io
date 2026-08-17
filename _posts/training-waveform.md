@@ -52,7 +52,7 @@ for step in range(num_steps):
 Here, the forward pass runs the input through the model. The loss measures how poorly the model predicted the next token. Through the chain rule, the backward pass computes which direction each parameter should move and how far. And finally, the optimizer nudges all the parameters accordingly.
 
 ## 100k GPUs
-A frontier model trains on trillions of tokens, far more than one GPU can process in any useful amount of time. At that scale, need 100k GPUs working through the pile at once. In the simplest version, every GPU holds a copy of the model and sees a different slice of the data. Each one runs the same training loop, computes its own gradients, and then the fleet combines what they found. This is called data parallelism.
+A frontier model trains on trillions of tokens, far more than one GPU can process in any useful amount of time. At that scale, we need 100k GPUs working through the pile at once. In the simplest version, every GPU holds a copy of the model and sees a different slice of the data. Each one runs the same training loop, computes its own gradients, and then the fleet combines what they found. This is called data parallelism.
 
 But those copies come with a fragile invariant. They have to stay identical. If one of the GPUs updates its parameters using only what it learned from its own slice of data, it now holds a slightly different model from everyone else. Within a few hundred steps, we’re no longer training one model. We end up training 100k models that have drifted apart. So we add one more step to our loop:
 ```diff
@@ -63,7 +63,7 @@ But those copies come with a fragile invariant. They have to stay identical. If 
 `all_reduce(model.grads)` is a collective operation. Each GPU sends out the gradients it learned from its own slice of data. The cluster averages those gradients together, then sends the shared result back so every GPU can update its copy of the model to stay in sync. But the average cannot finish until the last GPU contributes, so the fastest GPUs must wait for the slowest. In effect, the averaging step becomes a synchronization barrier, pulling the cluster back to the same clock every iteration. Over a months-long training run, the cluster repeats this synchronization millions of times.
 
 ## The Waveform
-Each loop iteration has two electrical modes. During the forward and backward passes, a GPU's tensor cores are saturated and the chip runs near full power at 1200 watts. During all-reduce, the chip is sharing gradients over the network and sits idle until the average comes back. Power falls by hundreds of watts. 
+Each loop iteration has two electrical modes. During the forward and backward passes, a GPU's tensor cores are saturated and the chip runs near full power at 1200 watts. During `all_reduce`, the chip is sharing gradients over the network and sits idle until the average comes back. Power usage falls by hundreds of watts. 
 
 ![GPU Waveform](/assets/training-waveform/single_gpu_square_wave.svg)
 
