@@ -39,7 +39,7 @@ loss.backward()
 a.grad                # 4.0. nudge a up by 0.001, loss rises by ~0.004
 b.grad                # 2.0
 ```
-This mechanism is called [autograd](https://docs.pytorch.org/docs/2.13/notes/autograd.html). PyTorch’s `loss.backward()` is this exact algorithm, run over tensors instead of scalars, on hardware that does trillions of these multiply-and-add steps per second. 
+This mechanism is called [autograd](https://docs.pytorch.org/docs/2.13/notes/autograd.html). PyTorch’s `loss.backward()` does the same reverse walk over tensors instead of single numbers. And Modern AI chips do the underlying multiply-adds by the trillions.
 
 ## The Loop
 With gradients in hand, training is essentially a four-line loop:
