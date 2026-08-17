@@ -70,13 +70,11 @@ Each loop iteration has two electrical modes. During the forward and backward pa
 
 ![GPU Waveform](/assets/training-waveform/single_gpu_square_wave.svg)
 
-A training cluster is unlike any other load on the electric grid. Run a chatbot for millions of users on identical GPUs and the power draw fluctuates too, but the chat messages arrive at random moments, so the blips cancel out. The barrier removes the randomness. In every training iteration, `all_reduce(model.grads)` takes any GPU that drifted ahead and holds it until the cluster is back in formation. The synchronization isn't an accident that better engineering could remove. It's produced, deliberately and continuously, by the [definition of the training job](https://docs.pytorch.org/docs/2.13/notes/ddp.html#distributed-data-parallel). Every GPU peaks together and dips together, so the waves don't smooth each other out. They stack. The power draw appear and vanishes every second or so, oscillating with the rhythm of a for loop.
-
-The size of the power swings is manageable. The speed is the threat, which collides with how power plants work.
+A training cluster is unlike any other load on the electric grid. Run a chatbot for millions of users on identical GPUs and the power draw fluctuates too, but the chat messages arrive at random moments, so the blips cancel out. The barrier removes the randomness. In every training iteration, `all_reduce(model.grads)` takes any GPU that drifted ahead and holds it until the cluster is back in formation. The synchronization isn't an accident that better engineering could remove. It's produced, deliberately and continuously, by the [definition of the training job](https://docs.pytorch.org/docs/2.13/notes/ddp.html#distributed-data-parallel). Every GPU peaks together and dips together, so the waves don't smooth each other out. They stack. The power draw appear and vanishes every second or so, oscillating with the rhythm of a for loop. The size of the power swings is manageable. The speed is the threat, which collides with how power plants work.
 
 ![Governor Control System](/assets/training-waveform/governor_control_system.png)
 
-Every power plant has a governor, a mechanical feedback that senses the turbine slowing under load and opens the steam valve wider to compensate. But the valve takes a few seconds to respond, and the training loop swings faster than that. The turbine can't correct a swing it can't keep up with, so it absorbs it instead, speeding up and slowing down, vibrating.
+Every power plant has a governor, a mechanical feedback that senses the turbine slowing under load and opens the steam valve wider to compensate. But the training loop creates swings faster than what the valve can respond to in a few seconds. The turbine can't correct a swing it can't keep up with, so it absorbs it instead, speeding up and slowing down, vibrating.
 
 ![Training Frequence vs. Governor and Turbine Resonance](/assets/training-waveform/training_frequency_vs_governor_and_turbine_resonance.svg)
 
