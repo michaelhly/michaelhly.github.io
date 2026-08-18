@@ -71,10 +71,12 @@ A training cluster behaves unlike most loads on the electric grid. Serving a cha
 
 ![Governor Control System](/assets/training-waveform/governor_control_system.png)
 
-The shaft is the only thing connecting the two sides of the machine: steam pushing the turbine in at one end, the grid pulling on the generator at the other. When the two are balanced, the shaft carries a steady twist and spins at a constant speed. During the control lag they are not, and that leftover torque twists the shaft back and forth. The danger isn't the twist itself, it's fatigue. Turbine shafts are built to hold enormous steady loads, but oscillating stress is a different problem. And if the training loop keeps pulsing near one of the rotor train's natural torsional frequencies, the twisting reinforces itself instead of damping out, the same way a push timed to a swing sends it higher. Each cycle adds a little more strain, and over time it can crack the shaft. A gradient update in one state can become mechanical fatigue in a turbine shaft somewhere else.
+Every generator is a spinning machine tied to the grid. When power demand jumps, the electrical drag on that machine changes almost instantly. A governor watches the turbine speed, and when the turbine starts to slow, it tells the plant to push in more steam, gas, or water, depending sends it higher. Each cycle adds a little more strain, and over time it can crack the shaft. A gradient update in one state can become mechanical fatigue in a turbine shaft somewhere else.
 
 
 ![Training Frequence vs. Governor and Turbine Resonance](/assets/training-waveform/training-pulse-turbine-stress.svg)
+
+The grid has changed how hard it is pulling, but the turbine has not yet changed how hard it is pushing, so the shaft twists back and forth under load. The danger is fatigue. Turbine shafts are designed to handle enormous steady forces, but repeated twisting at the wrong rhythm is different. If the training loop keeps landing near one of the rotor train’s natural torsional frequencies, the twisting can amplify instead of fading away. Over time, that repeated stress can damage the shaft. A gradient update in one state can become mechanical fatigue in a turbine shaft somewhere else.
 
 ## Shipping the Fix
 In August 2025, Microsoft, OpenAI, and Nvidia published a joint paper, "Power Stablization for AI Training Datacenters", documenting the problem in their live clusters. Microsoft had co-developed a power-smoothing feature with Nvidia that enforces minimum power floors and ramp limits that keep a trough above the safe threshold.
