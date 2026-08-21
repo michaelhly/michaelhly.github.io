@@ -99,6 +99,9 @@
 <path style="stroke:none;" d="M 6.1875 -9.578125 L 8.359375 0 L 9.703125 0 L 12.171875 -11.484375 L 10.765625 -11.484375 L 9.015625 -2.078125 L 6.875 -11.484375 L 5.484375 -11.484375 L 3.359375 -2.078125 L 1.578125 -11.484375 L 0.203125 -11.484375 L 2.65625 0 L 4 0 Z "/>
 </symbol>
 </g>
+<symbol overflow="visible" id="glyph0-V">
+<path style="stroke:none;" d="M 4.35 -2.46875 L 1.575 -11.484375 L 0.2 -11.484375 L 3.735 0 L 4.965 0 L 8.5 -11.484375 L 7.125 -11.484375 Z "/>
+</symbol>
 </defs>
 <g id="surface1">
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(66.836548%,62.24823%,57.414246%);fill-opacity:1;" d="M 489.5 209 L 489.5 147.75 L 388.5 147.75 L 388.5 127.75 L 280.5 127.75 L 280.5 180.25 L 269.5 172.75 L 262 31.25 L 239 31.25 L 233 210.75 L 232.5 235.25 L 489.5 235.25 L 489.5 217.25 "/>
@@ -2437,17 +2440,31 @@
 </g>
 <!-- governor valve added to the steam line between boiler and turbine -->
 <g id="governor-valve">
-  <!-- Steam admission valve at the turbine end of the steam run: the horizontal
-       channel (y141-144) ends at x371, where the pipe drops into the turbine
-       housing, so the valve body ends at that corner. Ink rgb(35,31,32), cap
-       height 11.0, 1.8 arrow shaft and solid head match the base labels. -->
+  <!-- Steam admission valve at the turbine end of the steam run (channel y141-144
+       ends at x371). Label typeset from the artwork's own glyph symbols (V is
+       custom-built to the font's cap height 11.484, stroke 1.375, apex from 'v').
+       Arrow is the boiler arrow's exact geometry translated by (45, -24.57):
+       stroked shaft w2.0, flared head, white swallow-tail notch. -->
   <path d="M 355 136.5 L 371 148.5 L 371 136.5 L 355 148.5 Z" fill="rgb(154,153,150)" stroke="rgb(35,31,32)" stroke-width="1.2"/>
   <line x1="363" y1="142.5" x2="363" y2="132" stroke="rgb(35,31,32)" stroke-width="1.2"/>
-  <line x1="357" y1="132" x2="369" y2="132" stroke="rgb(35,31,32)" stroke-width="1.8"/>
-  <line x1="363" y1="95" x2="363" y2="116" stroke="rgb(35,31,32)" stroke-width="1.8"/>
-  <path d="M 363 128 L 357 116 L 369 116 Z" fill="rgb(35,31,32)"/>
-  <text x="346" y="74" style="font: 400 15.3px Helvetica, Arial, sans-serif; fill: rgb(35,31,32);">Governor</text>
-  <text x="346" y="88.7" style="font: 400 15.3px Helvetica, Arial, sans-serif; fill: rgb(35,31,32);">Valve</text>
+  <line x1="357" y1="132" x2="369" y2="132" stroke="rgb(35,31,32)" stroke-width="2"/>
+  <path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.729858%,12.159729%,12.548828%);stroke-opacity:1;" d="M 363 98 L 363 118"/>
+  <path style="stroke:none;fill-rule:nonzero;fill:rgb(13.729858%,12.159729%,12.548828%);fill-opacity:1;" d="M 363.000000 130.000312 C 360.894531 124.320625 357.296875 117.273750 353.488281 112.906562 L 363.000000 116.344062 L 372.507812 112.906562 C 368.703125 117.273750 365.105469 124.320625 363.000000 130.000312"/>
+<g style="fill:rgb(13.729858%,12.159729%,12.548828%);fill-opacity:1;">
+<use xlink:href="#glyph0-25" x="354.000" y="77.0"/>
+<use xlink:href="#glyph0-7" x="364.208" y="77.0"/>
+<use xlink:href="#glyph0-3" x="371.504" y="77.0"/>
+<use xlink:href="#glyph0-4" x="378.064" y="77.0"/>
+<use xlink:href="#glyph0-5" x="385.360" y="77.0"/>
+<use xlink:href="#glyph0-15" x="389.728" y="77.0"/>
+<use xlink:href="#glyph0-7" x="397.024" y="77.0"/>
+<use xlink:href="#glyph0-5" x="404.320" y="77.0"/>
+<use xlink:href="#glyph0-V" x="354.000" y="92.0"/>
+<use xlink:href="#glyph0-8" x="362.700" y="92.0"/>
+<use xlink:href="#glyph0-9" x="369.996" y="92.0"/>
+<use xlink:href="#glyph0-3" x="372.908" y="92.0"/>
+<use xlink:href="#glyph0-4" x="379.468" y="92.0"/>
+</g>
 </g>
 <line x1="0" y1="386" x2="601" y2="386" stroke="rgb(210,209,206)" stroke-width="1"/>
 <circle class="bdot" cx="8" cy="404" r="8"/>
