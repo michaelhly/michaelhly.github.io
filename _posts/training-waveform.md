@@ -71,15 +71,13 @@ A training cluster behaves differently from most loads on the electric grid. Pow
 
 [Coal Power Plant Layers](/assets/training-waveform/coal_fired_power_plant_layers.svg)
 
-A power plant does not answer a change in demand all at once, it answers in layers, each one slower than the last.
+A power plant does not answer a change in demand all at once, it answers in layers:
 
-- **In the first instant.** Nothing has decided anything yet. The turbine and generator are many tons of metal spinning at 3600 rpm on a 60 Hz grid, and when the grid pulls harder, the extra pull drags on all that spinning metal and slows it down a little.
-- **Over the next several seconds.** The governor notices the lost speed and opens the steam valve until the turbine is pushing as hard as the grid is pulling.
-- **Minutes later.** Operators bring other plants up to cover the new load and hand this one back a steady setpoint.
+- The extra pull by ... drags on the spinning turbine slowing it down ...
+- The governor notices the lost speed and opens the steam valve until the turbine is pushing as hard as the grid is pulling.
+- Operators bring other plants up to cover the new load and hand this one back a steady setpoint.
 
 Every layer assumes the load is changing slowly enough to hand off to the next one.
-
-![A coal-fired power plant and the three layers that answer a change in demand](/assets/training-waveform/coal_fired_power_plant_layers.svg)
 
 A training cluster arrives below the bottom rung of that ladder. The load swings hundreds of megawatts in lockstep, once a second, and no control layer is that fast. Nothing pushes back except the spinning steel itself. On every pulse, the grid has already changed how hard it is pulling before the turbine can change how hard it is pushing, and the mismatch has to go somewhere. It goes into the shaft as torque, twisting the metal back and forth on every iteration of the training loop.
 
