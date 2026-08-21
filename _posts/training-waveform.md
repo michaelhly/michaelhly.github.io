@@ -69,13 +69,19 @@ Each loop iteration has two electrical modes. During the forward and backward pa
 
 A training cluster behaves differently from most loads on the electric grid. Power can also fluctuate when millions of users are talking to a chatbot, but their requests arrive at random moments, so most of those fluctuations cancel each other out. Training does not have the same randomness. In each iteration, `all_reduce(model.grads)` takes any GPU that has drifted ahead and holds it until the rest arrive. This forced alignment is not an accident or a bug to engineer away; it is produced, deliberately and continuously, by the [definition of the training job](https://docs.pytorch.org/docs/2.13/notes/ddp.html#distributed-data-parallel). The GPUs ramps up in power consumption and tapers off together synchornously, so the waves do not cancel. They stack into a power draw that pulses every second or so, locked to the rhythm of the training loop. While the size of the swings are manageable, the speed is a threat because the pattern runs up against how power plants are designed to work.
 
-![Governor Control System](/assets/training-waveform/governor_control_system.png)
+A power plant does not answer a change in demand all at once, it answers in layers, each one slower than the last.
 
-A power plant is built around a steady bargain. The turbine spins a generator at a fixed speed, 3600 rpm on a 60 Hz grid, and a governor watches that speed. When demand rises, the extra pull slows the shaft slightly, the governor opens the steam valve, and the turbine pushes harder until supply and demand balance again. That control loop was designed for loads that drift over seconds to minutes, and for millions of consumers whose random changes mostly cancel out.
+- **In the first instant.** Nothing has decided anything yet. The turbine and generator are many tons of metal spinning at 3600 rpm on a 60 Hz grid, and when the grid pulls harder, the extra pull drags on all that spinning metal and slows it down a little.
+- **Over the next several seconds.** The governor notices the lost speed and opens the steam valve until the turbine is pushing as hard as the grid is pulling.
+- **Minutes later.** Operators bring other plants up to cover the new load and hand this one back a steady setpoint.
 
-A training cluster breaks both assumptions at once. The load swings hundreds of megawatts in lockstep, once a second, faster than any governor can answer. On every pulse, the grid has already changed how hard it is pulling before the turbine can change how hard it is pushing, and the mismatch has to go somewhere. It goes into the shaft as torque, twisting the metal back and forth on each iteration of the training loop.
+Every layer assumes the load is changing slowly enough to hand off to the next one.
 
-![Training Frequence vs. Governor and Turbine Resonance](/assets/training-waveform/training-pulse-turbine-stress.svg)
+![A coal-fired power plant and the three layers that answer a change in demand](/assets/training-waveform/coal_fired_power_plant_layers.svg)
+
+A training cluster arrives below the bottom rung of that ladder. The load swings hundreds of megawatts in lockstep, once a second, and no control layer is that fast. Nothing pushes back except the spinning steel itself. On every pulse, the grid has already changed how hard it is pulling before the turbine can change how hard it is pushing, and the mismatch has to go somewhere. It goes into the shaft as torque, twisting the metal back and forth on every iteration of the training loop.
+
+![How a training loop becomes turbine stress](/assets/training-waveform/training-pulse-turbine-stress.svg)
 
 The twist itself is not the danger, fatigue is. Turbine shafts are built to hold enormous steady loads, but oscillating stress is a different problem. If the training loop keeps pulsing near one of the rotor train's natural torsional frequencies, the twisting reinforces itself instead of damping out, the same way a push timed to a swing sends it higher. Each cycle adds a little more strain, and over time it can crack the shaft. A gradient update in one state can become mechanical fatigue in a turbine shaft somewhere else.
 
