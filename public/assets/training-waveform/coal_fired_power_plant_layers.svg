@@ -2437,14 +2437,15 @@
 </g>
 <!-- governor valve added to the steam line between boiler and turbine -->
 <g id="governor-valve">
-  <!-- Valve straddling the steam pipe, which runs y141-144 between x310 and x370.
-       Ink rgb(35,31,32), cap height 11.0, 1.8-wide arrow shaft and solid head all
-       match the base illustration's own labels and arrows. -->
-  <path d="M 342 136.5 L 358 148.5 L 358 136.5 L 342 148.5 Z" fill="rgb(154,153,150)" stroke="rgb(35,31,32)" stroke-width="1.2"/>
-  <line x1="350" y1="142.5" x2="350" y2="132" stroke="rgb(35,31,32)" stroke-width="1.2"/>
-  <line x1="344" y1="132" x2="356" y2="132" stroke="rgb(35,31,32)" stroke-width="1.8"/>
-  <line x1="350" y1="95" x2="350" y2="116" stroke="rgb(35,31,32)" stroke-width="1.8"/>
-  <path d="M 350 128 L 344 116 L 356 116 Z" fill="rgb(35,31,32)"/>
+  <!-- Steam admission valve at the turbine end of the steam run: the horizontal
+       channel (y141-144) ends at x371, where the pipe drops into the turbine
+       housing, so the valve body ends at that corner. Ink rgb(35,31,32), cap
+       height 11.0, 1.8 arrow shaft and solid head match the base labels. -->
+  <path d="M 355 136.5 L 371 148.5 L 371 136.5 L 355 148.5 Z" fill="rgb(154,153,150)" stroke="rgb(35,31,32)" stroke-width="1.2"/>
+  <line x1="363" y1="142.5" x2="363" y2="132" stroke="rgb(35,31,32)" stroke-width="1.2"/>
+  <line x1="357" y1="132" x2="369" y2="132" stroke="rgb(35,31,32)" stroke-width="1.8"/>
+  <line x1="363" y1="95" x2="363" y2="116" stroke="rgb(35,31,32)" stroke-width="1.8"/>
+  <path d="M 363 128 L 357 116 L 369 116 Z" fill="rgb(35,31,32)"/>
   <text x="346" y="74" style="font: 400 15.3px Helvetica, Arial, sans-serif; fill: rgb(35,31,32);">Governor</text>
   <text x="346" y="88.7" style="font: 400 15.3px Helvetica, Arial, sans-serif; fill: rgb(35,31,32);">Valve</text>
 </g>
