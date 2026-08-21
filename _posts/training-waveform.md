@@ -2,7 +2,7 @@
 title: "The Line of Code that Shakes the Grid"
 date: "2026-08-16T16:30:51.231Z"
 ---
-Training a large language model is a few lines of code in a `for` loop. Run that loop on 100k GPUs, and one of the lines is why the Federal Energy Regulatory Commission (FERC) moved to put data centers into the [same reliability regime as power plants](https://www.ferc.gov/media/e-1-rd26-7-000).
+Training a large language model is a few lines of code in a `for` loop. Run that loop on 100k GPUs, and one of the lines is why regulators moved to put data centers into the same reliability regime as power plants.
 
 ## Gradients, from Scratch
 A neural network is a function with billions of tunable parameters, and training is the process of nudging each one in the direction that makes the AI model’s predictions less wrong. Every parameter gets its own number, and that number answers one question: If I nudge this parameter up a little, does the model’s mistake get bigger or smaller, and by how much? That number is the gradient. 
@@ -85,10 +85,10 @@ A training run's power draw is a square wave. It swings hundreds of megawatts in
 The twist itself is not the danger, but the repetition is. Turbine shafts are built to hold enormous steady loads, but oscillating stress can wear the shaft down. If the pulses arrive at the wrong rhythm, near one of the shaft’s natural torsional frequencies, each twist can reinforce the last instead of fading away. Over time, that repeated stress can turn an electrical waveform into fatigue in steel. Each cycle adds a little more strain, and over time it can crack the shaft.
 
 ## Shipping the Fix
-In August 2025, Microsoft, OpenAI, and Nvidia published a joint paper, "Power Stablization for AI Training Datacenters", documenting the problem in their clusters.
+In August 2025, Microsoft, OpenAI, and Nvidia published a joint paper, "Power Stabilization for AI Training Datacenters", documenting the problem in their clusters.
 
 ![Training Run with Power Smoothing](/assets/training-waveform/training_run_with_smoothing.png)
 
-Nvidia GPUs now include a power-smoothing feature that deliberately burns extra energy to make training loads easier for the grid to absorb. It holds GPUs above a minimum power floor and limits how quickly their power draw can rise or fall, rounding off the square wave before it reaches the utility.
+Nvidia GPUs now ship a power-smoothing feature that deliberately burns extra energy to make training loads easier for the grid to absorb. It holds GPUs above a minimum power floor and limits how quickly their power draw can rise or fall, rounding off the square wave before it reaches the utility.
 
-Then the problem escaped engineering. NERC, the body that polices grid reliability, stood up a Large Loads Task Force in 2024 and spent 2025 escalating through reports and alerts. In May 2026 it issued its highest-tier alert, citing large-load swings happening in seconds, too fast for operators to manually correct. Two months later, FERC ordered NERC to write mandatory reliability standards for what it now calls computational loads, pulling data-center operators toward the same reliability regime that has governed power plants for two decades. The AI power story is usually told as a bottleneck: not enough gigawatts, not enough interconnects, not enough turbines on backorder. But how much is only one of the questions. The model you asked a question this morning was trained on infrastructure like this. A 100,000-GPU training run doesn’t just consume power. It sculpts it, second by second, into a waveform the grid has never had to digest.
+Then the problem escaped engineering. NERC, the body that polices grid reliability, spent 2025 escalating from reports to alerts about load swings too fast for operators to correct. In July 2026, FERC ordered NERC to write [mandatory reliability standards](https://www.ferc.gov/media/e-1-rd26-7-000) for what it now calls computational loads, pulling data centers into the same rulebook as power plants. For twenty years we kept the grid stable by regulating supply. Now we also have to regulate demand.
