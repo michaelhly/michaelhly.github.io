@@ -69,6 +69,8 @@ Each loop iteration has two electrical modes. During the forward and backward pa
 
 A training cluster behaves differently from most loads on the electric grid. Power can also fluctuate when millions of users are talking to a chatbot, but their requests arrive at random moments, so most of those fluctuations cancel each other out. Training does not have the same randomness. In each iteration, `all_reduce(model.grads)` takes any GPU that has drifted ahead and holds it until the rest arrive. This forced alignment is not an accident or a bug to engineer away; it is produced, deliberately and continuously, by the [definition of the training job](https://docs.pytorch.org/docs/2.13/notes/ddp.html#distributed-data-parallel). The GPUs ramps up in power consumption and tapers off together synchornously, so the waves do not cancel. They stack into a power draw that pulses every second or so, locked to the rhythm of the training loop. While the size of the swings are manageable, the speed is a threat because the pattern runs up against how power plants are designed to work.
 
+[Coal Power Plant Layers](/assets/training-waveform/coal_fired_power_plant_layers.svg)
+
 A power plant does not answer a change in demand all at once, it answers in layers, each one slower than the last.
 
 - **In the first instant.** Nothing has decided anything yet. The turbine and generator are many tons of metal spinning at 3600 rpm on a 60 Hz grid, and when the grid pulls harder, the extra pull drags on all that spinning metal and slows it down a little.
@@ -83,7 +85,7 @@ A training cluster arrives below the bottom rung of that ladder. The load swings
 
 ![How a training loop becomes turbine stress](/assets/training-waveform/training-pulse-turbine-stress.svg)
 
-The twist itself is not the danger, fatigue is. Turbine shafts are built to hold enormous steady loads, but oscillating stress is a different problem. If the training loop keeps pulsing near one of the rotor train's natural torsional frequencies, the twisting reinforces itself instead of damping out, the same way a push timed to a swing sends it higher. Each cycle adds a little more strain, and over time it can crack the shaft. A gradient update in one state can become mechanical fatigue in a turbine shaft somewhere else.
+The twist itself is not the danger, fatigue is. Turbine shafts are built to hold enormous steady loads, but oscillating stress is a different problem. And the training pulse is not a gentle sine wave. Each iteration ramps hundreds of megawatts up and down with sharp edges, and a sharp edge carries energy at many frequencies at once, the way striking a bell rings every tone the bell can make. When some of that energy lands near one of the rotor train's natural torsional frequencies, the twisting reinforces itself instead of damping out, the same way a push timed to a swing sends it higher. Each cycle adds a little more strain, and over time it can crack the shaft. A gradient update in one state can become mechanical fatigue in a turbine shaft somewhere else.
 
 ## Shipping the Fix
 In August 2025, Microsoft, OpenAI, and Nvidia published a joint paper, "Power Stablization for AI Training Datacenters", documenting the problem in their live clusters. Microsoft had co-developed a power-smoothing feature with Nvidia that enforces minimum power floors and ramp limits that keep a trough above the safe threshold.
