@@ -78,7 +78,7 @@ A power plant does not answer a change in demand all at once, it responds in lay
 - The governor notices the lost speed and opens the steam valve. More steam pushes on the turbine blades, adding energy until the plant is back in balance with the grid.
 - Operators bring other plants up to cover the new load and hand this one back a steady setpoint.
 
-A training cluster arrives below the bottom rung of that ladder. The load swings hundreds of megawatts in lockstep, once a second, and no control layer is that fast. Nothing pushes back except the spinning steel itself. On every pulse, the grid has already changed how hard it is pulling before the turbine can change how hard it is pushing, and the mismatch has to go somewhere. It goes into the shaft as torque, twisting the metal back and forth on every iteration of the training loop.
+A training run's power draw is a square wave. It swings hundreds of megawatts in lockstep, up and down about once a second, far faster than a governor can adjust and far faster than an operator can react. The magnetic pull keeps up easily, because that is a circuit responding. Everything downstream of it does not, so nothing absorbs the swing except the spinning steel itself. On every pulse, the grid has already changed how hard it is pulling before the turbine can change how hard it is pushing, and the mismatch has to go somewhere. It goes into the shaft as torque, twisting the metal back and forth on every iteration of the training loop.
 
 ![How a training loop becomes turbine stress](/assets/training-waveform/training-pulse-turbine-stress.svg)
 
