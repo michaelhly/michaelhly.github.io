@@ -37,7 +37,7 @@ Each loop iteration has two electrical modes. During the forward and backward pa
 
 A training cluster behaves differently from most loads on the electric grid. Power can also fluctuate when millions of users are talking to a chatbot, but their requests arrive at random moments, so most of those fluctuations cancel each other out. Training does not have the same randomness. In each iteration, `all_reduce(model.grads)` takes any GPU that has drifted ahead and holds it until the rest arrive. This forced alignment is not an accident or a bug to engineer away; it is produced, deliberately and continuously, by the [definition of the training job](https://docs.pytorch.org/docs/2.13/notes/ddp.html#distributed-data-parallel). The GPUs ramps up in power consumption and tapers off together synchornously, so the waves do not cancel. They stack into a power draw that pulses every second or so, locked to the rhythm of the training loop. While the size of the swings are manageable, the speed is a threat because the pattern runs up against how power plants are designed to work.
 
-[Coal Power Plant Layers](/assets/training-waveform/coal_fired_power_plant_layers.svg)
+![Coal Power Plant Layers](/assets/training-waveform/coal_fired_power_plant_layers.svg)
 
 A power plant does not answer a change in demand all at once, it responds in layers:
 
