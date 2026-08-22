@@ -1,0 +1,26 @@
+<svg width="100%" viewBox="0 0 680 350" role="img" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'system-ui', 'Segoe UI', sans-serif">
+<title>One GPU's power draw over the training loop</title>
+<desc>A square wave of power versus time. During the forward and backward passes the chip does math near 1,200 watts. During the all-reduce it shares gradients and power drops to roughly 400 watts. The pattern repeats every iteration.</desc>
+<rect x="0" y="0" width="680" height="350" fill="#ffffff"/>
+<rect x="100" y="60" width="120" height="150" fill="#faeeda"/>
+<rect x="220" y="60" width="60" height="150" fill="#e1f5ee"/>
+<rect x="280" y="60" width="120" height="150" fill="#faeeda"/>
+<rect x="400" y="60" width="60" height="150" fill="#e1f5ee"/>
+<rect x="460" y="60" width="120" height="150" fill="#faeeda"/>
+<rect x="580" y="60" width="60" height="150" fill="#e1f5ee"/>
+<path d="M100 80 L220 80 L220 180 L280 180 L280 80 L400 80 L400 180 L460 180 L460 80 L580 80 L580 180 L640 180" fill="none" stroke="#BA7517" stroke-width="2" stroke-linejoin="round"/>
+<line x1="100" y1="210" x2="640" y2="210" stroke="#0b0b0b" stroke-opacity="0.2" stroke-width="0.5"/>
+<line x1="100" y1="60" x2="100" y2="210" stroke="#0b0b0b" stroke-opacity="0.2" stroke-width="0.5"/>
+<text x="94" y="84" text-anchor="end" fill="#52514e" font-size="12">1,200 W</text>
+<text x="94" y="184" text-anchor="end" fill="#52514e" font-size="12">~400 W</text>
+<line x1="100" y1="228" x2="280" y2="228" stroke="#898781" stroke-width="0.5"/>
+<line x1="100" y1="224" x2="100" y2="232" stroke="#898781" stroke-width="0.5"/>
+<line x1="280" y1="224" x2="280" y2="232" stroke="#898781" stroke-width="0.5"/>
+<text x="190" y="248" text-anchor="middle" fill="#52514e" font-size="12">one iteration</text>
+<rect x="100" y="280" width="12" height="12" rx="3" fill="#faeeda" stroke="#854f0b" stroke-width="0.5"/>
+<text x="118" y="290" fill="#0b0b0b" font-size="14" font-weight="500">forward + backward</text>
+<text x="118" y="308" fill="#52514e" font-size="12">doing math, chip near full power</text>
+<rect x="390" y="280" width="12" height="12" rx="3" fill="#e1f5ee" stroke="#0f6e56" stroke-width="0.5"/>
+<text x="408" y="290" fill="#0b0b0b" font-size="14" font-weight="500">all-reduce</text>
+<text x="408" y="308" fill="#52514e" font-size="12">sharing gradients, power drops</text>
+</svg>
